@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Deutscher Führerschein | Rechtlich Führerschein – Düsseldorf</title>
+  <meta name="description" content="Legal deutschen Führerschein beantragen in Düsseldorf. Schnell, transparent und offiziell registriert.">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', Roboto, system-ui, sans-serif;
+      background: #f4f7fb;
+      color: #1a2332;
+      line-height: 1.6;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 24px;
+    }
+
+    /* ----- DEUTSCHE FLAGGE ----- */
+    .de-bar {
+      height: 4px;
+      background: linear-gradient(to right, #000000 33.3%, #DD0000 33.3%, #DD0000 66.6%, #FFCE00 66.6%);
+      width: 100%;
+    }
+
+    /* ----- NAV ----- */
+    .navbar {
+      background: white;
+      box-shadow: 0 2px 16px rgba(0,0,0,0.05);
+      padding: 16px 0;
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+
+    .navbar .container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+
+    .logo {
+      font-size: 1.5rem;
+      font-weight: 700;
+      letter-spacing: -0.5px;
+    }
+    .logo span {
+      color: #003399;
+    }
+    .logo small {
+      font-size: 0.8rem;
+      font-weight: 400;
+      color: #555;
+      margin-left: 8px;
+      background: #eef2f6;
+      padding: 2px 10px;
+      border-radius: 20px;
+    }
+
+    .nav-actions {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+    }
+
+    .nav-social {
+      color: #1a2332;
+      font-size: 1.5rem;
+      transition: 0.2s;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      text-decoration: none;
+      font-weight: 500;
+      font-size: 1rem;
+    }
+    .nav-social i {
+      font-size: 1.5rem;
+      color: #003399;
+    }
+    .nav-social:hover {
+      opacity: 0.7;
+    }
+
+    .nav-cta {
+      background: #003399;
+      color: white !important;
+      padding: 10px 26px;
+      border-radius: 40px;
+      font-weight: 600;
+      text-decoration: none;
+      transition: 0.2s;
+      font-size: 0.95rem;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .nav-cta:hover {
+      background: #002277;
+      transform: scale(1.02);
+    }
+
+    /* ----- HERO ----- */
+    .hero {
+      padding: 70px 0 50px;
+      text-align: center;
+    }
+
+    .hero h1 {
+      font-size: 3rem;
+      font-weight: 800;
+      line-height: 1.2;
+      margin-bottom: 16px;
+    }
+    .hero h1 .highlight {
+      background: linear-gradient(145deg, #003399, #0066cc);
+      color: white;
+      padding: 0 20px;
+      border-radius: 16px;
+      display: inline-block;
+    }
+
+    .hero-sub {
+      font-size: 1.2rem;
+      color: #2d3c53;
+      max-width: 750px;
+      margin: 0 auto 30px;
+    }
+
+    .hero-badge {
+      background: #e6edf6;
+      padding: 8px 24px;
+      border-radius: 60px;
+      display: inline-block;
+      font-weight: 500;
+      color: #003399;
+      margin-bottom: 24px;
+      font-size: 0.95rem;
+    }
+    .hero-badge i {
+      color: #008a00;
+      margin-right: 8px;
+    }
+
+    .btn-primary {
+      background: #003399;
+      color: white;
+      border: none;
+      padding: 18px 50px;
+      border-radius: 60px;
+      font-size: 1.2rem;
+      font-weight: 700;
+      cursor: pointer;
+      transition: 0.2s;
+      text-decoration: none;
+      display: inline-block;
+      box-shadow: 0 12px 30px -8px rgba(0, 51, 153, 0.35);
+    }
+    .btn-primary:hover {
+      background: #002266;
+      transform: translateY(-3px);
+      box-shadow: 0 18px 36px -8px rgba(0, 51, 153, 0.45);
+    }
+    .btn-primary i {
+      margin-right: 10px;
+    }
+
+    .trust-hint {
+      margin-top: 20px;
+      font-size: 0.9rem;
+      color: #4a5a72;
+    }
+    .trust-hint i {
+      color: #008a00;
+    }
+
+    /* ----- VORTEILE ----- */
+    .features {
+      padding: 40px 0 20px;
+    }
+    .section-title {
+      text-align: center;
+      font-size: 2rem;
+      font-weight: 700;
+      margin-bottom: 10px;
+    }
+    .section-sub {
+      text-align: center;
+      color: #4a5a72;
+      margin-bottom: 30px;
+    }
+    .features-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 30px;
+      margin-top: 10px;
+    }
+    .feature-card {
+      background: white;
+      padding: 32px 24px;
+      border-radius: 24px;
+      text-align: center;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.04);
+      transition: 0.25s;
+      border: 1px solid #eef2f6;
+    }
+    .feature-card:hover {
+      transform: translateY(-8px);
+      border-color: #b3cce6;
+      box-shadow: 0 12px 30px rgba(0,51,153,0.08);
+    }
+    .feature-card i {
+      font-size: 2.6rem;
+      color: #003399;
+      margin-bottom: 14px;
+    }
+    .feature-card h3 {
+      font-size: 1.2rem;
+      margin-bottom: 6px;
+    }
+    .feature-card p {
+      color: #475569;
+      font-size: 0.95rem;
+    }
+
+    /* ----- KONTAKT (mit Adresse & Instagram, ohne Telefon) ----- */
+    .contact-section {
+      background: white;
+      border-radius: 32px;
+      padding: 44px 30px;
+      margin: 40px auto 50px;
+      box-shadow: 0 8px 30px rgba(0,0,0,0.04);
+      border: 1px solid #e2eaf2;
+      text-align: center;
+      max-width: 720px;
+    }
+    .contact-section h2 {
+      font-size: 1.8rem;
+      margin-bottom: 6px;
+    }
+
+    .contact-details {
+      margin-top: 20px;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      align-items: center;
+    }
+
+    .contact-details p {
+      font-size: 1.05rem;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      background: #f0f5fb;
+      padding: 12px 24px;
+      border-radius: 60px;
+      width: fit-content;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .contact-details i {
+      color: #003399;
+      font-size: 1.2rem;
+      width: 1.4rem;
+      text-align: center;
+    }
+
+    .contact-details a {
+      color: #0b1a33;
+      text-decoration: none;
+      font-weight: 500;
+      border-bottom: 2px dotted #94a3b8;
+    }
+    .contact-details a:hover {
+      color: #003399;
+      border-bottom-color: #003399;
+    }
+
+    .contact-legal {
+      margin-top: 22px;
+      font-size: 0.85rem;
+      color: #6b7a8f;
+    }
+
+    /* ----- FOOTER (mit Impressum & Adresse) ----- */
+    .footer {
+      background: #1a2332;
+      color: #b0c4de;
+      padding: 40px 0 30px;
+      margin-top: 20px;
+    }
+    .footer .container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      gap: 30px;
+    }
+    .footer-col h4 {
+      color: white;
+      font-size: 1rem;
+      margin-bottom: 10px;
+    }
+    .footer-col p, .footer-col a {
+      color: #b0c4de;
+      text-decoration: none;
+      font-size: 0.9rem;
+      display: block;
+      margin-bottom: 4px;
+    }
+    .footer-col a:hover {
+      color: white;
+    }
+    .footer-col .insta-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: #2a3a4a;
+      padding: 6px 16px;
+      border-radius: 40px;
+      margin-top: 6px;
+      font-weight: 500;
+    }
+    .footer-col .insta-link i {
+      font-size: 1.2rem;
+      color: #E1306C;
+    }
+
+    .footer-bottom {
+      border-top: 1px solid #2a3a4a;
+      margin-top: 30px;
+      padding-top: 20px;
+      text-align: center;
+      font-size: 0.85rem;
+      color: #8a9db0;
+      width: 100%;
+    }
+
+    @media (max-width: 700px) {
+      .hero h1 {
+        font-size: 2.2rem;
+      }
+      .navbar .container {
+        flex-direction: column;
+        align-items: center;
+      }
+      .nav-actions {
+        width: 100%;
+        justify-content: center;
+        flex-wrap: wrap;
+      }
+      .contact-details p {
+        width: 100%;
+        font-size: 0.95rem;
+        padding: 10px 16px;
+      }
+      .footer .container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<!-- Deutschland-Flagge -->
+<div class="de-bar"></div>
+
+<!-- NAVBAR -->
+<nav class="navbar">
+  <div class="container">
+    <div class="logo">
+      🚗 <span>Rechtlich</span>Führerschein <small>offiziell · DE</small>
+    </div>
+    <div class="nav-actions">
+      <a href="https://instagram.com/rechtlich.furehreschein" target="_blank" class="nav-social" aria-label="Instagram">
+        <i class="fab fa-instagram"></i> <span style="font-weight:400;">@rechtlich.furehreschein</span>
+      </a>
+      <a href="mailto:rechtlichfuhrerschein@gmail.com" class="nav-cta">
+        <i class="fas fa-envelope"></i> Jetzt anfragen
+      </a>
+    </div>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero container">
+  <div class="hero-badge">
+    <i class="fas fa-check-circle"></i> 100 % legal · EU-weit anerkannt
+  </div>
+  <h1>
+    Ihr deutscher Führerschein – <br/>
+    <span class="highlight">schnell & rechtskonform</span>
+  </h1>
+  <p class="hero-sub">
+    Wir begleiten Sie professionell beim Erwerb Ihres <strong>offiziellen deutschen Führerscheins</strong>.
+    Transparent, zuverlässig und mit persönlicher Betreuung in Düsseldorf.
+  </p>
+  <a href="mailto:rechtlichfuhrerschein@gmail.com" class="btn-primary">
+    <i class="fas fa-paper-plane"></i> Unverbindliches Angebot
+  </a>
+  <div class="trust-hint">
+    <i class="fas fa-lock"></i> Ihre Anfrage ist streng vertraulich
+  </div>
+</section>
+
+<!-- VORTEILE -->
+<section class="features container">
+  <h2 class="section-title">Warum Rechtlich Führerschein?</h2>
+  <p class="section-sub">Wir setzen auf Seriosität, Geschwindigkeit und faire Konditionen.</p>
+  <div class="features-grid">
+    <div class="feature-card">
+      <i class="fas fa-gavel"></i>
+      <h3>Rechtssicherheit</h3>
+      <p>Der Führerschein wird offiziell registriert und ist in allen EU-Staaten gültig.</p>
+    </div>
+    <div class="feature-card">
+      <i class="fas fa-bolt"></i>
+      <h3>Schnelle Abwicklung</h3>
+      <p>Durch unser exklusives Partnernetzwerk minimieren wir Wartezeiten erheblich.</p>
+    </div>
+    <div class="feature-card">
+      <i class="fas fa-hand-holding-usd"></i>
+      <h3>Faire Preise</h3>
+      <p>Keine versteckten Kosten. Sie erhalten ein individuelles Festpreis-Angebot.</p>
+    </div>
+    <div class="feature-card">
+      <i class="fas fa-headset"></i>
+      <h3>Persönliche Beratung</h3>
+      <p>Wir stehen Ihnen jederzeit per E-Mail oder Instagram zur Verfügung.</p>
+    </div>
+  </div>
+</section>
+
+<!-- KONTAKT (ohne Telefon, mit Adresse & Instagram) -->
+<section class="container">
+  <div class="contact-section">
+    <h2>📬 So erreichen Sie uns</h2>
+    <p style="color: #2d3c53;">Besuchen Sie uns vor Ort oder schreiben Sie uns – wir freuen uns auf Sie!</p>
+    
+    <div class="contact-details">
+      <p>
+        <i class="fas fa-map-pin"></i> 
+        Himmelgeister Str. 113, 40225 Düsseldorf
+      </p>
+      <p>
+        <i class="fas fa-envelope"></i>
+        <a href="mailto:rechtlichfuhrerschein@gmail.com">rechtlichfuhrerschein@gmail.com</a>
+      </p>
+      <p>
+        <i class="fab fa-instagram"></i>
+        <a href="https://instagram.com/rechtlich.furehreschein" target="_blank">@rechtlich.furehreschein</a>
+      </p>
+    </div>
+
+    <div class="contact-legal">
+      <i class="fas fa-shield-alt" style="margin-right: 6px;"></i> 
+      Ihre Daten werden gemäß der DSGVO vertraulich behandelt.
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER mit Impressum & Adresse -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-col">
+      <h4>Rechtlich Führerschein</h4>
+      <p>Ihr vertrauenswürdiger Partner für den legalen Erwerb des deutschen Führerscheins in Düsseldorf.</p>
+    </div>
+    <div class="footer-col">
+      <h4>Kontakt & Adresse</h4>
+      <p>Himmelgeister Str. 113</p>
+      <p>40225 Düsseldorf</p>
+      <a href="mailto:rechtlichfuhrerschein@gmail.com">rechtlichfuhrerschein@gmail.com</a>
+      <a href="https://instagram.com/rechtlich.furehreschein" target="_blank" class="insta-link">
+        <i class="fab fa-instagram"></i> @rechtlich.furehreschein
+      </a>
+    </div>
+    <div class="footer-col">
+      <h4>Rechtliches</h4>
+      <a href="#">Impressum</a>
+      <a href="#">Datenschutzerklärung</a>
+      <a href="#">AGB</a>
+    </div>
+    <div class="footer-bottom">
+      &copy; 2026 <strong>Rechtlich Führerschein</strong> – Alle Rechte vorbehalten.
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
