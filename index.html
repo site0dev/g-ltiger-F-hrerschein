@@ -148,6 +148,209 @@ section .container {
   .cards .card,.steps .step{min-height:0}
 }
 
+
+/* =========================================================
+   CORRECTION MOBILE / PLEIN ECRAN SANS DEBORDEMENT
+   DE / FR / IT : tout le contenu reste dans la largeur du viewport.
+   ========================================================= */
+
+html, body {
+  width: 100%;
+  max-width: 100%;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden !important;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  max-width: 100%;
+}
+
+img, video, svg, canvas {
+  max-width: 100%;
+  height: auto;
+}
+
+.container,
+.section > .container,
+.hero > .container,
+main > section > .container,
+.section-inner,
+.hero-inner,
+main,
+section,
+header,
+footer {
+  width: 100%;
+  max-width: 100%;
+  min-width: 0;
+}
+
+.section > .container,
+.hero > .container,
+main > section > .container {
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: clamp(16px, 3vw, 40px);
+  padding-right: clamp(16px, 3vw, 40px);
+}
+
+/* Aucun texte ne doit forcer la largeur de la page. */
+h1, h2, h3, h4, p, a, button, label, summary, li, span {
+  max-width: 100%;
+  overflow-wrap: anywhere;
+  word-break: normal;
+}
+
+/* Le grand titre reste lisible sans sortir de l'écran. */
+.hero h1 {
+  width: 100%;
+  max-width: 900px;
+  font-size: clamp(2.2rem, 6vw, 5rem);
+  line-height: 1.02;
+}
+
+/* Paragraphes longs : largeur fluide. */
+.hero p,
+.section p {
+  width: 100%;
+  max-width: 850px;
+}
+
+/* Grilles : côte à côte sur grand écran, mais jamais plus larges
+   que le viewport. */
+.cards,
+.steps,
+.faq {
+  width: 100%;
+  max-width: 100%;
+  min-width: 0;
+}
+
+.cards > *,
+.steps > *,
+.faq > * {
+  min-width: 0;
+  max-width: 100%;
+}
+
+/* Navigation mobile : aucun élément ne peut pousser la page
+   horizontalement. */
+nav, .nav, .navbar, .header-inner {
+  width: 100%;
+  max-width: 100%;
+  min-width: 0;
+}
+
+.nav * {
+  min-width: 0;
+}
+
+/* Boutons et champs : jamais plus larges que leur parent. */
+button, input, select, textarea {
+  max-width: 100%;
+  min-width: 0;
+}
+
+/* Formulaires : les colonnes se réduisent proprement. */
+.form-grid,
+.contact-grid {
+  width: 100%;
+  max-width: 100%;
+  min-width: 0;
+}
+
+.form-grid > *,
+.contact-grid > * {
+  min-width: 0;
+  max-width: 100%;
+}
+
+@media (max-width: 900px) {
+  .cards {
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+  }
+
+  .steps {
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+  }
+
+  .faq {
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+  }
+
+  .contact-grid {
+    grid-template-columns: 1fr !important;
+  }
+}
+
+@media (max-width: 600px) {
+  html, body {
+    overflow-x: hidden !important;
+  }
+
+  .section > .container,
+  .hero > .container,
+  main > section > .container {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  .cards,
+  .steps,
+  .faq {
+    grid-template-columns: 1fr !important;
+    gap: 14px;
+  }
+
+  .cards .card,
+  .steps .step,
+  .faq details {
+    width: 100%;
+    min-width: 0;
+    min-height: 0;
+  }
+
+  .hero h1 {
+    font-size: clamp(2rem, 10vw, 3.5rem);
+    line-height: 1.04;
+  }
+
+  .hero p {
+    font-size: clamp(.95rem, 4vw, 1.1rem);
+    line-height: 1.65;
+  }
+
+  .hero .actions {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .hero .actions > * {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .form-grid {
+    grid-template-columns: 1fr !important;
+  }
+
+  .contact-grid {
+    grid-template-columns: 1fr !important;
+  }
+
+  /* Les éléments de navigation peuvent se compacter sans créer
+     de seconde largeur de page. */
+  .nav,
+  .navbar,
+  .header-inner {
+    overflow: hidden;
+  }
+}
+
 </style>
 </head>
 <body>
