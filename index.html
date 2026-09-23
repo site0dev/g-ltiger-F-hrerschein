@@ -1,506 +1,446 @@
 <!DOCTYPE html>
-<html lang="de">
+<html lang="fr">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Deutscher Führerschein | Rechtlich Führerschein – Düsseldorf</title>
-  <meta name="description" content="Legal deutschen Führerschein beantragen in Düsseldorf. Schnell, transparent und offiziell registriert.">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-
-    body {
-      font-family: 'Segoe UI', Roboto, system-ui, sans-serif;
-      background: #f4f7fb;
-      color: #1a2332;
-      line-height: 1.6;
-    }
-
-    .container {
-      max-width: 1200px;
-      margin: 0 auto;
-      padding: 0 24px;
-    }
-
-    /* ----- DEUTSCHE FLAGGE ----- */
-    .de-bar {
-      height: 4px;
-      background: linear-gradient(to right, #000000 33.3%, #DD0000 33.3%, #DD0000 66.6%, #FFCE00 66.6%);
-      width: 100%;
-    }
-
-    /* ----- NAV ----- */
-    .navbar {
-      background: white;
-      box-shadow: 0 2px 16px rgba(0,0,0,0.05);
-      padding: 16px 0;
-      position: sticky;
-      top: 0;
-      z-index: 10;
-    }
-
-    .navbar .container {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      flex-wrap: wrap;
-      gap: 12px;
-    }
-
-    .logo {
-      font-size: 1.5rem;
-      font-weight: 700;
-      letter-spacing: -0.5px;
-    }
-    .logo span {
-      color: #003399;
-    }
-    .logo small {
-      font-size: 0.8rem;
-      font-weight: 400;
-      color: #555;
-      margin-left: 8px;
-      background: #eef2f6;
-      padding: 2px 10px;
-      border-radius: 20px;
-    }
-
-    .nav-actions {
-      display: flex;
-      align-items: center;
-      gap: 14px;
-    }
-
-    .nav-social {
-      color: #1a2332;
-      font-size: 1.5rem;
-      transition: 0.2s;
-      display: inline-flex;
-      align-items: center;
-      gap: 6px;
-      text-decoration: none;
-      font-weight: 500;
-      font-size: 1rem;
-    }
-    .nav-social i {
-      font-size: 1.5rem;
-      color: #003399;
-    }
-    .nav-social:hover {
-      opacity: 0.7;
-    }
-
-    .nav-cta {
-      background: #003399;
-      color: white !important;
-      padding: 10px 26px;
-      border-radius: 40px;
-      font-weight: 600;
-      text-decoration: none;
-      transition: 0.2s;
-      font-size: 0.95rem;
-      display: inline-flex;
-      align-items: center;
-      gap: 8px;
-    }
-    .nav-cta:hover {
-      background: #002277;
-      transform: scale(1.02);
-    }
-
-    /* ----- HERO ----- */
-    .hero {
-      padding: 70px 0 50px;
-      text-align: center;
-    }
-
-    .hero h1 {
-      font-size: 3rem;
-      font-weight: 800;
-      line-height: 1.2;
-      margin-bottom: 16px;
-    }
-    .hero h1 .highlight {
-      background: linear-gradient(145deg, #003399, #0066cc);
-      color: white;
-      padding: 0 20px;
-      border-radius: 16px;
-      display: inline-block;
-    }
-
-    .hero-sub {
-      font-size: 1.2rem;
-      color: #2d3c53;
-      max-width: 750px;
-      margin: 0 auto 30px;
-    }
-
-    .hero-badge {
-      background: #e6edf6;
-      padding: 8px 24px;
-      border-radius: 60px;
-      display: inline-block;
-      font-weight: 500;
-      color: #003399;
-      margin-bottom: 24px;
-      font-size: 0.95rem;
-    }
-    .hero-badge i {
-      color: #008a00;
-      margin-right: 8px;
-    }
-
-    .btn-primary {
-      background: #003399;
-      color: white;
-      border: none;
-      padding: 18px 50px;
-      border-radius: 60px;
-      font-size: 1.2rem;
-      font-weight: 700;
-      cursor: pointer;
-      transition: 0.2s;
-      text-decoration: none;
-      display: inline-block;
-      box-shadow: 0 12px 30px -8px rgba(0, 51, 153, 0.35);
-    }
-    .btn-primary:hover {
-      background: #002266;
-      transform: translateY(-3px);
-      box-shadow: 0 18px 36px -8px rgba(0, 51, 153, 0.45);
-    }
-    .btn-primary i {
-      margin-right: 10px;
-    }
-
-    .trust-hint {
-      margin-top: 20px;
-      font-size: 0.9rem;
-      color: #4a5a72;
-    }
-    .trust-hint i {
-      color: #008a00;
-    }
-
-    /* ----- VORTEILE ----- */
-    .features {
-      padding: 40px 0 20px;
-    }
-    .section-title {
-      text-align: center;
-      font-size: 2rem;
-      font-weight: 700;
-      margin-bottom: 10px;
-    }
-    .section-sub {
-      text-align: center;
-      color: #4a5a72;
-      margin-bottom: 30px;
-    }
-    .features-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-      gap: 30px;
-      margin-top: 10px;
-    }
-    .feature-card {
-      background: white;
-      padding: 32px 24px;
-      border-radius: 24px;
-      text-align: center;
-      box-shadow: 0 4px 20px rgba(0,0,0,0.04);
-      transition: 0.25s;
-      border: 1px solid #eef2f6;
-    }
-    .feature-card:hover {
-      transform: translateY(-8px);
-      border-color: #b3cce6;
-      box-shadow: 0 12px 30px rgba(0,51,153,0.08);
-    }
-    .feature-card i {
-      font-size: 2.6rem;
-      color: #003399;
-      margin-bottom: 14px;
-    }
-    .feature-card h3 {
-      font-size: 1.2rem;
-      margin-bottom: 6px;
-    }
-    .feature-card p {
-      color: #475569;
-      font-size: 0.95rem;
-    }
-
-    /* ----- KONTAKT (mit Adresse & Instagram, ohne Telefon) ----- */
-    .contact-section {
-      background: white;
-      border-radius: 32px;
-      padding: 44px 30px;
-      margin: 40px auto 50px;
-      box-shadow: 0 8px 30px rgba(0,0,0,0.04);
-      border: 1px solid #e2eaf2;
-      text-align: center;
-      max-width: 720px;
-    }
-    .contact-section h2 {
-      font-size: 1.8rem;
-      margin-bottom: 6px;
-    }
-
-    .contact-details {
-      margin-top: 20px;
-      display: flex;
-      flex-direction: column;
-      gap: 12px;
-      align-items: center;
-    }
-
-    .contact-details p {
-      font-size: 1.05rem;
-      display: flex;
-      align-items: center;
-      gap: 12px;
-      background: #f0f5fb;
-      padding: 12px 24px;
-      border-radius: 60px;
-      width: fit-content;
-      flex-wrap: wrap;
-      justify-content: center;
-    }
-
-    .contact-details i {
-      color: #003399;
-      font-size: 1.2rem;
-      width: 1.4rem;
-      text-align: center;
-    }
-
-    .contact-details a {
-      color: #0b1a33;
-      text-decoration: none;
-      font-weight: 500;
-      border-bottom: 2px dotted #94a3b8;
-    }
-    .contact-details a:hover {
-      color: #003399;
-      border-bottom-color: #003399;
-    }
-
-    .contact-legal {
-      margin-top: 22px;
-      font-size: 0.85rem;
-      color: #6b7a8f;
-    }
-
-    /* ----- FOOTER (mit Impressum & Adresse) ----- */
-    .footer {
-      background: #1a2332;
-      color: #b0c4de;
-      padding: 40px 0 30px;
-      margin-top: 20px;
-    }
-    .footer .container {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: space-between;
-      gap: 30px;
-    }
-    .footer-col h4 {
-      color: white;
-      font-size: 1rem;
-      margin-bottom: 10px;
-    }
-    .footer-col p, .footer-col a {
-      color: #b0c4de;
-      text-decoration: none;
-      font-size: 0.9rem;
-      display: block;
-      margin-bottom: 4px;
-    }
-    .footer-col a:hover {
-      color: white;
-    }
-    .footer-col .insta-link {
-      display: inline-flex;
-      align-items: center;
-      gap: 8px;
-      background: #2a3a4a;
-      padding: 6px 16px;
-      border-radius: 40px;
-      margin-top: 6px;
-      font-weight: 500;
-    }
-    .footer-col .insta-link i {
-      font-size: 1.2rem;
-      color: #E1306C;
-    }
-
-    .footer-bottom {
-      border-top: 1px solid #2a3a4a;
-      margin-top: 30px;
-      padding-top: 20px;
-      text-align: center;
-      font-size: 0.85rem;
-      color: #8a9db0;
-      width: 100%;
-    }
-
-    @media (max-width: 700px) {
-      .hero h1 {
-        font-size: 2.2rem;
-      }
-      .navbar .container {
-        flex-direction: column;
-        align-items: center;
-      }
-      .nav-actions {
-        width: 100%;
-        justify-content: center;
-        flex-wrap: wrap;
-      }
-      .contact-details p {
-        width: 100%;
-        font-size: 0.95rem;
-        padding: 10px 16px;
-      }
-      .footer .container {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-      }
-    }
-  </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="Führerschein Finvero Capital — demande et suivi en ligne de votre dossier de permis de conduire en Allemagne.">
+<meta name="theme-color" content="#0a1020">
+<title>Führerschein Finvero Capital — Demande de permis de conduire</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<style>
+:root{--navy:#07101f;--navy2:#0c1930;--gold:#c9a45c;--gold2:#ead4a2;--cream:#f7f3eb;--white:#fff;--ink:#172033;--muted:#697386;--line:#e3e6eb;--danger:#b42318;--ok:#16835b;--shadow:0 22px 60px #07101f18;--serif:"Playfair Display",serif;--sans:"DM Sans",sans-serif}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:var(--sans);color:var(--ink);background:#fff;line-height:1.65}a{text-decoration:none;color:inherit}button,input,select,textarea{font:inherit}.container{width:min(1180px,92%);margin:auto}
+header{position:fixed;top:0;left:0;right:0;z-index:100;background:#07101ff2;color:#fff;border-bottom:1px solid #ffffff18;backdrop-filter:blur(15px)}
+.nav{height:76px;display:flex;align-items:center;gap:28px}.logo{display:flex;align-items:center;gap:12px;min-width:235px;cursor:pointer}.logo-mark{width:40px;height:40px;border:1px solid var(--gold);display:grid;place-items:center;color:var(--gold);font-family:var(--serif);font-size:1.15rem}.logo-text{font-family:var(--serif);font-size:1.18rem;line-height:1.05}.logo-text small{display:block;font-family:var(--sans);font-size:.48rem;letter-spacing:.22em;color:var(--gold);text-transform:uppercase;margin-top:4px}.navlinks{display:flex;gap:25px;align-items:center;margin-left:auto}.navlinks a{font-size:.76rem;text-transform:uppercase;letter-spacing:.09em;color:#e8edf5}.navlinks a:hover{color:var(--gold2)}.nav-actions{display:flex;gap:8px}.lang,.account-btn,.menu{border:1px solid #ffffff25;background:transparent;color:#fff;padding:9px 12px;cursor:pointer}.account-btn{border-color:var(--gold);color:var(--gold2)}.menu{display:none}
+main{padding-top:76px}.page{display:none}.page.active{display:block}
+.hero{min-height:700px;background:linear-gradient(100deg,#07101feF,#07101fB8 52%,#07101f40),url("https://images.unsplash.com/photo-1516979187457-637abb4f9353?auto=format&fit=crop&w=1800&q=88") center/cover;display:flex;align-items:center;color:#fff}.hero-inner{padding:90px 0;max-width:820px}.eyebrow{display:inline-flex;gap:10px;align-items:center;text-transform:uppercase;letter-spacing:.2em;font-size:.68rem;font-weight:700;color:var(--gold)}.eyebrow:before{content:"";width:28px;height:1px;background:currentColor}.hero h1{font-family:var(--serif);font-size:clamp(3.1rem,7vw,6.4rem);line-height:.96;font-weight:600;margin:18px 0 25px}.hero h1 span{color:var(--gold2)}.hero p{max-width:680px;color:#d8deea;font-size:1.04rem}.actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:32px}.btn{border:0;padding:13px 19px;cursor:pointer;display:inline-flex;align-items:center;justify-content:center;gap:9px;text-transform:uppercase;letter-spacing:.08em;font-size:.72rem;font-weight:700;border-radius:2px}.gold{background:var(--gold);color:#0a1020}.dark{background:var(--navy);color:#fff}.outline{background:transparent;color:var(--ink);border:1px solid #cbd0d9}.outline-light{background:transparent;color:#fff;border:1px solid #ffffff4a}.btn:hover{transform:translateY(-1px);filter:brightness(1.04)}
+.notice{background:#fff8e8;border:1px solid #ead7aa;padding:15px 18px;color:#624c24;font-size:.84rem}.notice strong{display:block;margin-bottom:3px}
+.section{padding:95px 0}.cream{background:var(--cream)}.dark-section{background:var(--navy);color:#fff}.head{display:flex;justify-content:space-between;gap:45px;align-items:end;margin-bottom:42px}.head h2{font-family:var(--serif);font-size:clamp(2.6rem,5vw,4.7rem);line-height:.98;margin:12px 0 0;font-weight:600}.head p{max-width:450px;color:var(--muted)}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:#dfe2e7}.card{background:#fff;padding:34px;min-height:240px}.card i{font-size:1.4rem;color:var(--gold);margin-bottom:25px}.card h3{font-family:var(--serif);font-size:1.65rem;margin:0 0 10px}.card p{color:var(--muted);font-size:.88rem}
+.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:#28344a}.step{background:var(--navy2);padding:30px;min-height:220px}.step b{font-family:var(--serif);font-size:2.5rem;color:var(--gold)}.step h3{font-family:var(--serif);font-size:1.45rem;margin:15px 0 8px}.step p{color:#aeb8c8;font-size:.83rem}
+.faq{display:grid;grid-template-columns:1fr 1fr;gap:12px}.faq details{border:1px solid var(--line);padding:17px 20px;background:#fff}.faq summary{cursor:pointer;font-weight:700}.faq p{color:var(--muted);font-size:.86rem}
+.contact-grid{display:grid;grid-template-columns:.8fr 1.2fr;gap:50px}.contact-box{background:var(--navy);color:#fff;padding:38px}.contact-box h3{font-family:var(--serif);font-size:2rem;margin-top:0}.contact-row{margin:22px 0}.contact-row small{display:block;text-transform:uppercase;letter-spacing:.12em;color:var(--gold);font-size:.62rem}.contact-row a{color:#fff}.formbox{background:#fff;border:1px solid var(--line);padding:34px;box-shadow:var(--shadow)}
+.form-grid{display:grid;grid-template-columns:1fr 1fr;gap:15px}.field{margin-bottom:15px}.field.full{grid-column:1/-1}.field label{display:block;font-size:.68rem;text-transform:uppercase;letter-spacing:.08em;font-weight:700;margin-bottom:6px}.field input,.field select,.field textarea{width:100%;padding:12px 13px;border:1px solid #d4d9e1;background:#fff;border-radius:2px}.field textarea{min-height:115px;resize:vertical}.field input:focus,.field select:focus,.field textarea:focus{outline:2px solid #c9a45c33;border-color:var(--gold)}
+.auth-wrap{min-height:calc(100vh - 76px);display:grid;place-items:center;background:linear-gradient(135deg,#f6f1e7,#fff);padding:55px 0}.auth{width:min(520px,92%);background:#fff;border:1px solid var(--line);box-shadow:var(--shadow);padding:38px}.auth h1{font-family:var(--serif);font-size:2.8rem;margin:0 0 8px}.auth>p{color:var(--muted);font-size:.86rem}.auth-links{display:flex;justify-content:space-between;gap:12px;margin-top:17px;font-size:.78rem}.link{color:#8a6a30;cursor:pointer}.password-wrap{position:relative}.password-wrap input{padding-right:45px}.eye{position:absolute;right:0;top:0;height:100%;width:42px;border:0;background:none;cursor:pointer;color:#677}
+.dashboard{padding:45px 0 90px;background:#f5f7fa;min-height:calc(100vh - 76px)}.dash-top{display:flex;justify-content:space-between;gap:20px;align-items:center;margin-bottom:25px}.dash-top h1{font-family:var(--serif);font-size:3rem;margin:0}.dash-grid{display:grid;grid-template-columns:280px 1fr;gap:20px}.side{background:var(--navy);color:#fff;padding:22px;height:max-content}.side button{width:100%;text-align:left;background:transparent;color:#dfe6f1;border:0;padding:12px;cursor:pointer}.side button.active,.side button:hover{background:#ffffff12;color:var(--gold2)}.panel{background:#fff;border:1px solid var(--line);padding:28px}.statusbar{display:flex;gap:8px;flex-wrap:wrap;margin:15px 0}.pill{padding:7px 11px;border-radius:99px;background:#eef1f5;font-size:.7rem;font-weight:700}.pill.ok{background:#e5f6ef;color:#116c4b}.pill.pending{background:#fff4d8;color:#765816}.pill.bad{background:#fee9e7;color:#9c2a22}.progress{height:8px;background:#e7eaf0;margin:22px 0;overflow:hidden}.progress i{display:block;height:100%;background:var(--gold);width:0}.doc-list{display:grid;gap:10px}.doc{border:1px solid var(--line);padding:13px;display:flex;justify-content:space-between;gap:12px;align-items:center}.doc small{color:var(--muted)}
+.admin-screen{display:none;position:fixed;inset:0;z-index:1000;background:#07101ff5;backdrop-filter:blur(12px);overflow:auto;padding:15px}.admin-screen.open{display:block}.admin-box{max-width:1250px;margin:auto;background:#f5f7fa;min-height:calc(100vh - 30px)}.admin-head{background:var(--navy);color:#fff;padding:15px 20px;display:flex;justify-content:space-between;align-items:center;position:sticky;top:0;z-index:3}.admin-head h2{font-family:var(--serif);margin:0}.admin-body{padding:22px}.admin-login{max-width:430px;margin:80px auto;background:#fff;padding:35px}.admin-tabs{display:flex;gap:7px;overflow:auto;background:#fff;border-bottom:1px solid var(--line);padding:10px}.admin-tabs button{white-space:nowrap;border:0;background:#f0f2f5;padding:10px 14px;cursor:pointer}.admin-tabs button.active{background:var(--navy);color:#fff}.admin-section{display:none}.admin-section.active{display:block}.admin-list{display:grid;gap:10px}.admin-item{background:#fff;border:1px solid var(--line);padding:17px;display:flex;gap:15px;align-items:center}.admin-item-main{flex:1}.admin-item h4{margin:0 0 4px}.admin-item p{margin:0;color:var(--muted);font-size:.82rem}.admin-actions{display:flex;gap:7px;flex-wrap:wrap}.small{padding:8px 10px;font-size:.65rem}.tablewrap{overflow:auto;background:#fff;border:1px solid var(--line)}table{border-collapse:collapse;width:100%;min-width:720px}th,td{padding:12px;border-bottom:1px solid var(--line);text-align:left;font-size:.76rem}th{background:#f2f4f7;text-transform:uppercase;letter-spacing:.07em;font-size:.62rem}.toast{position:fixed;right:18px;bottom:18px;z-index:1500;display:none;padding:13px 16px;background:var(--navy);color:#fff;box-shadow:var(--shadow);max-width:360px}.toast.show{display:block}.toast.error{background:#7c201b}.empty{padding:35px;text-align:center;color:var(--muted);border:1px dashed #cbd1da}
+footer{background:#050a12;color:#aab3c1;padding:35px 0}.foot{display:flex;justify-content:space-between;gap:20px;font-size:.72rem}.foot strong{color:#fff}
+@media(max-width:900px){.navlinks{display:none}.menu{display:block}.nav{height:68px}.logo{min-width:0}.nav-actions{margin-left:auto}.cards,.steps{grid-template-columns:1fr 1fr}.contact-grid,.dash-grid{grid-template-columns:1fr}.side{display:flex;gap:5px;overflow:auto}.side button{width:auto;white-space:nowrap}.head{display:block}.head p{margin-top:20px}}
+@media(max-width:560px){main{padding-top:68px}.hero{min-height:650px}.hero-inner{padding:70px 0}.hero h1{font-size:3.2rem}.actions .btn{width:100%}.section{padding:70px 0}.cards,.steps,.faq,.form-grid{grid-template-columns:1fr}.field.full{grid-column:auto}.formbox,.auth{padding:24px}.dash-top{display:block}.dash-top .btn{margin-top:12px}.dash-top h1{font-size:2.4rem}.admin-body{padding:12px}.admin-item{align-items:flex-start;flex-direction:column}.foot{flex-direction:column}}
+</style>
 </head>
 <body>
 
-<!-- Deutschland-Flagge -->
-<div class="de-bar"></div>
-
-<!-- NAVBAR -->
-<nav class="navbar">
-  <div class="container">
-    <div class="logo">
-      🚗 <span>Rechtlich</span>Führerschein <small>offiziell · DE</small>
+<header>
+  <div class="container nav">
+    <div class="logo" id="logo-admin-trigger" title="Führerschein Finvero Capital">
+      <div class="logo-mark">F</div>
+      <div class="logo-text">Führerschein Finvero Capital<small>Service privé · Allemagne</small></div>
     </div>
+    <nav class="navlinks">
+      <a href="#accueil" data-page-link="home">Accueil</a>
+      <a href="#services" data-page-link="home">Services</a>
+      <a href="#procedure" data-page-link="home">Procédure</a>
+      <a href="#faq" data-page-link="home">FAQ</a>
+      <a href="#contact" data-page-link="home">Contact</a>
+    </nav>
     <div class="nav-actions">
-      <a href="https://instagram.com/rechtlich.furehreschein" target="_blank" class="nav-social" aria-label="Instagram">
-        <i class="fab fa-instagram"></i> <span style="font-weight:400;">@rechtlich.furehreschein</span>
-      </a>
-      <a href="mailto:rechtlichfuhrerschein@gmail.com" class="nav-cta">
-        <i class="fas fa-envelope"></i> Jetzt anfragen
-      </a>
+      <button class="lang" id="lang-btn">DE</button>
+      <button class="account-btn" id="account-btn"><i class="fa-regular fa-user"></i> Mon dossier</button>
+      <button class="menu" id="menu-btn"><i class="fa-solid fa-bars"></i></button>
     </div>
   </div>
-</nav>
+</header>
 
-<!-- HERO -->
-<section class="hero container">
-  <div class="hero-badge">
-    <i class="fas fa-check-circle"></i> 100 % legal · EU-weit anerkannt
-  </div>
-  <h1>
-    Ihr deutscher Führerschein – <br/>
-    <span class="highlight">schnell & rechtskonform</span>
-  </h1>
-  <p class="hero-sub">
-    Wir begleiten Sie professionell beim Erwerb Ihres <strong>offiziellen deutschen Führerscheins</strong>.
-    Transparent, zuverlässig und mit persönlicher Betreuung in Düsseldorf.
-  </p>
-  <a href="mailto:rechtlichfuhrerschein@gmail.com" class="btn-primary">
-    <i class="fas fa-paper-plane"></i> Unverbindliches Angebot
-  </a>
-  <div class="trust-hint">
-    <i class="fas fa-lock"></i> Ihre Anfrage ist streng vertraulich
-  </div>
+<main>
+<section id="home-page" class="page active">
+  <section id="accueil" class="hero">
+    <div class="container hero-inner">
+      <span class="eyebrow">Accompagnement privé · Allemagne</span>
+      <h1>Votre dossier de <span>permis de conduire</span>, organisé en ligne.</h1>
+      <p>Führerschein Finvero Capital vous permet de déposer les informations et pièces de votre dossier, de consulter son état et d'échanger avec le service. Le service est privé et ne remplace pas les autorités allemandes ni l'auto-école compétente.</p>
+      <div class="actions">
+        <button class="btn gold" data-go="register"><i class="fa-solid fa-file-signature"></i> Commencer une demande</button>
+        <button class="btn outline-light" data-go="login"><i class="fa-solid fa-right-to-bracket"></i> Suivre mon dossier</button>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="notice"><strong>Information importante</strong>Führerschein Finvero Capital est un service privé d'accompagnement administratif. Il ne délivre pas lui-même de permis de conduire et aucune autorité allemande n'est représentée par ce site.</div>
+    </div>
+  </section>
+
+  <section id="services" class="section cream">
+    <div class="container">
+      <div class="head"><div><span class="eyebrow">Nos services</span><h2>Un espace unique pour votre dossier.</h2></div><p>Les fonctions ci-dessous sont conçues autour d'une demande en ligne structurée et d'un suivi individuel.</p></div>
+      <div class="cards">
+        <article class="card"><i class="fa-solid fa-file-circle-check"></i><h3>Dépôt de demande</h3><p>Création d'un dossier avec vos informations personnelles, la catégorie demandée et les éléments utiles à son traitement.</p></article>
+        <article class="card"><i class="fa-solid fa-folder-open"></i><h3>Pièces du dossier</h3><p>Ajout des documents demandés dans votre espace personnel, avec un état permettant de suivre leur prise en compte.</p></article>
+        <article class="card"><i class="fa-solid fa-chart-line"></i><h3>Suivi en ligne</h3><p>Connexion à votre compte pour retrouver votre référence, le statut de votre dossier et les messages du service.</p></article>
+      </div>
+    </div>
+  </section>
+
+  <section id="procedure" class="section dark-section">
+    <div class="container">
+      <div class="head"><div><span class="eyebrow">La procédure</span><h2>Du compte au suivi.</h2></div><p>Chaque étape est enregistrée dans votre espace afin de limiter les informations perdues entre deux échanges.</p></div>
+      <div class="steps">
+        <article class="step"><b>01</b><h3>Créer votre compte</h3><p>Inscrivez-vous avec une adresse e-mail et un mot de passe personnel.</p></article>
+        <article class="step"><b>02</b><h3>Ouvrir le dossier</h3><p>Renseignez votre identité, votre situation et la catégorie de permis concernée.</p></article>
+        <article class="step"><b>03</b><h3>Déposer les pièces</h3><p>Ajoutez les documents disponibles depuis votre espace personnel.</p></article>
+        <article class="step"><b>04</b><h3>Suivre l'état</h3><p>Retrouvez le statut et les demandes de complément directement dans votre compte.</p></article>
+      </div>
+    </div>
+  </section>
+
+  <section id="faq" class="section">
+    <div class="container">
+      <div class="head"><div><span class="eyebrow">Questions fréquentes</span><h2>Tout est expliqué.</h2></div></div>
+      <div class="faq">
+        <details><summary>Le site délivre-t-il directement un permis allemand ?</summary><p>Non. Le site est un service privé d'accompagnement et de suivi. La délivrance d'un permis relève des autorités et procédures compétentes en Allemagne.</p></details>
+        <details><summary>Dois-je créer un compte ?</summary><p>Oui pour déposer et suivre un dossier. Le compte permet de retrouver vos informations et votre statut après reconnexion.</p></details>
+        <details><summary>Puis-je suivre mon dossier depuis mon téléphone ?</summary><p>Oui. L'interface est responsive et le compte peut être consulté depuis un smartphone, une tablette ou un ordinateur.</p></details>
+        <details><summary>Que faire si j'oublie mon mot de passe ?</summary><p>Utilisez « Mot de passe oublié ». Un e-mail de récupération sera demandé via Supabase Auth.</p></details>
+        <details><summary>Mes documents sont-ils publics ?</summary><p>Non. Les documents sont associés au compte du demandeur et les politiques de sécurité Supabase doivent limiter l'accès à leur propriétaire et à l'administration autorisée.</p></details>
+        <details><summary>Le paiement est-il automatique ?</summary><p>Non. Cette version ne déclenche aucun paiement automatique.</p></details>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="section cream">
+    <div class="container contact-grid">
+      <div class="contact-box">
+        <span class="eyebrow">Contact</span>
+        <h3>Une question sur votre dossier ?</h3>
+        <div class="contact-row"><small>E-mail</small><a href="mailto:contact@finverocapital.de">contact@finverocapital.de</a></div>
+        <div class="contact-row"><small>Site</small><span>finverocapital.de</span></div>
+        <div class="contact-row"><small>Service</small><span>Führerschein Finvero Capital</span></div>
+      </div>
+      <div class="formbox">
+        <span class="eyebrow">Message</span>
+        <h2 style="font-family:var(--serif);font-size:2.7rem;margin:10px 0 22px">Nous contacter</h2>
+        <form id="contact-form">
+          <div class="form-grid">
+            <div class="field"><label>Nom</label><input name="name" required></div>
+            <div class="field"><label>E-mail</label><input name="email" type="email" required></div>
+            <div class="field full"><label>Message</label><textarea name="message" required></textarea></div>
+          </div>
+          <button class="btn gold" type="submit">Envoyer le message</button>
+        </form>
+      </div>
+    </div>
+  </section>
 </section>
 
-<!-- VORTEILE -->
-<section class="features container">
-  <h2 class="section-title">Warum Rechtlich Führerschein?</h2>
-  <p class="section-sub">Wir setzen auf Seriosität, Geschwindigkeit und faire Konditionen.</p>
-  <div class="features-grid">
-    <div class="feature-card">
-      <i class="fas fa-gavel"></i>
-      <h3>Rechtssicherheit</h3>
-      <p>Der Führerschein wird offiziell registriert und ist in allen EU-Staaten gültig.</p>
-    </div>
-    <div class="feature-card">
-      <i class="fas fa-bolt"></i>
-      <h3>Schnelle Abwicklung</h3>
-      <p>Durch unser exklusives Partnernetzwerk minimieren wir Wartezeiten erheblich.</p>
-    </div>
-    <div class="feature-card">
-      <i class="fas fa-hand-holding-usd"></i>
-      <h3>Faire Preise</h3>
-      <p>Keine versteckten Kosten. Sie erhalten ein individuelles Festpreis-Angebot.</p>
-    </div>
-    <div class="feature-card">
-      <i class="fas fa-headset"></i>
-      <h3>Persönliche Beratung</h3>
-      <p>Wir stehen Ihnen jederzeit per E-Mail oder Instagram zur Verfügung.</p>
-    </div>
-  </div>
+<section id="login-page" class="page">
+  <div class="auth-wrap"><div class="auth">
+    <span class="eyebrow">Espace client</span><h1>Connexion</h1><p>Accédez à votre dossier et à vos documents.</p>
+    <form id="login-form">
+      <div class="field"><label>E-mail</label><input id="login-email" type="email" autocomplete="email" required></div>
+      <div class="field"><label>Mot de passe</label><div class="password-wrap"><input id="login-password" type="password" autocomplete="current-password" required><button type="button" class="eye" data-eye="login-password"><i class="fa-regular fa-eye"></i></button></div></div>
+      <button class="btn gold" style="width:100%" type="submit">Se connecter</button>
+    </form>
+    <div class="auth-links"><span class="link" data-go="forgot">Mot de passe oublié ?</span><span class="link" data-go="register">Créer un compte</span></div>
+  </div></div>
 </section>
 
-<!-- KONTAKT (ohne Telefon, mit Adresse & Instagram) -->
-<section class="container">
-  <div class="contact-section">
-    <h2>📬 So erreichen Sie uns</h2>
-    <p style="color: #2d3c53;">Besuchen Sie uns vor Ort oder schreiben Sie uns – wir freuen uns auf Sie!</p>
-    
-    <div class="contact-details">
-      <p>
-        <i class="fas fa-map-pin"></i> 
-        Himmelgeister Str. 113, 40225 Düsseldorf
-      </p>
-      <p>
-        <i class="fas fa-envelope"></i>
-        <a href="mailto:rechtlichfuhrerschein@gmail.com">rechtlichfuhrerschein@gmail.com</a>
-      </p>
-      <p>
-        <i class="fab fa-instagram"></i>
-        <a href="https://instagram.com/rechtlich.furehreschein" target="_blank">@rechtlich.furehreschein</a>
-      </p>
-    </div>
-
-    <div class="contact-legal">
-      <i class="fas fa-shield-alt" style="margin-right: 6px;"></i> 
-      Ihre Daten werden gemäß der DSGVO vertraulich behandelt.
-    </div>
-  </div>
+<section id="register-page" class="page">
+  <div class="auth-wrap"><div class="auth">
+    <span class="eyebrow">Nouvel espace</span><h1>Inscription</h1><p>Créez votre compte avant d'ouvrir votre dossier.</p>
+    <form id="register-form">
+      <div class="field"><label>Nom complet</label><input id="reg-name" required></div>
+      <div class="field"><label>E-mail</label><input id="reg-email" type="email" autocomplete="email" required></div>
+      <div class="field"><label>Mot de passe</label><div class="password-wrap"><input id="reg-password" type="password" minlength="8" required><button type="button" class="eye" data-eye="reg-password"><i class="fa-regular fa-eye"></i></button></div></div>
+      <div class="field"><label>Confirmation</label><input id="reg-password2" type="password" minlength="8" required></div>
+      <button class="btn gold" style="width:100%" type="submit">Créer mon compte</button>
+    </form>
+    <div class="auth-links"><span class="link" data-go="login">J'ai déjà un compte</span></div>
+  </div></div>
 </section>
 
-<!-- FOOTER mit Impressum & Adresse -->
-<footer class="footer">
-  <div class="container">
-    <div class="footer-col">
-      <h4>Rechtlich Führerschein</h4>
-      <p>Ihr vertrauenswürdiger Partner für den legalen Erwerb des deutschen Führerscheins in Düsseldorf.</p>
+<section id="forgot-page" class="page">
+  <div class="auth-wrap"><div class="auth">
+    <span class="eyebrow">Récupération</span><h1>Mot de passe oublié</h1><p>Entrez l'adresse de votre compte pour recevoir le lien de récupération.</p>
+    <form id="forgot-form">
+      <div class="field"><label>E-mail</label><input id="forgot-email" type="email" required></div>
+      <button class="btn gold" style="width:100%" type="submit">Envoyer le lien</button>
+    </form>
+    <div class="auth-links"><span class="link" data-go="login">Retour à la connexion</span></div>
+  </div></div>
+</section>
+
+<section id="dashboard-page" class="page">
+  <div class="dashboard"><div class="container">
+    <div class="dash-top"><div><span class="eyebrow">Espace personnel</span><h1>Mon dossier</h1></div><button class="btn dark" id="logout-btn">Déconnexion</button></div>
+    <div class="dash-grid">
+      <aside class="side">
+        <button class="active" data-dash-tab="file"><i class="fa-solid fa-folder"></i> Mon dossier</button>
+        <button data-dash-tab="documents"><i class="fa-solid fa-file"></i> Mes documents</button>
+        <button data-dash-tab="profile"><i class="fa-solid fa-user"></i> Mon profil</button>
+      </aside>
+      <div>
+        <section class="panel dash-tab active" id="dash-file">
+          <div id="file-content"></div>
+        </section>
+        <section class="panel dash-tab" id="dash-documents" style="display:none">
+          <h2 style="font-family:var(--serif)">Mes documents</h2>
+          <p style="color:var(--muted)">Ajoutez les pièces demandées à votre dossier.</p>
+          <form id="document-form">
+            <div class="form-grid">
+              <div class="field"><label>Type de document</label><select id="doc-type"><option value="identity">Pièce d'identité</option><option value="photo">Photo</option><option value="residence">Justificatif de résidence</option><option value="other">Autre document</option></select></div>
+              <div class="field"><label>Fichier</label><input id="doc-file" type="file" required></div>
+            </div>
+            <button class="btn gold" type="submit">Déposer le document</button>
+          </form>
+          <div id="documents-list" class="doc-list" style="margin-top:22px"></div>
+        </section>
+        <section class="panel dash-tab" id="dash-profile" style="display:none">
+          <h2 style="font-family:var(--serif)">Mon profil</h2>
+          <form id="profile-form">
+            <div class="form-grid">
+              <div class="field"><label>Nom complet</label><input id="profile-name"></div>
+              <div class="field"><label>Téléphone</label><input id="profile-phone"></div>
+              <div class="field full"><label>Adresse</label><input id="profile-address"></div>
+              <div class="field"><label>Code postal</label><input id="profile-zip"></div>
+              <div class="field"><label>Ville</label><input id="profile-city"></div>
+              <div class="field"><label>Pays</label><input id="profile-country"></div>
+            </div>
+            <button class="btn gold" type="submit">Enregistrer le profil</button>
+          </form>
+        </section>
+      </div>
     </div>
-    <div class="footer-col">
-      <h4>Kontakt & Adresse</h4>
-      <p>Himmelgeister Str. 113</p>
-      <p>40225 Düsseldorf</p>
-      <a href="mailto:rechtlichfuhrerschein@gmail.com">rechtlichfuhrerschein@gmail.com</a>
-      <a href="https://instagram.com/rechtlich.furehreschein" target="_blank" class="insta-link">
-        <i class="fab fa-instagram"></i> @rechtlich.furehreschein
-      </a>
+  </div></div>
+</section>
+</main>
+
+<footer><div class="container foot"><span><strong>Führerschein Finvero Capital</strong><br>Service privé d'accompagnement administratif.</span><span>contact@finverocapital.de · finverocapital.de</span></div></footer>
+
+<div id="admin-screen" class="admin-screen">
+  <div class="admin-box">
+    <div class="admin-head"><h2>Administration — Führerschein Finvero Capital</h2><button class="btn outline-light" id="admin-close">Fermer</button></div>
+    <div id="admin-login-view" class="admin-login">
+      <span class="eyebrow">Accès sécurisé</span><h2 style="font-family:var(--serif);font-size:2.5rem">Administration</h2>
+      <p>Cette zone est réservée au compte administrateur autorisé.</p>
+      <form id="admin-login-form">
+        <div class="field"><label>E-mail administrateur</label><input id="admin-email" type="email" required></div>
+        <div class="field"><label>Mot de passe</label><input id="admin-password" type="password" required></div>
+        <button class="btn gold" style="width:100%" type="submit">Ouvrir l'administration</button>
+      </form>
     </div>
-    <div class="footer-col">
-      <h4>Rechtliches</h4>
-      <a href="#">Impressum</a>
-      <a href="#">Datenschutzerklärung</a>
-      <a href="#">AGB</a>
-    </div>
-    <div class="footer-bottom">
-      &copy; 2026 <strong>Rechtlich Führerschein</strong> – Alle Rechte vorbehalten.
+    <div id="admin-dashboard" style="display:none">
+      <div class="admin-tabs">
+        <button class="active" data-admin-tab="applications">Dossiers</button>
+        <button data-admin-tab="documents">Documents</button>
+        <button data-admin-tab="users">Clients</button>
+        <button data-admin-tab="settings">Paramètres</button>
+      </div>
+      <div class="admin-body">
+        <section class="admin-section active" id="admin-applications">
+          <h2>Dossiers clients</h2><p>Les modifications enregistrées ici sont visibles dans l'espace du client concerné.</p>
+          <div id="admin-applications-list" class="admin-list"></div>
+        </section>
+        <section class="admin-section" id="admin-documents">
+          <h2>Documents</h2><div id="admin-documents-list" class="tablewrap"></div>
+        </section>
+        <section class="admin-section" id="admin-users">
+          <h2>Clients inscrits</h2><div id="admin-users-list" class="tablewrap"></div>
+        </section>
+        <section class="admin-section" id="admin-settings">
+          <h2>Paramètres</h2>
+          <form id="admin-settings-form" class="formbox">
+            <div class="field"><label>Nom du service</label><input id="set-brand"></div>
+            <div class="field"><label>E-mail de contact</label><input id="set-email"></div>
+            <div class="field"><label>Message d'accueil</label><textarea id="set-message"></textarea></div>
+            <button class="btn gold" type="submit">Enregistrer</button>
+          </form>
+        </section>
+      </div>
     </div>
   </div>
-</footer>
+</div>
+<div id="toast" class="toast"></div>
 
+<script>
+/* ================= CONFIGURATION =================
+   Remplacez uniquement SUPABASE_ANON_KEY par votre clé publique
+   Supabase. L'URL ci-dessous est celle du projet Finvero Capital.
+*/
+const SUPABASE_URL="https://vxeqdooqrryekbogrxdp.supabase.co";
+const SUPABASE_ANON_KEY="REMPLACEZ_PAR_VOTRE_CLE_PUBLIQUE_SUPABASE";
+const sb=window.supabase.createClient(SUPABASE_URL,SUPABASE_ANON_KEY);
+const CONTACT_EMAIL="contact@finverocapital.de";
+
+let currentUser=null,currentProfile=null,currentApplication=null;
+
+function toast(msg,error=false){const e=document.getElementById("toast");e.textContent=msg;e.className="toast show"+(error?" error":"");setTimeout(()=>e.className="toast",4200)}
+function esc(v){return String(v??"").replace(/[&<>"']/g,m=>({"&":"&amp;","<":"&lt;",">":"&gt;","\"":"&quot;","'":"&#039;"}[m]))}
+function showPage(name){document.querySelectorAll(".page").forEach(x=>x.classList.remove("active"));const p=document.getElementById(name+"-page");if(p)p.classList.add("active");window.scrollTo({top:0,behavior:"smooth"})}
+function go(name){showPage(name)}
+document.querySelectorAll("[data-go]").forEach(x=>x.addEventListener("click",()=>go(x.dataset.go)));
+document.querySelectorAll("[data-page-link]").forEach(x=>x.addEventListener("click",e=>{if(x.hash){go("home");setTimeout(()=>document.querySelector(x.getAttribute("href"))?.scrollIntoView({behavior:"smooth"}),30)}}));
+document.getElementById("account-btn").onclick=async()=>{if(currentUser)await loadDashboard();else go("login")};
+document.getElementById("logout-btn").onclick=async()=>{await sb.auth.signOut();currentUser=null;currentProfile=null;currentApplication=null;go("home");toast("Vous êtes déconnecté.")};
+document.querySelectorAll("[data-eye]").forEach(b=>b.onclick=()=>{const i=document.getElementById(b.dataset.eye);i.type=i.type==="password"?"text":"password";b.innerHTML=i.type==="password"?'<i class="fa-regular fa-eye"></i>':'<i class="fa-regular fa-eye-slash"></i>'});
+
+document.getElementById("login-form").onsubmit=async e=>{
+ e.preventDefault();
+ const email=document.getElementById("login-email").value.trim(),password=document.getElementById("login-password").value;
+ const {data,error}=await sb.auth.signInWithPassword({email,password});
+ if(error)return toast(error.message,true);
+ currentUser=data.user;await loadDashboard();toast("Connexion réussie.");
+};
+document.getElementById("register-form").onsubmit=async e=>{
+ e.preventDefault();
+ const name=document.getElementById("reg-name").value.trim(),email=document.getElementById("reg-email").value.trim(),p=document.getElementById("reg-password").value,p2=document.getElementById("reg-password2").value;
+ if(p!==p2)return toast("Les deux mots de passe ne correspondent pas.",true);
+ if(p.length<8)return toast("Le mot de passe doit contenir au moins 8 caractères.",true);
+ const {data,error}=await sb.auth.signUp({email,password:p,options:{data:{full_name:name}}});
+ if(error)return toast(error.message,true);
+ if(data.user){currentUser=data.user;await sb.from("profiles").upsert({id:data.user.id,full_name:name,email}).select().maybeSingle();toast("Compte créé. Vérifiez votre e-mail si la confirmation est activée.");go("login")}
+};
+document.getElementById("forgot-form").onsubmit=async e=>{
+ e.preventDefault();
+ const email=document.getElementById("forgot-email").value.trim();
+ const {error}=await sb.auth.resetPasswordForEmail(email,{redirectTo:location.origin+location.pathname+"#reset"});
+ if(error)return toast(error.message,true);toast("Le lien de récupération a été envoyé si cette adresse correspond à un compte.");
+};
+document.getElementById("contact-form").onsubmit=async e=>{
+ e.preventDefault();const f=new FormData(e.target);
+ const {error}=await sb.from("contact_messages").insert({name:f.get("name"),email:f.get("email"),message:f.get("message")});
+ if(error)return toast(error.message,true);e.target.reset();toast("Votre message a été envoyé.");
+};
+
+async function loadDashboard(){
+ if(!currentUser){const r=await sb.auth.getUser();currentUser=r.data.user}
+ if(!currentUser)return go("login");
+ const [pr,ap]=await Promise.all([
+  sb.from("profiles").select("*").eq("id",currentUser.id).maybeSingle(),
+  sb.from("applications").select("*").eq("user_id",currentUser.id).order("created_at",{ascending:false}).limit(1).maybeSingle()
+ ]);
+ currentProfile=pr.data||{id:currentUser.id,email:currentUser.email};
+ currentApplication=ap.data||null;
+ fillProfile();renderFile();await renderDocuments();go("dashboard");
+}
+function fillProfile(){
+ document.getElementById("profile-name").value=currentProfile?.full_name||"";
+ document.getElementById("profile-phone").value=currentProfile?.phone||"";
+ document.getElementById("profile-address").value=currentProfile?.address||"";
+ document.getElementById("profile-zip").value=currentProfile?.postal_code||"";
+ document.getElementById("profile-city").value=currentProfile?.city||"";
+ document.getElementById("profile-country").value=currentProfile?.country||"";
+}
+function statusLabel(s){return {draft:"Brouillon",submitted:"Reçu",review:"En cours de traitement",missing_documents:"Pièces à compléter",approved:"Décision enregistrée",rejected:"Clôturé"}[s]||s||"Aucun dossier"}
+function renderFile(){
+ const el=document.getElementById("file-content");
+ if(!currentApplication){el.innerHTML=`<h2 style="font-family:var(--serif)">Aucun dossier ouvert</h2><p style="color:var(--muted)">Vous pouvez ouvrir votre demande de permis depuis ce bouton.</p><button class="btn gold" id="open-file-btn">Ouvrir mon dossier</button>`;document.getElementById("open-file-btn").onclick=()=>openApplicationForm();return}
+ const s=currentApplication.status||"draft", progress={draft:15,submitted:35,review:60,missing_documents:50,approved:100,rejected:100}[s]||20;
+ el.innerHTML=`<div style="display:flex;justify-content:space-between;gap:15px;align-items:start"><div><span class="eyebrow">Référence</span><h2 style="font-family:var(--serif);font-size:2rem;margin:8px 0">${esc(currentApplication.reference)}</h2></div><button class="btn outline" id="edit-file-btn">Modifier</button></div>
+ <div class="statusbar"><span class="pill ${s==="approved"?"ok":s==="rejected"?"bad":s==="missing_documents"?"pending":""}">${esc(statusLabel(s))}</span><span class="pill">${esc(currentApplication.category||"Catégorie non renseignée")}</span></div>
+ <div class="progress"><i style="width:${progress}%"></i></div>
+ <p><strong>Demandeur :</strong> ${esc(currentApplication.full_name||"")}<br><strong>Date de naissance :</strong> ${esc(currentApplication.birth_date||"")}<br><strong>Nationalité :</strong> ${esc(currentApplication.nationality||"")}<br><strong>Ville :</strong> ${esc(currentApplication.city||"")}</p>
+ <div class="notice"><strong>Message du service</strong>${esc(currentApplication.admin_message||"Votre dossier est enregistré. Consultez régulièrement votre espace pour suivre son évolution.")}</div>`;
+ document.getElementById("edit-file-btn").onclick=()=>openApplicationForm(currentApplication);
+}
+async function openApplicationForm(existing=null){
+ const name=prompt("Nom complet",existing?.full_name||currentProfile?.full_name||"");if(name===null)return;
+ const birth=prompt("Date de naissance (AAAA-MM-JJ)",existing?.birth_date||"");if(birth===null)return;
+ const nationality=prompt("Nationalité",existing?.nationality||"");if(nationality===null)return;
+ const category=prompt("Catégorie (A, B, BE, C, D ou autre)",existing?.category||"B");if(category===null)return;
+ const city=prompt("Ville de résidence",existing?.city||currentProfile?.city||"");if(city===null)return;
+ const payload={user_id:currentUser.id,full_name:name,birth_date:birth,nationality,category,city,status:existing?.status||"submitted"};
+ if(!existing)payload.reference="FZ-"+new Date().getFullYear()+"-"+Math.random().toString(36).slice(2,8).toUpperCase();
+ const q=existing?sb.from("applications").update(payload).eq("id",existing.id):sb.from("applications").insert(payload);
+ const {data,error}=await q.select().single();if(error)return toast(error.message,true);currentApplication=data;renderFile();toast("Dossier enregistré.");
+}
+document.getElementById("profile-form").onsubmit=async e=>{
+ e.preventDefault();
+ const payload={id:currentUser.id,full_name:document.getElementById("profile-name").value.trim(),phone:document.getElementById("profile-phone").value.trim(),address:document.getElementById("profile-address").value.trim(),postal_code:document.getElementById("profile-zip").value.trim(),city:document.getElementById("profile-city").value.trim(),country:document.getElementById("profile-country").value.trim(),email:currentUser.email};
+ const {error}=await sb.from("profiles").upsert(payload);if(error)return toast(error.message,true);currentProfile={...currentProfile,...payload};toast("Profil enregistré.");
+};
+document.querySelectorAll("[data-dash-tab]").forEach(b=>b.onclick=()=>{
+ document.querySelectorAll("[data-dash-tab]").forEach(x=>x.classList.remove("active"));b.classList.add("active");
+ document.querySelectorAll(".dash-tab").forEach(x=>x.style.display="none");document.getElementById("dash-"+b.dataset.dashTab).style.display="block";
+});
+
+document.getElementById("document-form").onsubmit=async e=>{
+ e.preventDefault();if(!currentUser)return;
+ const file=document.getElementById("doc-file").files[0],type=document.getElementById("doc-type").value;
+ if(!file)return;
+ if(file.size>10*1024*1024)return toast("Fichier trop volumineux (10 Mo maximum).",true);
+ if(!currentApplication)return toast("Ouvrez d'abord votre dossier.",true);
+ const safe=file.name.replace(/[^a-zA-Z0-9._-]/g,"_"),path=currentUser.id+"/"+crypto.randomUUID()+"-"+safe;
+ const up=await sb.storage.from("application-documents").upload(path,file,{upsert:false});
+ if(up.error)return toast(up.error.message,true);
+ const ins=await sb.from("application_documents").insert({user_id:currentUser.id,application_id:currentApplication.id,document_type:type,file_name:file.name,storage_path:path,status:"submitted"});
+ if(ins.error){await sb.storage.from("application-documents").remove([path]);return toast(ins.error.message,true)}
+ e.target.reset();await renderDocuments();toast("Document déposé.");
+};
+async function renderDocuments(){
+ if(!currentUser)return;
+ const {data,error}=await sb.from("application_documents").select("*").eq("user_id",currentUser.id).order("created_at",{ascending:false});
+ if(error)return document.getElementById("documents-list").innerHTML=`<div class="empty">${esc(error.message)}</div>`;
+ document.getElementById("documents-list").innerHTML=data?.length?data.map(x=>`<div class="doc"><div><strong>${esc(x.file_name)}</strong><br><small>${esc(x.document_type)} · ${esc(x.status)}</small></div><span class="pill ${x.status==="approved"?"ok":x.status==="rejected"?"bad":"pending"}">${esc(x.status)}</span></div>`).join(""):`<div class="empty">Aucun document déposé.</div>`;
+}
+
+let adminUser=null;
+const adminScreen=document.getElementById("admin-screen");
+document.getElementById("admin-close").onclick=()=>adminScreen.classList.remove("open");
+/* 3 clics sur le logo en moins de 2 secondes */
+let logoClicks=0,logoTimer=null;
+document.getElementById("logo-admin-trigger").addEventListener("click",()=>{
+ logoClicks++;
+ if(!logoTimer)logoTimer=setTimeout(()=>{logoClicks=0;logoTimer=null},2000);
+ if(logoClicks>=3){logoClicks=0;clearTimeout(logoTimer);logoTimer=null;adminScreen.classList.add("open");}
+});
+document.getElementById("admin-login-form").onsubmit=async e=>{
+ e.preventDefault();
+ const email=document.getElementById("admin-email").value.trim(),password=document.getElementById("admin-password").value;
+ const {data,error}=await sb.auth.signInWithPassword({email,password});
+ if(error)return toast(error.message,true);
+ const ok=await sb.rpc("is_admin");
+ if(ok.error||ok.data!==true){await sb.auth.signOut();return toast("Ce compte n'a pas les droits administrateur.",true)}
+ adminUser=data.user;document.getElementById("admin-login-view").style.display="none";document.getElementById("admin-dashboard").style.display="block";await loadAdmin();
+};
+document.querySelectorAll("[data-admin-tab]").forEach(b=>b.onclick=()=>{document.querySelectorAll("[data-admin-tab]").forEach(x=>x.classList.remove("active"));b.classList.add("active");document.querySelectorAll(".admin-section").forEach(x=>x.classList.remove("active"));document.getElementById("admin-"+b.dataset.adminTab).classList.add("active")});
+
+async function loadAdmin(){await Promise.all([loadAdminApplications(),loadAdminDocuments(),loadAdminUsers(),loadAdminSettings()])}
+async function loadAdminApplications(){
+ const {data,error}=await sb.from("applications").select("*").order("created_at",{ascending:false});
+ const el=document.getElementById("admin-applications-list");if(error)return el.innerHTML=`<div class="empty">${esc(error.message)}</div>`;
+ el.innerHTML=data?.length?data.map(x=>`<div class="admin-item"><div class="admin-item-main"><h4>${esc(x.reference)} · ${esc(x.full_name)}</h4><p>${esc(x.category)} · ${esc(x.city||"")} · ${esc(x.status)}</p><p style="margin-top:8px">${esc(x.admin_message||"Aucun message")}</p></div><div class="admin-actions"><select data-status="${x.id}"><option value="draft">Brouillon</option><option value="submitted">Reçu</option><option value="review">En cours de traitement</option><option value="missing_documents">Pièces à compléter</option><option value="approved">Décision enregistrée</option><option value="rejected">Clôturé</option></select><button class="btn small gold" data-edit-app="${x.id}">Enregistrer</button></div></div>`).join(""):`<div class="empty">Aucun dossier.</div>`;
+ data?.forEach(x=>{const s=document.querySelector(`[data-status="${x.id}"]`);if(s)s.value=x.status;const b=document.querySelector(`[data-edit-app="${x.id}"]`);if(b)b.onclick=async()=>{const ns=document.querySelector(`[data-status="${x.id}"]`).value;const message=prompt("Message visible par le client",x.admin_message||"");if(message===null)return;const {error}=await sb.from("applications").update({status:ns,admin_message:message}).eq("id",x.id);if(error)return toast(error.message,true);toast("Dossier actualisé.");loadAdminApplications()}})
+}
+async function loadAdminDocuments(){
+ const {data,error}=await sb.from("application_documents").select("*").order("created_at",{ascending:false});
+ const el=document.getElementById("admin-documents-list");if(error)return el.innerHTML=`<div class="empty">${esc(error.message)}</div>`;
+ el.innerHTML=`<table><thead><tr><th>Fichier</th><th>Type</th><th>Statut</th><th>Action</th></tr></thead><tbody>${(data||[]).map(x=>`<tr><td>${esc(x.file_name)}</td><td>${esc(x.document_type)}</td><td>${esc(x.status)}</td><td><button class="btn small gold" data-doc="${x.id}">Modifier</button></td></tr>`).join("")}</tbody></table>`;
+ data?.forEach(x=>document.querySelector(`[data-doc="${x.id}"]`)?.addEventListener("click",async()=>{const s=prompt("Statut : submitted, approved ou rejected",x.status);if(!s)return;const {error}=await sb.from("application_documents").update({status:s}).eq("id",x.id);if(error)return toast(error.message,true);loadAdminDocuments();toast("Document actualisé.")}))
+}
+async function loadAdminUsers(){
+ const {data,error}=await sb.from("profiles").select("*").order("created_at",{ascending:false});
+ const el=document.getElementById("admin-users-list");if(error)return el.innerHTML=`<div class="empty">${esc(error.message)}</div>`;
+ el.innerHTML=`<table><thead><tr><th>Nom</th><th>E-mail</th><th>Téléphone</th><th>Ville</th><th>Créé</th></tr></thead><tbody>${(data||[]).map(x=>`<tr><td>${esc(x.full_name)}</td><td>${esc(x.email)}</td><td>${esc(x.phone)}</td><td>${esc(x.city)}</td><td>${esc(x.created_at||"")}</td></tr>`).join("")}</tbody></table>`;
+}
+async function loadAdminSettings(){
+ const {data}=await sb.from("site_settings").select("*").eq("id",1).maybeSingle();
+ if(data){document.getElementById("set-brand").value=data.brand_name||"";document.getElementById("set-email").value=data.contact_email||"";document.getElementById("set-message").value=data.welcome_message||""}
+}
+document.getElementById("admin-settings-form").onsubmit=async e=>{
+ e.preventDefault();const payload={id:1,brand_name:document.getElementById("set-brand").value,contact_email:document.getElementById("set-email").value,welcome_message:document.getElementById("set-message").value,updated_at:new Date().toISOString()};
+ const {error}=await sb.from("site_settings").upsert(payload);if(error)return toast(error.message,true);toast("Paramètres enregistrés.");
+};
+
+sb.auth.onAuthStateChange(async(event,session)=>{
+ if(session){currentUser=session.user}
+ else{currentUser=null}
+});
+</script>
 </body>
 </html>
