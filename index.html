@@ -32,6 +32,68 @@ footer{background:#050a12;color:#aab3c1;padding:35px 0}.foot{display:flex;justif
 .modal{display:none;position:fixed;inset:0;z-index:1400;background:#07101fcc;backdrop-filter:blur(8px);padding:18px;overflow:auto}.modal.open{display:flex;align-items:center;justify-content:center}.modal-card{width:min(760px,100%);background:#fff;padding:28px;box-shadow:var(--shadow)}.modal-head{display:flex;justify-content:space-between;gap:20px;align-items:flex-start;margin-bottom:20px}.modal-head h2{font-family:var(--serif);font-size:2.4rem;margin-top:7px}.modal-close{width:42px;height:42px;border:1px solid var(--line);background:#fff;font-size:1.6rem;cursor:pointer}.modal-actions{display:flex;justify-content:flex-end;gap:10px;margin-top:22px}@media(max-width:560px){.modal-card{padding:20px}.modal-head h2{font-size:1.9rem}.modal-actions{flex-direction:column}.modal-actions .btn{width:100%}}
 @media(max-width:900px){.navlinks{display:none}.navlinks.open{display:flex;position:absolute;top:68px;left:4%;right:4%;background:var(--navy);padding:18px;flex-direction:column;align-items:stretch;gap:4px;border:1px solid #ffffff20;box-shadow:var(--shadow);z-index:20}.navlinks.open a{padding:12px 10px;border-bottom:1px solid #ffffff10}.menu{display:block}.nav{height:68px}.logo{min-width:0}.nav-actions{margin-left:auto}.cards,.steps{grid-template-columns:1fr 1fr}.contact-grid,.dash-grid{grid-template-columns:1fr}.side{display:flex;gap:5px;overflow:auto}.side button{width:auto;white-space:nowrap}.head{display:block}.head p{margin-top:20px}}
 @media(max-width:560px){main{padding-top:68px}.hero{min-height:650px}.hero-inner{padding:70px 0}.hero h1{font-size:3.2rem}.actions .btn{width:100%}.section{padding:70px 0}.cards,.steps,.faq,.form-grid{grid-template-columns:1fr}.field.full{grid-column:auto}.formbox,.auth{padding:24px}.dash-top{display:block}.dash-top .btn{margin-top:12px}.dash-top h1{font-size:2.4rem}.admin-body{padding:12px}.admin-item{align-items:flex-start;flex-direction:column}.foot{flex-direction:column}}
+
+/* --- Mise en page plein écran et listes en grilles côte à côte --- */
+.container,
+.section-inner,
+main > section > .container {
+    width: 100%;
+    max-width: none;
+}
+
+section .container {
+    padding-left: 3vw;
+    padding-right: 3vw;
+}
+
+.cards {
+    display: grid !important;
+    grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
+    gap: 24px;
+    width: 100%;
+}
+
+.steps {
+    display: grid !important;
+    grid-template-columns: repeat(4, minmax(0, 1fr)) !important;
+    gap: 24px;
+    width: 100%;
+}
+
+.faq {
+    display: grid !important;
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+    gap: 20px;
+    width: 100%;
+}
+
+.services-list,
+.features-list,
+.contact-grid,
+.admin-grid,
+.stats-grid,
+.list-grid {
+    width: 100%;
+}
+
+@media (max-width: 900px) {
+    .cards { grid-template-columns: repeat(2, minmax(0, 1fr)) !important; }
+    .steps { grid-template-columns: repeat(2, minmax(0, 1fr)) !important; }
+    .faq { grid-template-columns: 1fr !important; }
+}
+
+@media (max-width: 600px) {
+    section .container {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+    .cards,
+    .steps,
+    .faq {
+        grid-template-columns: 1fr !important;
+    }
+}
+
 </style>
 </head>
 <body>
