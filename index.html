@@ -802,6 +802,57 @@ header .container,
 @media(max-width:700px){.photo-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.advice-banner{grid-template-columns:1fr}.advice-banner img{min-height:220px;max-height:280px}.requirements{grid-template-columns:1fr}}
 @media(max-width:460px){.photo-grid{grid-template-columns:1fr}}
 
+
+/* AFFICHAGE MOBILE : toutes les galeries et listes en grille 2 x 2 */
+@media (max-width: 600px) {
+  .photo-grid,
+  .cards,
+  .steps,
+  .faq,
+  .requirements,
+  .doc-list,
+  .admin-list,
+  .services-list,
+  .features-list,
+  .stats-grid,
+  .list-grid {
+    display: grid !important;
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+    gap: 10px !important;
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .photo-grid figure,
+  .cards > *,
+  .steps > *,
+  .faq > *,
+  .requirements > *,
+  .doc-list > *,
+  .admin-list > *,
+  .services-list > *,
+  .features-list > *,
+  .stats-grid > *,
+  .list-grid > * {
+    min-width: 0;
+    max-width: 100%;
+  }
+
+  .photo-grid img {
+    width: 100%;
+    aspect-ratio: 4 / 3;
+    object-fit: cover;
+  }
+
+  .requirements .requirement,
+  .cards .card,
+  .steps .step {
+    height: 100%;
+    min-height: 0;
+    padding: 12px !important;
+  }
+}
+
 </style>
 </head>
 <body>
