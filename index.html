@@ -853,6 +853,22 @@ header .container,
   }
 }
 
+
+
+/* Ajustements finaux : galerie sans légendes, cadres fins et grille mobile 2x2 */
+.photo-grid figure{border:1px solid var(--gold);padding:0;background:transparent;box-shadow:none}
+.photo-grid figcaption{display:none !important}
+.photo-grid img{display:block;width:100%;aspect-ratio:4/3;object-fit:cover}
+@media(max-width:600px){
+  .photo-grid,.cards,.steps,.faq,.requirements,.doc-list,.admin-list,.services-list,.features-list,.stats-grid,.list-grid{
+    grid-template-columns:repeat(2,minmax(0,1fr)) !important;
+    gap:10px !important;
+  }
+  .photo-grid figure{min-width:0;border:1px solid var(--gold);}
+  .photo-grid img{width:100%;aspect-ratio:4/3;object-fit:cover}
+  .photo-grid figcaption{display:none !important}
+  .requirements .requirement,.cards .card,.steps .step{height:100%;min-height:0;padding:12px !important}
+}
 </style>
 </head>
 <body>
@@ -994,6 +1010,7 @@ header .container,
         <div class="contact-row"><small>E-Mail</small><a href="mailto:contact@finverocapital.de">contact@finverocapital.de</a></div>
         <div class="contact-row"><small>Website</small><span>finverocapital.de</span></div>
         <div class="contact-row"><small>Service</small><span>Finvero</span></div>
+        <div class="contact-row"><small>Sitz</small><span>Dresden, Deutschland</span></div>
       </div>
       <div class="formbox">
         <span class="eyebrow">Nachricht</span>
@@ -1017,7 +1034,7 @@ header .container,
 
 </main>
 
-<footer><div class="container foot"><span><strong>Finvero</strong><br>Privater Informations- und Unterstützungsservice. Keine staatliche Behörde.</span><span>contact@finverocapital.de · finverocapital.de</span></div></footer>
+<footer><div class="container foot"><span><strong>Finvero</strong><br>Privater Informations- und Unterstützungsservice. Keine staatliche Behörde.<br>Sitz: Dresden, Deutschland.</span><span>contact@finverocapital.de · finverocapital.de</span></div></footer>
 
 <div id="toast" class="toast"></div>
 
