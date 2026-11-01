@@ -17,7 +17,7 @@
 header{position:fixed;top:0;left:0;right:0;z-index:100;background:#07101ff2;color:#fff;border-bottom:1px solid #ffffff18;backdrop-filter:blur(15px)}
 .nav{height:76px;display:flex;align-items:center;gap:28px}.logo{display:flex;align-items:center;gap:12px;min-width:235px;cursor:pointer}.logo-mark{width:40px;height:40px;border:1px solid var(--gold);display:grid;place-items:center;color:var(--gold);font-family:var(--serif);font-size:1.15rem}.logo-text{font-family:var(--serif);font-size:1.18rem;line-height:1.05}.logo-text small{display:block;font-family:var(--sans);font-size:.48rem;letter-spacing:.22em;color:var(--gold);text-transform:uppercase;margin-top:4px}.navlinks{display:flex;gap:25px;align-items:center;margin-left:auto}.navlinks a{font-size:.76rem;text-transform:uppercase;letter-spacing:.09em;color:#e8edf5}.navlinks a:hover{color:var(--gold2)}.nav-actions{display:flex;gap:8px}.lang,.account-btn,.menu{border:1px solid #ffffff25;background:transparent;color:#fff;padding:9px 12px;cursor:pointer}.lang option{background:#07101f;color:#fff}.account-btn{border-color:var(--gold);color:var(--gold2)}.menu{display:none}.navlinks.open{display:flex}
 main{padding-top:76px}.page{display:none}.page.active{display:block}
-.hero{min-height:700px;background:linear-gradient(100deg,#07101feF,#07101fB8 52%,#07101f40),url("https://upload.wikimedia.org/wikipedia/commons/d/dd/DE_Licence_2013_Front.jpg") center/cover;display:flex;align-items:center;color:#fff}.hero-inner{padding:90px 0;max-width:820px}.eyebrow{display:inline-flex;gap:10px;align-items:center;text-transform:uppercase;letter-spacing:.2em;font-size:.68rem;font-weight:700;color:var(--gold)}.eyebrow:before{content:"";width:28px;height:1px;background:currentColor}.hero h1{font-family:var(--serif);font-size:clamp(3.1rem,7vw,6.4rem);line-height:.96;font-weight:600;margin:18px 0 25px}.hero h1 span{color:var(--gold2)}.hero p{max-width:680px;color:#d8deea;font-size:1.04rem}.actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:32px}.btn{border:0;padding:13px 19px;cursor:pointer;display:inline-flex;align-items:center;justify-content:center;gap:9px;text-transform:uppercase;letter-spacing:.08em;font-size:.72rem;font-weight:700;border-radius:2px}.gold{background:var(--gold);color:#0a1020}.dark{background:var(--navy);color:#fff}.outline{background:transparent;color:var(--ink);border:1px solid #cbd0d9}.outline-light{background:transparent;color:#fff;border:1px solid #ffffff4a}.btn:hover{transform:translateY(-1px);filter:brightness(1.04)}
+.hero{min-height:700px;background:linear-gradient(100deg,#07101feF,#07101fB8 52%,#07101f40),url("hero.jpg") center/cover;display:flex;align-items:center;color:#fff}.hero-inner{padding:90px 0;max-width:820px}.eyebrow{display:inline-flex;gap:10px;align-items:center;text-transform:uppercase;letter-spacing:.2em;font-size:.68rem;font-weight:700;color:var(--gold)}.eyebrow:before{content:"";width:28px;height:1px;background:currentColor}.hero h1{font-family:var(--serif);font-size:clamp(3.1rem,7vw,6.4rem);line-height:.96;font-weight:600;margin:18px 0 25px}.hero h1 span{color:var(--gold2)}.hero p{max-width:680px;color:#d8deea;font-size:1.04rem}.actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:32px}.btn{border:0;padding:13px 19px;cursor:pointer;display:inline-flex;align-items:center;justify-content:center;gap:9px;text-transform:uppercase;letter-spacing:.08em;font-size:.72rem;font-weight:700;border-radius:2px}.gold{background:var(--gold);color:#0a1020}.dark{background:var(--navy);color:#fff}.outline{background:transparent;color:var(--ink);border:1px solid #cbd0d9}.outline-light{background:transparent;color:#fff;border:1px solid #ffffff4a}.btn:hover{transform:translateY(-1px);filter:brightness(1.04)}
 .notice{background:#fff8e8;border:1px solid #ead7aa;padding:15px 18px;color:#624c24;font-size:.84rem}.notice strong{display:block;margin-bottom:3px}
 .section{padding:95px 0}.cream{background:var(--cream)}.dark-section{background:var(--navy);color:#fff}.head{display:flex;justify-content:space-between;gap:45px;align-items:end;margin-bottom:42px}.head h2{font-family:var(--serif);font-size:clamp(2.6rem,5vw,4.7rem);line-height:.98;margin:12px 0 0;font-weight:600}.head p{max-width:450px;color:var(--muted)}
 .cards{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:#dfe2e7}.card{background:#fff;padding:34px;min-height:240px}.card i{font-size:1.4rem;color:var(--gold);margin-bottom:25px}.card h3{font-family:var(--serif);font-size:1.65rem;margin:0 0 10px}.card p{color:var(--muted);font-size:.88rem}
@@ -783,6 +783,25 @@ header .container,
   }
 }
 
+
+/* Galerie, prix et informations utiles */
+.photo-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}
+.photo-grid figure{margin:0;background:#fff;border:1px solid var(--line);overflow:hidden}
+.photo-grid img{display:block;width:100%;aspect-ratio:4/3;object-fit:cover}
+.photo-grid figcaption{padding:10px 13px;font-size:.78rem;color:var(--muted)}
+.advice-banner{display:grid;grid-template-columns:1fr 1fr;background:var(--navy);color:#fff;overflow:hidden}
+.advice-banner img{width:100%;height:100%;min-height:300px;object-fit:cover}
+.advice-copy{padding:clamp(24px,5vw,55px);align-self:center}
+.advice-copy p{color:#d8deea}
+.price-card{max-width:620px;margin:0 auto;background:#fff;border:1px solid var(--line);padding:38px;text-align:center;box-shadow:var(--shadow)}
+.price-value{font-family:var(--serif);font-size:clamp(2.8rem,7vw,4.5rem);color:var(--navy);line-height:1.1;margin:12px 0}
+.requirements{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}
+.requirement{background:#fff;border:1px solid var(--line);padding:20px;display:flex;gap:14px;align-items:flex-start}
+.requirement i{color:var(--gold);font-size:1.3rem;margin-top:4px}
+.requirement p{margin:5px 0 0;color:var(--muted);font-size:.85rem}
+@media(max-width:700px){.photo-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.advice-banner{grid-template-columns:1fr}.advice-banner img{min-height:220px;max-height:280px}.requirements{grid-template-columns:1fr}}
+@media(max-width:460px){.photo-grid{grid-template-columns:1fr}}
+
 </style>
 </head>
 <body>
@@ -796,6 +815,9 @@ header .container,
     <nav class="navlinks">
       <a href="#accueil" data-page-link="home">Startseite</a>
       <a href="#services" data-page-link="home">Leistungen</a>
+      <a href="#galerie" data-page-link="home">Galerie</a>
+      <a href="#unterlagen" data-page-link="home">Unterlagen</a>
+      <a href="#preise" data-page-link="home">Preise</a>
       <a href="#procedure" data-page-link="home">Ablauf</a>
       <a href="#faq" data-page-link="home">FAQ</a>
       <a href="#contact" data-page-link="home">Kontakt</a>
@@ -835,6 +857,53 @@ header .container,
         <article class="card"><i class="fa-solid fa-folder-open"></i><h3>Erforderliche Unterlagen</h3><p>Erhalten Sie Hinweise zu Unterlagen, die für Ihr Anliegen möglicherweise benötigt werden.</p></article>
         <article class="card"><i class="fa-solid fa-chart-line"></i><h3>Direkter Austausch</h3><p>Kontaktieren Sie unser Team, um Informationen zu den möglichen nächsten Schritten zu erhalten.</p></article>
       </div>
+    </div>
+  </section>
+
+  <section id="galerie" class="section">
+    <div class="container">
+      <div class="head"><div><span class="eyebrow">Einblicke</span><h2>Informationen und Eindrücke.</h2></div><p>Die folgenden Bilder veranschaulichen die Themen und den Informationsservice von Finvero.</p></div>
+      <div class="photo-grid">
+        <figure><img src="01.jpg" alt="Informationen zum Führerschein" loading="lazy"><figcaption>Führerschein – Informationen</figcaption></figure>
+        <figure><img src="02.jpg" alt="Beratung und Unterstützung" loading="lazy"><figcaption>Beratung und Unterstützung</figcaption></figure>
+        <figure><img src="03.jpg" alt="Dokumente und Unterlagen" loading="lazy"><figcaption>Unterlagen und Dokumente</figcaption></figure>
+        <figure><img src="04.jpg" alt="Persönliche Betreuung" loading="lazy"><figcaption>Persönliche Betreuung</figcaption></figure>
+        <figure><img src="05.jpg" alt="Kontakt mit dem Serviceteam" loading="lazy"><figcaption>Kontakt zum Serviceteam</figcaption></figure>
+        <figure><img src="06.jpg" alt="Administrative Informationen" loading="lazy"><figcaption>Administrative Informationen</figcaption></figure>
+        <figure><img src="07.jpg" alt="Führerscheinservice" loading="lazy"><figcaption>Führerscheinservice</figcaption></figure>
+        <figure><img src="08.jpg" alt="Unterstützung bei Anfragen" loading="lazy"><figcaption>Unterstützung bei Anfragen</figcaption></figure>
+        <figure><img src="09.jpg" alt="Finvero Informationsservice" loading="lazy"><figcaption>Finvero Informationsservice</figcaption></figure>
+      </div>
+    </div>
+  </section>
+
+  <section class="section cream" id="beratung">
+    <div class="container">
+      <div class="advice-banner">
+        <img src="beratung.jpg" alt="Beratung durch den privaten Finvero-Service" loading="lazy">
+        <div class="advice-copy"><span class="eyebrow">Persönliche Beratung</span><h2 style="font-family:var(--serif);font-size:clamp(2rem,4vw,3.2rem);line-height:1.05">Wir beantworten Ihre Fragen.</h2><p>Teilen Sie uns Ihr Anliegen mit. Unser Team informiert Sie über die verfügbaren Unterstützungsleistungen und die nächsten möglichen Schritte.</p><a class="btn gold" href="#contact">Beratung anfragen</a></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="unterlagen">
+    <div class="container">
+      <div class="head"><div><span class="eyebrow">Vorbereitung</span><h2>Erforderliche Angaben und Unterlagen.</h2></div><p>Die folgende Liste dient zur ersten Orientierung. Welche Nachweise tatsächlich benötigt werden, hängt vom Einzelfall und den Vorgaben der zuständigen Behörde ab.</p></div>
+      <div class="requirements">
+        <article class="requirement"><i class="fa-regular fa-id-card"></i><div><strong>Aktuelles Passfoto</strong><p>Ein geeignetes biometrisches Passfoto, sofern es für das konkrete Verfahren erforderlich ist.</p></div></article>
+        <article class="requirement"><i class="fa-regular fa-envelope"></i><div><strong>E-Mail-Adresse</strong><p>Eine gültige E-Mail-Adresse für Rückfragen und die Kommunikation.</p></div></article>
+        <article class="requirement"><i class="fa-solid fa-phone"></i><div><strong>Telefonnummer</strong><p>Eine erreichbare Telefonnummer für eventuelle Rückfragen.</p></div></article>
+        <article class="requirement"><i class="fa-solid fa-location-dot"></i><div><strong>Liefer- bzw. Postanschrift</strong><p>Die vollständige Anschrift, falls ein postalischer Versand tatsächlich vorgesehen und rechtlich zulässig ist.</p></div></article>
+      </div>
+      <p class="notice" style="margin-top:20px"><strong>Datenschutzhinweis</strong>Bitte senden Sie keine Passfotos oder anderen sensiblen Dokumente über das allgemeine Kontaktformular. Falls Unterlagen erforderlich sind, informieren wir Sie über einen geeigneten sicheren Übermittlungsweg.</p>
+    </div>
+  </section>
+
+  <section class="section cream" id="preise">
+    <div class="container">
+      <div class="head"><div><span class="eyebrow">Preisübersicht</span><h2>Transparente Informationen zum Preis.</h2></div></div>
+      <div class="price-card"><span class="eyebrow">Angegebener Preis</span><h3 style="font-family:var(--serif);font-size:1.7rem;margin:8px 0">Führerschein – privater Begleitungsservice</h3><div class="price-value">2.400 €</div><p style="color:var(--muted)">Der Preis bezieht sich auf die private Unterstützungsleistung. Vor einer Beauftragung müssen die enthaltenen Leistungen, mögliche Behördengebühren, Zahlungsbedingungen sowie Rücktritts- und Erstattungsbedingungen schriftlich erläutert werden.</p><a class="btn gold" href="#contact">Preis und Leistungen anfragen</a></div>
+      <p class="notice" style="margin-top:20px"><strong>Wichtiger Hinweis</strong>Der Preis ist kein Kaufpreis für einen amtlichen Führerschein und garantiert keine Erteilung. Ein Führerschein kann ausschließlich von der zuständigen Behörde nach den geltenden gesetzlichen Voraussetzungen ausgestellt werden.</p>
     </div>
   </section>
 
@@ -883,6 +952,8 @@ header .container,
           <div class="form-grid">
             <div class="field"><label>Name</label><input name="name" autocomplete="name" required></div>
             <div class="field"><label>E-Mail-Adresse</label><input name="email" type="email" autocomplete="email" required></div>
+            <div class="field"><label>Telefonnummer</label><input name="phone" type="tel" autocomplete="tel" placeholder="+49 …"></div>
+            <div class="field full"><label>Post- oder Lieferanschrift (optional)</label><input name="address" autocomplete="street-address" placeholder="Straße, Hausnummer, PLZ, Ort, Land"></div>
             <div class="field full"><label>Ihre Nachricht</label><textarea name="message" placeholder="Beschreiben Sie bitte Ihr Anliegen…" required></textarea></div>
           </div>
           <button class="btn gold" type="submit">Nachricht senden</button>
@@ -895,7 +966,7 @@ header .container,
 
 </main>
 
-<footer><div class="container foot"><span><strong>Finvero</strong><br>Privater administrativer Unterstützungsservice.</span><span>contact@finverocapital.de · finverocapital.de</span></div></footer>
+<footer><div class="container foot"><span><strong>Finvero</strong><br>Privater Informations- und Unterstützungsservice. Keine staatliche Behörde.</span><span>contact@finverocapital.de · finverocapital.de</span></div></footer>
 
 <div id="toast" class="toast"></div>
 
