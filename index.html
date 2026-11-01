@@ -3,14 +3,14 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<meta name="description" content="Führerschein Finvero Capital — Antrag, Bearbeitung und Nachverfolgung eines deutschen Führerscheins nach den geltenden deutschen Vorschriften.">
+<meta name="description" content="Finvero — Antrag, Bearbeitung und Nachverfolgung eines deutschen Führerscheins nach den geltenden deutschen Vorschriften.">
 <meta name="theme-color" content="#0a1020">
-<title>Führerschein Finvero Capital — Deutscher Führerschein</title>
+<title>Finvero — Deutscher Führerschein</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+
 <style>
 :root{--navy:#07101f;--navy2:#0c1930;--gold:#c9a45c;--gold2:#ead4a2;--cream:#f7f3eb;--white:#fff;--ink:#172033;--muted:#697386;--line:#e3e6eb;--danger:#b42318;--ok:#16835b;--shadow:0 22px 60px #07101f18;--serif:"Playfair Display",serif;--sans:"DM Sans",sans-serif}
 *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:var(--sans);color:var(--ink);background:#fff;line-height:1.65}a{text-decoration:none;color:inherit}button,input,select,textarea{font:inherit}.container{width:min(1180px,92%);margin:auto}
@@ -789,9 +789,9 @@ header .container,
 
 <header>
   <div class="container nav">
-    <div class="logo" id="logo-admin-trigger" title="Führerschein Finvero Capital">
+    <div class="logo" title="Finvero">
       <div class="logo-mark">F</div>
-      <div class="logo-text">Führerschein Finvero Capital<small>Privater Service · Deutschland</small></div>
+      <div class="logo-text">Finvero<small>Privater Service · Deutschland</small></div>
     </div>
     <nav class="navlinks">
       <a href="#accueil" data-page-link="home">Startseite</a>
@@ -802,7 +802,7 @@ header .container,
     </nav>
     <div class="nav-actions">
       <select class="lang" id="lang-btn" aria-label="Sprache auswählen"><option value="de">DE</option><option value="fr">FR</option><option value="it">IT</option></select>
-      <button class="account-btn" id="account-btn"><i class="fa-regular fa-user"></i> Meine Akte</button>
+      <a class="account-btn" id="account-btn" href="#contact"><i class="fa-regular fa-envelope"></i> Kontakt</a>
       <button class="menu" id="menu-btn"><i class="fa-solid fa-bars"></i></button>
     </div>
   </div>
@@ -814,39 +814,39 @@ header .container,
     <div class="container hero-inner">
       <span class="eyebrow">Private Begleitung · Deutschland</span>
       <h1>Ihre <span>Führerscheinangelegenheit</span>, professionell und strukturiert online.</h1>
-      <p>Führerschein Finvero Capital übernimmt die vollständige Begleitung und Abwicklung Ihres Führerscheinverfahrens – von der Aufnahme Ihrer Angaben und Unterlagen bis zur Nachverfolgung des Bearbeitungsstands. Je nach Situation und wenn die gesetzlichen Voraussetzungen erfüllt sind, kann die Wiedererteilung oder Neuausstellung des Führerscheins ohne erneute theoretische oder praktische Prüfung möglich sein.</p>
+      <p>Finvero übernimmt die vollständige Begleitung und Abwicklung Ihres Führerscheinverfahrens – von der Aufnahme Ihrer Angaben und Unterlagen bis zur Nachverfolgung des Bearbeitungsstands. Je nach Situation und wenn die gesetzlichen Voraussetzungen erfüllt sind, kann die Wiedererteilung oder Neuausstellung des Führerscheins ohne erneute theoretische oder praktische Prüfung möglich sein.</p>
       <div class="actions">
-        <button class="btn gold" data-go="register"><i class="fa-solid fa-file-signature"></i> Verfahren beginnen</button>
-        <button class="btn outline-light" data-go="login"><i class="fa-solid fa-right-to-bracket"></i> Meine Akte verfolgen</button>
+        <a class="btn gold" href="#contact"><i class="fa-solid fa-envelope"></i> Kontakt aufnehmen</a>
+        <a class="btn outline-light" href="#contact"><i class="fa-regular fa-message"></i> Nachricht senden</a>
       </div>
     </div>
   </section>
 
   <section class="section">
     <div class="container">
-      <div class="notice"><strong>Wichtige Information</strong>Führerschein Finvero Capital übernimmt die vollständige Begleitung und Abwicklung des Verfahrens. Unter den gesetzlichen Voraussetzungen kann die Wiedererteilung oder Neuausstellung des Führerscheins in bestimmten Fällen ohne erneute theoretische oder praktische Prüfung erfolgen.</div>
+      <div class="notice"><strong>Wichtige Information</strong>Finvero übernimmt die vollständige Begleitung und Abwicklung des Verfahrens. Unter den gesetzlichen Voraussetzungen kann die Wiedererteilung oder Neuausstellung des Führerscheins in bestimmten Fällen ohne erneute theoretische oder praktische Prüfung erfolgen.</div>
     </div>
   </section>
 
   <section id="services" class="section cream">
     <div class="container">
-      <div class="head"><div><span class="eyebrow">Nos services</span><h2>Un espace clair pour gérer votre dossier.</h2></div><p>Les fonctionnalités sont organisées pour centraliser votre demande, vos documents et les échanges liés à votre dossier.</p></div>
+      <div class="head"><div><span class="eyebrow">Nos services</span><h2>Un accompagnement clair, adapté à votre situation.</h2></div><p>Présentez votre situation et échangez directement avec notre service pour obtenir des informations sur les démarches possibles.</p></div>
       <div class="cards">
-        <article class="card"><i class="fa-solid fa-file-circle-check"></i><h3>Dépôt de demande</h3><p>Créez votre dossier avec vos informations personnelles, votre catégorie de permis et les renseignements nécessaires à son suivi.</p></article>
-        <article class="card"><i class="fa-solid fa-folder-open"></i><h3>Pièces du dossier</h3><p>Déposez les pièces demandées depuis votre espace personnel et consultez leur état de traitement.</p></article>
-        <article class="card"><i class="fa-solid fa-chart-line"></i><h3>Suivi en ligne</h3><p>Retrouvez votre référence, l’état de votre dossier et les messages du service après chaque connexion.</p></article>
+        <article class="card"><i class="fa-solid fa-file-circle-check"></i><h3>Dépôt de demande</h3><p>Présentez votre demande et les informations utiles à son étude.</p></article>
+        <article class="card"><i class="fa-solid fa-folder-open"></i><h3>Pièces du dossier</h3><p>Recevez des indications sur les pièces éventuellement nécessaires à votre démarche.</p></article>
+        <article class="card"><i class="fa-solid fa-chart-line"></i><h3>Suivi en ligne</h3><p>Échangez directement avec notre équipe pour obtenir des informations sur les prochaines étapes.</p></article>
       </div>
     </div>
   </section>
 
   <section id="procedure" class="section dark-section">
     <div class="container">
-      <div class="head"><div><span class="eyebrow">La procédure</span><h2>De la création du compte au suivi du dossier.</h2></div><p>Chaque étape est regroupée dans votre espace afin de conserver un suivi clair entre les différents échanges.</p></div>
+      <div class="head"><div><span class="eyebrow">La procédure</span><h2>Un échange simple, de votre première question aux prochaines étapes.</h2></div><p>Contactez le service, expliquez votre situation et recevez une réponse adaptée.</p></div>
       <div class="steps">
-        <article class="step"><b>01</b><h3>Créer votre compte</h3><p>Inscrivez-vous avec une adresse e-mail et un mot de passe personnel.</p></article>
-        <article class="step"><b>02</b><h3>Ouvrir le dossier</h3><p>Renseignez votre identité, votre situation et la catégorie de permis concernée.</p></article>
-        <article class="step"><b>03</b><h3>Déposer les pièces</h3><p>Déposez les documents dont vous disposez depuis votre espace personnel.</p></article>
-        <article class="step"><b>04</b><h3>Suivre l'état</h3><p>Consultez le statut de votre dossier et les éventuelles demandes de pièces complémentaires.</p></article>
+        <article class="step"><b>01</b><h3>Contacter le service</h3><p>Envoyez votre message avec vos coordonnées.</p></article>
+        <article class="step"><b>02</b><h3>Présenter votre situation</h3><p>Expliquez brièvement votre demande et la catégorie de permis concernée.</p></article>
+        <article class="step"><b>03</b><h3>Échanger avec le service</h3><p>Notre équipe vous indiquera les informations utiles à communiquer.</p></article>
+        <article class="step"><b>04</b><h3>Convenir des prochaines étapes</h3><p>Poursuivez les échanges directement avec notre service.</p></article>
       </div>
     </div>
   </section>
@@ -855,14 +855,14 @@ header .container,
     <div class="container">
       <div class="head"><div><span class="eyebrow">Questions fréquentes</span><h2>Les réponses aux questions essentielles.</h2></div></div>
             <div class="faq">
-        <details><summary>Wird ein deutscher Führerschein über diesen Service wiedererteilt oder neu ausgestellt?</summary><p>Ja, je nach Fall. Führerschein Finvero Capital übernimmt die vollständige Begleitung und Abwicklung des Verfahrens. Wenn die gesetzlichen Voraussetzungen erfüllt sind, kann die Wiedererteilung oder Neuausstellung des Führerscheins in bestimmten Fällen ohne erneute theoretische oder praktische Prüfung erfolgen. Die konkrete Prüfungspflicht richtet sich nach der individuellen Situation und den geltenden deutschen Vorschriften.</p></details>
-        <details><summary>Kann die Wiedererteilung nach Verlust des Führerscheins ohne neue Prüfungen erfolgen?</summary><p>In bestimmten Fällen ja. Ob eine neue theoretische oder praktische Prüfung erforderlich ist, hängt von der Art des Vorgangs, der persönlichen Situation und den gesetzlichen Voraussetzungen ab. Das Verfahren wird entsprechend dem jeweiligen Fall vorbereitet und begleitet.</p></details>
-        <details><summary>Übernimmt der Service die gesamte Bearbeitung meines Verfahrens?</summary><p>Ja. Die Angaben, erforderlichen Unterlagen, Einreichung und Nachverfolgung werden innerhalb Ihres persönlichen Bereichs strukturiert zusammengeführt. Sie erhalten außerdem Informationen zu erforderlichen Ergänzungen und zum Bearbeitungsstand Ihrer Akte.</p></details>
-        <details><summary>Muss ich ein Konto erstellen?</summary><p>Ja. Ihr persönliches Konto ist erforderlich, um Ihre Akte anzulegen, Unterlagen einzureichen und den Bearbeitungsstand nach der Anmeldung wieder aufzurufen.</p></details>
-        <details><summary>Kann ich meine Akte mit dem Smartphone verfolgen?</summary><p>Ja. Die Oberfläche ist für Smartphones, Tablets und Computer optimiert. Sie können Ihre Akte, Dokumente und den Bearbeitungsstand von Ihrem Gerät aus aufrufen.</p></details>
-        <details><summary>Was kann ich tun, wenn ich mein Passwort vergessen habe?</summary><p>Wählen Sie „Passwort vergessen“ auf der Anmeldeseite. Geben Sie Ihre E-Mail-Adresse ein und folgen Sie anschließend dem sicheren Wiederherstellungsprozess für Ihr Konto.</p></details>
-        <details><summary>Sind meine persönlichen Daten und Dokumente öffentlich?</summary><p>Nein. Ihre persönlichen Angaben und eingereichten Dokumente sind nicht für die Öffentlichkeit bestimmt. Der Zugriff ist auf Ihr Konto und die für die Bearbeitung autorisierten Personen beschränkt.</p></details>
-        <details><summary>Wird die Zahlung automatisch ausgelöst?</summary><p>Nein. Die Nutzung dieser Version des Portals löst keine automatische Zahlung aus. Informationen zu eventuell anfallenden Gebühren und den jeweiligen Zahlungsmodalitäten werden im Rahmen des konkreten Verfahrens mitgeteilt.</p></details>
+        <details><summary>Welche Dienstleistungen bietet Finvero an?</summary><p>Wir bieten einen privaten Informations- und Begleitungsservice rund um Führerscheinangelegenheiten. Die konkrete Vorgehensweise hängt von Ihrer persönlichen Situation und den geltenden gesetzlichen Vorschriften ab.</p></details>
+        <details><summary>Wie kann ich eine Anfrage stellen?</summary><p>Nutzen Sie das Kontaktformular auf dieser Website. Beschreiben Sie Ihr Anliegen und geben Sie Ihre Kontaktdaten an. Ihre Nachricht wird direkt über Telegram an unseren Service übermittelt.</p></details>
+        <details><summary>Welche Informationen sollte ich in meiner Nachricht angeben?</summary><p>Beschreiben Sie kurz Ihre Situation, die betreffende Führerscheinkategorie und Ihre konkrete Frage. Senden Sie über das Kontaktformular zunächst keine sensiblen Dokumente oder vollständigen Ausweisdaten.</p></details>
+        <details><summary>Kann ich den Service von meinem Smartphone aus kontaktieren?</summary><p>Ja. Die Website und das Kontaktformular sind für Smartphones, Tablets und Computer optimiert.</p></details>
+        <details><summary>Wie erhalte ich eine Antwort?</summary><p>Nachdem Ihre Nachricht übermittelt wurde, kann unser Team Sie über die von Ihnen angegebene E-Mail-Adresse kontaktieren.</p></details>
+        <details><summary>Ist eine Wiedererteilung oder Neuausstellung ohne neue Prüfung möglich?</summary><p>Das hängt vom Einzelfall und den geltenden deutschen Vorschriften ab. Eine Prüfung oder Entscheidung kann ausschließlich durch die zuständige Behörde erfolgen.</p></details>
+        <details><summary>Ist das Kontaktformular für dringende Notfälle gedacht?</summary><p>Nein. Das Formular dient allgemeinen Anfragen und ist kein Notfalldienst.</p></details>
+        <details><summary>Fallen automatisch Gebühren an, wenn ich eine Nachricht sende?</summary><p>Nein. Das Absenden einer Nachricht über das Kontaktformular löst keine automatische Zahlung aus.</p></details>
       </div>
     </div>
   </section>
@@ -874,501 +874,92 @@ header .container,
         <h3>Une question concernant votre dossier ?</h3>
         <div class="contact-row"><small>E-mail</small><a href="mailto:contact@finverocapital.de">contact@finverocapital.de</a></div>
         <div class="contact-row"><small>Site</small><span>finverocapital.de</span></div>
-        <div class="contact-row"><small>Service</small><span>Führerschein Finvero Capital</span></div>
+        <div class="contact-row"><small>Service</small><span>Finvero</span></div>
       </div>
       <div class="formbox">
         <span class="eyebrow">Message</span>
         <h2 style="font-family:var(--serif);font-size:2.7rem;margin:10px 0 22px">Écrire au service</h2>
         <form id="contact-form">
+          <div style="position:absolute;left:-9999px;width:1px;height:1px;overflow:hidden" aria-hidden="true"><input name="website" tabindex="-1" autocomplete="off" aria-label="Website"></div>
           <div class="form-grid">
             <div class="field"><label>Nom</label><input name="name" required></div>
             <div class="field"><label>E-mail</label><input name="email" type="email" required></div>
             <div class="field full"><label>Message</label><textarea name="message" required></textarea></div>
           </div>
           <button class="btn gold" type="submit">Envoyer le message</button>
+          <p id="contact-status" role="status" aria-live="polite" style="margin-top:14px;color:var(--muted);font-size:.85rem"></p>
         </form>
       </div>
     </div>
   </section>
 </section>
 
-<section id="login-page" class="page">
-  <div class="auth-wrap"><div class="auth">
-    <span class="eyebrow">Espace client</span><h1>Connexion</h1><p>Accédez à votre dossier, à vos documents et aux messages du service.</p>
-    <form id="login-form">
-      <div class="field"><label>E-mail</label><input id="login-email" type="email" autocomplete="email" required></div>
-      <div class="field"><label>Mot de passe</label><div class="password-wrap"><input id="login-password" type="password" autocomplete="current-password" required><button type="button" class="eye" data-eye="login-password"><i class="fa-regular fa-eye"></i></button></div></div>
-      <button class="btn gold" style="width:100%" type="submit">Se connecter</button>
-    </form>
-    <div class="auth-links"><span class="link" data-go="forgot">Mot de passe oublié ?</span><span class="link" data-go="register">Créer un compte</span></div>
-  </div></div>
-</section>
-
-<section id="register-page" class="page">
-  <div class="auth-wrap"><div class="auth">
-    <span class="eyebrow">Nouvel espace</span><h1>Inscription</h1><p>Créez votre espace personnel avant de déposer votre demande.</p>
-    <form id="register-form">
-      <div class="field"><label>Nom complet</label><input id="reg-name" required></div>
-      <div class="field"><label>E-mail</label><input id="reg-email" type="email" autocomplete="email" required></div>
-      <div class="field"><label>Mot de passe</label><div class="password-wrap"><input id="reg-password" type="password" minlength="8" required><button type="button" class="eye" data-eye="reg-password"><i class="fa-regular fa-eye"></i></button></div></div>
-      <div class="field"><label>Confirmation</label><input id="reg-password2" type="password" minlength="8" required></div>
-      <button class="btn gold" style="width:100%" type="submit">Créer mon compte</button>
-    </form>
-    <div class="auth-links"><span class="link" data-go="login">J'ai déjà un compte</span></div>
-  </div></div>
-</section>
-
-<section id="forgot-page" class="page">
-  <div class="auth-wrap"><div class="auth">
-    <span class="eyebrow">Récupération</span><h1>Mot de passe oublié</h1><p>Saisissez l’adresse associée à votre compte pour recevoir un lien sécurisé de réinitialisation.</p>
-    <form id="forgot-form">
-      <div class="field"><label>E-mail</label><input id="forgot-email" type="email" required></div>
-      <button class="btn gold" style="width:100%" type="submit">Envoyer le lien</button>
-    </form>
-    <div class="auth-links"><span class="link" data-go="login">Retour à la connexion</span></div>
-  </div></div>
-</section>
-
-<section id="reset-page" class="page">
-  <div class="auth-wrap"><div class="auth">
-    <span class="eyebrow">Sécurité du compte</span><h1>Nouveau mot de passe</h1><p>Choisissez un nouveau mot de passe pour sécuriser votre espace personnel.</p>
-    <form id="reset-form">
-      <div class="field"><label>Nouveau mot de passe</label><div class="password-wrap"><input id="reset-password" type="password" minlength="8" required><button type="button" class="eye" data-eye="reset-password"><i class="fa-regular fa-eye"></i></button></div></div>
-      <div class="field"><label>Confirmation</label><input id="reset-password2" type="password" minlength="8" required></div>
-      <button class="btn gold" style="width:100%" type="submit">Enregistrer le nouveau mot de passe</button>
-    </form>
-    <div class="auth-links"><span class="link" data-go="login">Retour à la connexion</span></div>
-  </div></div>
-</section>
-
-<section id="dashboard-page" class="page">
-  <div class="dashboard"><div class="container">
-    <div class="dash-top"><div><span class="eyebrow">Espace personnel</span><h1>Mon dossier</h1></div><button class="btn dark" id="logout-btn">Déconnexion</button></div>
-    <div class="dash-grid">
-      <aside class="side">
-        <button class="active" data-dash-tab="file"><i class="fa-solid fa-folder"></i> Mon dossier</button>
-        <button data-dash-tab="documents"><i class="fa-solid fa-file"></i> Mes documents</button>
-        <button data-dash-tab="profile"><i class="fa-solid fa-user"></i> Mon profil</button>
-      </aside>
-      <div>
-        <section class="panel dash-tab active" id="dash-file">
-          <div id="file-content"></div>
-        </section>
-        <section class="panel dash-tab" id="dash-documents" style="display:none">
-          <h2 style="font-family:var(--serif)">Mes documents</h2>
-          <p style="color:var(--muted)">Ajoutez les pièces demandées à votre dossier.</p>
-          <form id="document-form">
-            <div class="form-grid">
-              <div class="field"><label>Type de document</label><select id="doc-type"><option value="identity">Pièce d'identité</option><option value="photo">Photo</option><option value="residence">Justificatif de résidence</option><option value="other">Autre document</option></select></div>
-              <div class="field"><label>Fichier</label><input id="doc-file" type="file" required></div>
-            </div>
-            <button class="btn gold" type="submit">Déposer le document</button>
-          </form>
-          <div id="documents-list" class="doc-list" style="margin-top:22px"></div>
-        </section>
-        <section class="panel dash-tab" id="dash-profile" style="display:none">
-          <h2 style="font-family:var(--serif)">Mon profil</h2>
-          <form id="profile-form">
-            <div class="form-grid">
-              <div class="field"><label>Nom complet</label><input id="profile-name"></div>
-              <div class="field"><label>Téléphone</label><input id="profile-phone"></div>
-              <div class="field full"><label>Adresse</label><input id="profile-address"></div>
-              <div class="field"><label>Code postal</label><input id="profile-zip"></div>
-              <div class="field"><label>Ville</label><input id="profile-city"></div>
-              <div class="field"><label>Pays</label><input id="profile-country"></div>
-            </div>
-            <button class="btn gold" type="submit">Enregistrer le profil</button>
-          </form>
-        </section>
-      </div>
-    </div>
-  </div></div>
-</section>
 </main>
 
-<footer><div class="container foot"><span><strong>Führerschein Finvero Capital</strong><br>Service privé d'accompagnement administratif.</span><span>contact@finverocapital.de · finverocapital.de</span></div></footer>
+<footer><div class="container foot"><span><strong>Finvero</strong><br>Service privé d'accompagnement administratif.</span><span>contact@finverocapital.de · finverocapital.de</span></div></footer>
 
-<div id="application-modal" class="modal" aria-hidden="true">
-  <div class="modal-card">
-    <div class="modal-head"><div><span class="eyebrow">Dossier de permis</span><h2>Renseigner votre demande</h2></div><button type="button" class="modal-close" id="application-modal-close" aria-label="Fermer">×</button></div>
-    <form id="application-form">
-      <div class="form-grid">
-        <div class="field"><label>Nom complet</label><input id="app-name" required></div>
-        <div class="field"><label>Date de naissance</label><input id="app-birth" type="date" required></div>
-        <div class="field"><label>Nationalité</label><input id="app-nationality" required></div>
-        <div class="field"><label>Catégorie de permis</label><select id="app-category" required><option value="B">B — Voiture</option><option value="A">A — Moto</option><option value="BE">BE</option><option value="C">C — Poids lourd</option><option value="D">D — Transport de personnes</option><option value="Autre">Autre</option></select></div>
-        <div class="field full"><label>Ville de résidence</label><input id="app-city" required></div>
-      </div>
-      <div class="modal-actions"><button type="button" class="btn outline" id="application-cancel">Annuler</button><button class="btn gold" type="submit">Enregistrer le dossier</button></div>
-    </form>
-  </div>
-</div>
-
-<div id="admin-screen" class="admin-screen">
-  <div class="admin-box">
-    <div class="admin-head"><h2>Administration — Führerschein Finvero Capital</h2><button class="btn outline-light" id="admin-close">Fermer</button></div>
-    <div id="admin-login-view" class="admin-login">
-      <span class="eyebrow">Accès sécurisé</span><h2 style="font-family:var(--serif);font-size:2.5rem">Administration</h2>
-      <p>Cette zone est réservée au compte administrateur autorisé.</p>
-      <form id="admin-login-form">
-        <div class="field"><label>E-mail administrateur</label><input id="admin-email" type="email" required></div>
-        <div class="field"><label>Mot de passe</label><input id="admin-password" type="password" required></div>
-        <button class="btn gold" style="width:100%" type="submit">Ouvrir l'administration</button>
-      </form>
-    </div>
-    <div id="admin-dashboard" style="display:none">
-      <div class="admin-tabs">
-        <button class="active" data-admin-tab="applications">Dossiers</button>
-        <button data-admin-tab="documents">Documents</button>
-        <button data-admin-tab="users">Clients</button>
-        <button data-admin-tab="settings">Paramètres</button>
-      </div>
-      <div class="admin-body">
-        <section class="admin-section active" id="admin-applications">
-          <h2>Dossiers clients</h2><p>Les modifications enregistrées ici sont visibles dans l'espace du client concerné.</p>
-          <div id="admin-applications-list" class="admin-list"></div>
-        </section>
-        <section class="admin-section" id="admin-documents">
-          <h2>Documents</h2><div id="admin-documents-list" class="tablewrap"></div>
-        </section>
-        <section class="admin-section" id="admin-users">
-          <h2>Clients inscrits</h2><div id="admin-users-list" class="tablewrap"></div>
-        </section>
-        <section class="admin-section" id="admin-settings">
-          <h2>Paramètres</h2>
-          <form id="admin-settings-form" class="formbox">
-            <div class="field"><label>Nom du service</label><input id="set-brand"></div>
-            <div class="field"><label>E-mail de contact</label><input id="set-email"></div>
-            <div class="field"><label>Message d'accueil</label><textarea id="set-message"></textarea></div>
-            <button class="btn gold" type="submit">Enregistrer</button>
-          </form>
-        </section>
-      </div>
-    </div>
-  </div>
-</div>
 <div id="toast" class="toast"></div>
 
 <script>
-/* ================= CONFIGURATION =================
-   Remplacez uniquement SUPABASE_ANON_KEY par votre clé publique
-   Supabase. L'URL ci-dessous est celle du projet Finvero Capital.
-*/
-const SUPABASE_URL="https://vxeqdooqrryekbogrxdp.supabase.co";
-const SUPABASE_ANON_KEY="REMPLACEZ_PAR_VOTRE_CLE_PUBLIQUE_SUPABASE";
-const sb=window.supabase.createClient(SUPABASE_URL,SUPABASE_ANON_KEY);
-const CONTACT_EMAIL="contact@finverocapital.de";
-
-let currentUser=null,currentProfile=null,currentApplication=null;
-let currentLanguage=["de","fr","it"].includes(localStorage.getItem("fc_language"))?localStorage.getItem("fc_language"):"de";
-const TRANSLATIONS={
-de:{
-nav:["Startseite","Leistungen","Ablauf","FAQ","Kontakt"],account:"Meine Akte",heroK:"Private Begleitung · Deutschland",
-hero:"Ihre <span>Führerscheinangelegenheit</span>, professionell und strukturiert online.",heroP:"Führerschein Finvero Capital übernimmt die vollständige Begleitung und Abwicklung Ihres Führerscheinverfahrens – von der Aufnahme Ihrer Angaben und Unterlagen bis zur Nachverfolgung des Bearbeitungsstands. Je nach Situation und wenn die gesetzlichen Voraussetzungen erfüllt sind, kann die Wiedererteilung oder Neuausstellung des Führerscheins ohne erneute theoretische oder praktische Prüfung möglich sein.",
-start:"Antrag beginnen",follow:"Meine Akte verfolgen",
-noticeTitle:"Wichtige Information",notice:"Führerschein Finvero Capital übernimmt die vollständige Begleitung und Abwicklung des Verfahrens. Unter den gesetzlichen Voraussetzungen kann die Wiedererteilung oder Neuausstellung des Führerscheins in bestimmten Fällen ohne erneute theoretische oder praktische Prüfung erfolgen.",
-servicesK:"Unsere Leistungen",servicesH:"Ein klarer und strukturierter Bereich für Ihre Führerscheinakte.",servicesP:"Alle wichtigen Schritte werden übersichtlich zusammengeführt, damit Sie Ihren Antrag, Ihre Unterlagen und den Bearbeitungsstand nachvollziehen können.",
-cards:[
-["Antrag einreichen","Erstellen Sie Ihre Akte mit Ihren persönlichen Angaben, der gewünschten Führerscheinklasse und den für die Bearbeitung erforderlichen Informationen."],
-["Unterlagen verwalten","Laden Sie die erforderlichen Unterlagen in Ihrem persönlichen Bereich hoch und verfolgen Sie deren Bearbeitungsstatus."],
-["Online verfolgen","Sehen Sie Ihre Referenz, den aktuellen Status Ihrer Akte und die Nachrichten des zuständigen Services nach jeder Anmeldung."]
-],
-procedureK:"Der Ablauf",procedureH:"Von der Kontoerstellung bis zur Nachverfolgung Ihrer Akte.",procedureP:"Die einzelnen Schritte werden in Ihrem persönlichen Bereich übersichtlich zusammengeführt, damit Sie den Fortschritt Ihrer Anfrage jederzeit nachvollziehen können.",
-steps:[
-["Konto erstellen","Registrieren Sie sich mit Ihrer E-Mail-Adresse und einem persönlichen Passwort."],
-["Akte eröffnen","Geben Sie Ihre Identität, Ihre Situation und die gewünschte Führerscheinklasse an."],
-["Unterlagen einreichen","Laden Sie die für Ihr Verfahren erforderlichen Dokumente über Ihren persönlichen Bereich hoch."],
-["Status verfolgen","Prüfen Sie den Bearbeitungsstand und sehen Sie, ob weitere Unterlagen benötigt werden."]
-],
-faqK:"Häufige Fragen",faqH:"Antworten auf die wichtigsten Fragen.",faq:[
-["Wird ein deutscher Führerschein über diesen Service wiedererteilt oder neu ausgestellt?","Ja, je nach Fall. Führerschein Finvero Capital übernimmt die vollständige Begleitung und Abwicklung des Verfahrens. Wenn die gesetzlichen Voraussetzungen erfüllt sind, kann die Wiedererteilung oder Neuausstellung des Führerscheins in bestimmten Fällen ohne erneute theoretische oder praktische Prüfung erfolgen. Die konkrete Prüfungspflicht richtet sich nach der individuellen Situation und den geltenden deutschen Vorschriften."],
-["Kann die Wiedererteilung nach Verlust des Führerscheins ohne neue Prüfungen erfolgen?","In bestimmten Fällen ja. Ob eine neue theoretische oder praktische Prüfung erforderlich ist, hängt von der Art des Vorgangs, der persönlichen Situation und den gesetzlichen Voraussetzungen ab. Das Verfahren wird entsprechend dem jeweiligen Fall vorbereitet und begleitet."],
-["Übernimmt der Service die gesamte Bearbeitung meines Verfahrens?","Ja. Die Angaben, erforderlichen Unterlagen, Einreichung und Nachverfolgung werden innerhalb Ihres persönlichen Bereichs strukturiert zusammengeführt. Sie erhalten außerdem Informationen zu erforderlichen Ergänzungen und zum Bearbeitungsstand Ihrer Akte."],
-["Muss ich ein Konto erstellen?","Ja. Ihr persönliches Konto ist erforderlich, um Ihre Akte anzulegen, Unterlagen einzureichen und den Bearbeitungsstand nach der Anmeldung wieder aufzurufen."],
-["Kann ich meine Akte mit dem Smartphone verfolgen?","Ja. Die Oberfläche ist für Smartphones, Tablets und Computer optimiert. Sie können Ihre Akte, Dokumente und den Bearbeitungsstand von Ihrem Gerät aus aufrufen."],
-["Was kann ich tun, wenn ich mein Passwort vergessen habe?","Wählen Sie „Passwort vergessen“ auf der Anmeldeseite. Geben Sie Ihre E-Mail-Adresse ein und folgen Sie anschließend dem sicheren Wiederherstellungsprozess für Ihr Konto."],
-["Sind meine persönlichen Daten und Dokumente öffentlich?","Nein. Ihre persönlichen Angaben und eingereichten Dokumente sind nicht für die Öffentlichkeit bestimmt. Der Zugriff ist auf Ihr Konto und die für die Bearbeitung autorisierten Personen beschränkt."],
-["Wird die Zahlung automatisch ausgelöst?","Nein. Die Nutzung dieser Version des Portals löst keine automatische Zahlung aus. Informationen zu eventuell anfallenden Gebühren und den jeweiligen Zahlungsmodalitäten werden im Rahmen des konkreten Verfahrens mitgeteilt."]
-],contactK:"Kontakt",contactH:"Eine Frage zu Ihrer Führerscheinakte?",messageK:"Nachricht",messageH:"Schreiben Sie dem Service",send:"Nachricht senden",
-clientK:"Kundenbereich",loginH:"Anmeldung",loginP:"Greifen Sie auf Ihre Akte, Ihre Dokumente und die Nachrichten des Services zu.",email:"E-Mail",password:"Passwort",login:"Anmelden",forgot:"Passwort vergessen?",create:"Konto erstellen",
-newK:"Neuer Bereich",registerH:"Registrierung",registerP:"Erstellen Sie Ihren persönlichen Bereich, bevor Sie Ihren Antrag einreichen.",fullName:"Vollständiger Name",confirm:"Bestätigung",register:"Konto erstellen",already:"Ich habe bereits ein Konto",
-recoveryK:"Wiederherstellung",forgotH:"Passwort vergessen",forgotP:"Geben Sie die E-Mail-Adresse Ihres Kontos ein, um einen sicheren Link zur Wiederherstellung zu erhalten.",sendLink:"Link senden",backLogin:"Zurück zur Anmeldung",
-securityK:"Kontosicherheit",resetH:"Neues Passwort",resetP:"Wählen Sie ein neues Passwort für Ihren persönlichen Bereich.",newPassword:"Neues Passwort",savePassword:"Neues Passwort speichern",
-personalK:"Persönlicher Bereich",myFile:"Meine Akte",documents:"Meine Dokumente",profile:"Mein Profil",logout:"Abmelden",docsP:"Fügen Sie die für Ihre Akte erforderlichen Unterlagen hinzu.",docType:"Dokumenttyp",identity:"Identitätsnachweis",photo:"Foto",residence:"Wohnsitznachweis",other:"Anderes Dokument",file:"Datei",upload:"Dokument einreichen",saveProfile:"Profil speichern",phone:"Telefon",address:"Adresse",zip:"Postleitzahl",city:"Ort",country:"Land",
-appK:"Führerscheinakte",appH:"Ihren Antrag ausfüllen",birth:"Geburtsdatum",nationality:"Staatsangehörigkeit",category:"Führerscheinklasse",cityResidence:"Wohnort",cancel:"Abbrechen",saveFile:"Akte speichern",
-adminTitle:"Administration — Führerschein Finvero Capital",close:"Schließen",secure:"Gesicherter Zugang",admin:"Administration",adminP:"Dieser Bereich ist ausschließlich für autorisierte Administratoren bestimmt.",adminEmail:"Administrator-E-Mail",openAdmin:"Administration öffnen",applications:"Akten",clients:"Kunden",settings:"Einstellungen",clientFiles:"Kundenakten",adminP2:"Gespeicherte Änderungen werden im Bereich des jeweiligen Kunden angezeigt.",registered:"Registrierte Kunden",serviceName:"Name des Services",contactEmail:"Kontakt-E-Mail",welcome:"Willkommensnachricht",save:"Speichern",documentsAdmin:"Dokumente"
-},
-fr:{
-nav:["Accueil","Services","Procédure","FAQ","Contact"],account:"Mon dossier",heroK:"Accompagnement privé · Allemagne",
-hero:"Votre <span>dossier de permis de conduire</span>, organisé et suivi en ligne.",heroP:"Führerschein Finvero Capital prend en charge l’accompagnement et le suivi complet de votre procédure de permis, depuis vos informations et documents jusqu’au suivi de l’avancement. Selon votre situation et lorsque les conditions légales sont remplies, la réattribution ou la réédition du permis peut être possible sans repasser les épreuves théorique ou pratique.",
-start:"Commencer une demande",follow:"Suivre mon dossier",noticeTitle:"Information importante",notice:"Führerschein Finvero Capital prend en charge l’accompagnement et la procédure de bout en bout. Lorsque les conditions légales sont remplies, la réattribution ou la réédition du permis peut, dans certaines situations, être effectuée sans nouvelle épreuve théorique ou pratique.",
-servicesK:"Nos services",servicesH:"Un espace clair et structuré pour votre dossier.",servicesP:"Toutes les étapes importantes sont regroupées afin de faciliter le suivi de votre demande, de vos documents et de son état d'avancement.",
-cards:[["Dépôt de demande","Créez votre dossier avec vos informations personnelles, la catégorie de permis souhaitée et les renseignements nécessaires au traitement."],["Gestion des pièces","Déposez les documents demandés dans votre espace personnel et consultez leur état de traitement."],["Suivi en ligne","Retrouvez votre référence, l’état de votre dossier et les messages du service après chaque connexion."]],
-procedureK:"La procédure",procedureH:"De la création du compte au suivi de votre dossier.",procedureP:"Chaque étape est regroupée dans votre espace personnel afin de vous permettre de suivre clairement l’évolution de votre demande.",
-steps:[["Créer votre compte","Inscrivez-vous avec une adresse e-mail et un mot de passe personnel."],["Ouvrir le dossier","Renseignez votre identité, votre situation et la catégorie de permis concernée."],["Déposer les pièces","Déposez les documents nécessaires à votre procédure depuis votre espace personnel."],["Suivre l'état","Consultez le statut de votre dossier et les éventuelles demandes de pièces complémentaires."]],
-faqK:"Questions fréquentes",faqH:"Les réponses aux questions essentielles.",faq:[
-["Le permis allemand peut-il être réattribué ou réédité par l’intermédiaire de ce service ?","Oui, selon le cas. Führerschein Finvero Capital prend en charge l’accompagnement et la procédure de bout en bout. Lorsque les conditions légales sont remplies, la réattribution ou la réédition du permis peut, dans certaines situations, être effectuée sans repasser les épreuves théorique ou pratique. La nécessité d’un nouvel examen dépend de la situation individuelle et de la réglementation allemande applicable."],
-["Après avoir perdu mon permis, puis-je le récupérer sans repasser les examens ?","Dans certains cas, oui. La nécessité d’une nouvelle épreuve théorique ou pratique dépend de la nature de la procédure, de la situation du conducteur et des conditions légales applicables. Le dossier est préparé et suivi en fonction de votre situation."],
-["Le service prend-il en charge l’ensemble de la procédure ?","Oui. Les informations, les documents nécessaires, le dépôt et le suivi sont regroupés dans votre espace personnel. Vous êtes également informé des éventuelles pièces complémentaires et de l’avancement de votre dossier."],
-["Dois-je créer un compte ?","Oui. Votre compte personnel est nécessaire pour créer votre dossier, déposer vos documents et retrouver l’état d’avancement après connexion."],
-["Puis-je suivre mon dossier depuis mon téléphone ?","Oui. L’interface est adaptée aux smartphones, tablettes et ordinateurs. Vous pouvez consulter votre dossier, vos documents et son état d’avancement depuis votre appareil."],
-["Que faire si j’oublie mon mot de passe ?","Sélectionnez « Mot de passe oublié » sur la page de connexion. Saisissez votre adresse e-mail puis suivez la procédure sécurisée de récupération de votre compte."],
-["Mes données personnelles et mes documents sont-ils publics ?","Non. Vos informations personnelles et les documents transmis ne sont pas destinés à être publics. L’accès est limité à votre compte et aux personnes autorisées pour le traitement du dossier."],
-["Le paiement est-il automatique ?","Non. L’utilisation de cette version du portail ne déclenche aucun paiement automatique. Les éventuels frais et modalités de paiement sont communiqués dans le cadre de la procédure concernée."]
-],contactK:"Contact",contactH:"Une question concernant votre dossier ?",messageK:"Message",messageH:"Écrire au service",send:"Envoyer le message",clientK:"Espace client",loginH:"Connexion",loginP:"Accédez à votre dossier, à vos documents et aux messages du service.",email:"E-mail",password:"Mot de passe",login:"Se connecter",forgot:"Mot de passe oublié ?",create:"Créer un compte",newK:"Nouvel espace",registerH:"Inscription",registerP:"Créez votre espace personnel avant de déposer votre demande.",fullName:"Nom complet",confirm:"Confirmation",register:"Créer mon compte",already:"J'ai déjà un compte",recoveryK:"Récupération",forgotH:"Mot de passe oublié",forgotP:"Saisissez l’adresse associée à votre compte pour recevoir un lien sécurisé de récupération.",sendLink:"Envoyer le lien",backLogin:"Retour à la connexion",securityK:"Sécurité du compte",resetH:"Nouveau mot de passe",resetP:"Choisissez un nouveau mot de passe pour sécuriser votre espace personnel.",newPassword:"Nouveau mot de passe",savePassword:"Enregistrer le nouveau mot de passe",personalK:"Espace personnel",myFile:"Mon dossier",documents:"Mes documents",profile:"Mon profil",logout:"Déconnexion",docsP:"Ajoutez les pièces demandées à votre dossier.",docType:"Type de document",identity:"Pièce d'identité",photo:"Photo",residence:"Justificatif de résidence",other:"Autre document",file:"Fichier",upload:"Déposer le document",saveProfile:"Enregistrer le profil",phone:"Téléphone",address:"Adresse",zip:"Code postal",city:"Ville",country:"Pays",appK:"Dossier de permis",appH:"Renseigner votre demande",birth:"Date de naissance",nationality:"Nationalité",category:"Catégorie de permis",cityResidence:"Ville de résidence",cancel:"Annuler",saveFile:"Enregistrer le dossier",adminTitle:"Administration — Führerschein Finvero Capital",close:"Fermer",secure:"Accès sécurisé",admin:"Administration",adminP:"Cette zone est réservée au compte administrateur autorisé.",adminEmail:"E-mail administrateur",openAdmin:"Ouvrir l'administration",applications:"Dossiers",clients:"Clients",settings:"Paramètres",clientFiles:"Dossiers clients",adminP2:"Les modifications enregistrées ici sont visibles dans l'espace du client concerné.",registered:"Clients inscrits",serviceName:"Nom du service",contactEmail:"E-mail de contact",welcome:"Message d'accueil",save:"Enregistrer",documentsAdmin:"Documents"
-},
-it:{
-nav:["Home","Servizi","Procedura","FAQ","Contatti"],account:"La mia pratica",heroK:"Assistenza privata · Germania",
-hero:"La tua <span>pratica per la patente</span>, organizzata e monitorata online.",heroP:"Führerschein Finvero Capital gestisce l’assistenza e il monitoraggio completo della procedura, dalla raccolta dei dati e dei documenti fino allo stato della pratica. In base alla situazione e quando sono soddisfatti i requisiti di legge, la riassegnazione o la nuova emissione della patente può essere possibile senza ripetere l’esame teorico o pratico.",
-start:"Inizia una richiesta",follow:"Segui la mia pratica",noticeTitle:"Informazione importante",notice:"Führerschein Finvero Capital gestisce l’assistenza e la procedura completa. Quando sono soddisfatti i requisiti di legge, in determinate situazioni la riassegnazione o la nuova emissione della patente può avvenire senza un nuovo esame teorico o pratico.",
-servicesK:"I nostri servizi",servicesH:"Uno spazio chiaro e strutturato per la tua pratica.",servicesP:"Tutte le fasi importanti sono riunite in un unico spazio per facilitare la gestione della richiesta, dei documenti e dello stato della pratica.",
-cards:[["Presentazione della richiesta","Crea la tua pratica con i dati personali, la categoria di patente richiesta e le informazioni necessarie alla procedura."],["Gestione dei documenti","Carica i documenti richiesti nel tuo spazio personale e consulta il loro stato di trattamento."],["Monitoraggio online","Trova il riferimento della pratica, lo stato aggiornato e i messaggi del servizio dopo ogni accesso."]],
-procedureK:"La procedura",procedureH:"Dalla creazione dell'account al monitoraggio della pratica.",procedureP:"Ogni fase è organizzata nel tuo spazio personale per consentirti di seguire con chiarezza l'avanzamento della richiesta.",
-steps:[["Crea il tuo account","Registrati con un indirizzo e-mail e una password personale."],["Apri la pratica","Inserisci la tua identità, la tua situazione e la categoria di patente interessata."],["Carica i documenti","Carica i documenti necessari alla procedura dal tuo spazio personale."],["Segui lo stato","Controlla lo stato della pratica e le eventuali richieste di documenti aggiuntivi."]],
-faqK:"Domande frequenti",faqH:"Le risposte alle domande essenziali.",faq:[
-["La patente tedesca può essere riassegnata o nuovamente emessa tramite questo servizio?","Sì, a seconda del caso. Führerschein Finvero Capital gestisce l’assistenza e la procedura dall’inizio alla fine. Quando sono soddisfatti i requisiti previsti dalla legge, in determinate situazioni la riassegnazione o la nuova emissione può avvenire senza ripetere l’esame teorico o pratico. L’eventuale necessità di un nuovo esame dipende dalla situazione individuale e dalle norme tedesche applicabili."],
-["Dopo aver perso la patente, posso recuperarla senza ripetere gli esami?","In alcuni casi sì. La necessità di un nuovo esame teorico o pratico dipende dal tipo di procedura, dalla situazione del conducente e dai requisiti previsti dalla legge. La pratica viene preparata e seguita in base al singolo caso."],
-["Il servizio gestisce l’intera procedura?","Sì. Dati, documenti necessari, presentazione e monitoraggio vengono organizzati nella tua area personale. Riceverai inoltre informazioni sulle eventuali integrazioni richieste e sullo stato della pratica."],
-["Devo creare un account?","Sì. Il tuo account personale è necessario per creare la pratica, inviare i documenti e ritrovare lo stato di avanzamento dopo l’accesso."],
-["Posso seguire la pratica dal mio telefono?","Sì. L’interfaccia è ottimizzata per smartphone, tablet e computer. Puoi consultare la pratica, i documenti e lo stato di avanzamento dal tuo dispositivo."],
-["Cosa posso fare se dimentico la password?","Seleziona «Password dimenticata» nella pagina di accesso. Inserisci il tuo indirizzo e-mail e segui la procedura sicura di recupero dell’account."],
-["I miei dati personali e i miei documenti sono pubblici?","No. I tuoi dati personali e i documenti inviati non sono destinati alla pubblicazione. L’accesso è limitato al tuo account e alle persone autorizzate alla gestione della pratica."],
-["Il pagamento è automatico?","No. L’utilizzo di questa versione del portale non attiva alcun pagamento automatico. Eventuali costi e modalità di pagamento vengono comunicati nell’ambito della procedura interessata."]
-],contactK:"Contatti",contactH:"Hai una domanda sulla tua pratica?",messageK:"Messaggio",messageH:"Scrivi al servizio",send:"Invia il messaggio",clientK:"Area cliente",loginH:"Accesso",loginP:"Accedi alla tua pratica, ai tuoi documenti e ai messaggi del servizio.",email:"E-mail",password:"Password",login:"Accedi",forgot:"Password dimenticata?",create:"Crea un account",newK:"Nuova area",registerH:"Registrazione",registerP:"Crea il tuo spazio personale prima di presentare la richiesta.",fullName:"Nome completo",confirm:"Conferma",register:"Crea il mio account",already:"Ho già un account",recoveryK:"Recupero",forgotH:"Password dimenticata",forgotP:"Inserisci l'indirizzo e-mail associato al tuo account per ricevere un link sicuro di recupero.",sendLink:"Invia il link",backLogin:"Torna all'accesso",securityK:"Sicurezza dell'account",resetH:"Nuova password",resetP:"Scegli una nuova password per proteggere il tuo spazio personale.",newPassword:"Nuova password",savePassword:"Salva la nuova password",personalK:"Area personale",myFile:"La mia pratica",documents:"I miei documenti",profile:"Il mio profilo",logout:"Esci",docsP:"Aggiungi i documenti richiesti alla tua pratica.",docType:"Tipo di documento",identity:"Documento d'identità",photo:"Foto",residence:"Prova di residenza",other:"Altro documento",file:"File",upload:"Invia documento",saveProfile:"Salva il profilo",phone:"Telefono",address:"Indirizzo",zip:"CAP",city:"Città",country:"Paese",appK:"Pratica patente",appH:"Compila la richiesta",birth:"Data di nascita",nationality:"Nazionalità",category:"Categoria di patente",cityResidence:"Città di residenza",cancel:"Annulla",saveFile:"Salva la pratica",adminTitle:"Amministrazione — Führerschein Finvero Capital",close:"Chiudi",secure:"Accesso sicuro",admin:"Amministrazione",adminP:"Questa area è riservata agli amministratori autorizzati.",adminEmail:"E-mail amministratore",openAdmin:"Apri amministrazione",applications:"Pratiche",clients:"Clienti",settings:"Impostazioni",clientFiles:"Pratiche clienti",adminP2:"Le modifiche salvate qui sono visibili nell'area del cliente interessato.",registered:"Clienti registrati",serviceName:"Nome del servizio",contactEmail:"E-mail di contatto",welcome:"Messaggio di benvenuto",save:"Salva",documentsAdmin:"Documenti"
-}
+const SITE_TEXT={
+ de:{nav:['Startseite','Leistungen','Ablauf','FAQ','Kontakt'],heroK:'Private Begleitung · Deutschland',hero:'Ihre <span>Führerscheinangelegenheit</span>, professionell und strukturiert online.',heroP:'Finvero bietet einen privaten Informations- und Begleitungsservice rund um Führerscheinangelegenheiten. Die Möglichkeiten hängen von Ihrer persönlichen Situation und den geltenden gesetzlichen Vorschriften ab.',start:'Kontakt aufnehmen',noticeTitle:'Wichtige Information',notice:'Die zuständige Behörde entscheidet über die Erteilung, Wiedererteilung oder Neuausstellung eines Führerscheins. Unser Service bietet private Information und Begleitung.',servicesK:'Unsere Leistungen',servicesH:'Ein klarer und persönlicher Ansprechpartner.',servicesP:'Beschreiben Sie Ihr Anliegen und tauschen Sie sich direkt mit unserem Service über mögliche nächste Schritte aus.',cards:[['Anfrage stellen','Teilen Sie uns Ihr Anliegen und die wichtigsten Informationen zu Ihrer Situation mit.'],['Informationen erhalten','Erhalten Sie Hinweise zu den Informationen und Unterlagen, die für Ihre Anfrage relevant sein können.'],['Direkter Austausch','Stellen Sie Rückfragen und besprechen Sie die nächsten Schritte direkt mit unserem Service.']],procedureK:'Der Ablauf',procedureH:'In wenigen Schritten Kontakt aufnehmen.',procedureP:'Unser Kontaktformular macht es einfach, Ihre Frage an unseren Service zu übermitteln.',steps:[['Kontaktformular ausfüllen','Geben Sie Ihren Namen, Ihre E-Mail-Adresse und Ihre Nachricht ein.'],['Nachricht senden','Ihre Nachricht wird direkt über Telegram an unseren Service übermittelt.'],['Antwort erhalten','Unser Team kann Sie über die angegebene E-Mail-Adresse kontaktieren.'],['Nächste Schritte klären','Besprechen Sie mit unserem Team, welche Informationen für Ihr Anliegen relevant sind.']],faqK:'Häufige Fragen',faqH:'Antworten auf die wichtigsten Fragen.',faq:[['Welche Dienstleistungen bietet Finvero an?','Wir bieten einen privaten Informations- und Begleitungsservice rund um Führerscheinangelegenheiten. Die konkrete Vorgehensweise hängt von Ihrer persönlichen Situation und den geltenden gesetzlichen Vorschriften ab.'],['Wie kann ich eine Anfrage stellen?','Nutzen Sie das Kontaktformular auf dieser Website. Ihre Nachricht wird direkt über Telegram an unseren Service übermittelt.'],['Welche Informationen sollte ich angeben?','Beschreiben Sie kurz Ihre Situation, die betreffende Führerscheinkategorie und Ihre konkrete Frage. Senden Sie zunächst keine sensiblen Dokumente oder vollständigen Ausweisdaten.'],['Kann ich den Service vom Smartphone aus kontaktieren?','Ja. Die Website und das Kontaktformular sind für Smartphones, Tablets und Computer optimiert.'],['Wie erhalte ich eine Antwort?','Unser Team kann Sie über die von Ihnen angegebene E-Mail-Adresse kontaktieren.'],['Ist eine Wiedererteilung ohne neue Prüfung möglich?','Das hängt vom Einzelfall und den geltenden deutschen Vorschriften ab. Eine Entscheidung kann ausschließlich durch die zuständige Behörde erfolgen.'],['Ist das Formular ein Notfalldienst?','Nein. Das Formular dient allgemeinen Anfragen und ist kein Notfalldienst.'],['Fallen automatisch Gebühren an?','Nein. Das Absenden einer Nachricht löst keine automatische Zahlung aus.']],contactK:'Kontakt',contactH:'Eine Frage zu Ihrem Anliegen?',messageK:'Nachricht',messageH:'Schreiben Sie unserem Service',fullName:'Name',email:'E-Mail',message:'Nachricht',send:'Nachricht senden',footer:'Privater Informations- und Begleitungsservice.'},
+ fr:{nav:['Accueil','Services','Procédure','FAQ','Contact'],heroK:'Accompagnement privé · Allemagne',hero:'Votre <span>démarche liée au permis de conduire</span>, accompagnée avec clarté.',heroP:'Finvero propose un service privé d’information et d’accompagnement concernant les démarches liées au permis de conduire. Les possibilités dépendent de votre situation et de la réglementation applicable.',start:'Nous contacter',noticeTitle:'Information importante',notice:'La délivrance, la réattribution ou la réédition d’un permis relève de l’autorité compétente. Notre service propose un accompagnement privé et des informations générales.',servicesK:'Nos services',servicesH:'Un interlocuteur clair et disponible.',servicesP:'Présentez votre situation et échangez directement avec notre service sur les démarches envisageables.',cards:[['Présenter une demande','Expliquez votre besoin et les informations essentielles concernant votre situation.'],['Obtenir des informations','Recevez des indications sur les renseignements et documents utiles à votre demande.'],['Échanger directement','Posez vos questions et discutez des prochaines étapes avec notre service.']],procedureK:'La procédure',procedureH:'Nous contacter en quelques étapes.',procedureP:'Le formulaire permet de transmettre facilement votre question à notre service.',steps:[['Remplir le formulaire','Indiquez votre nom, votre adresse e-mail et votre message.'],['Envoyer le message','Votre message est transmis directement à notre service via Telegram.'],['Recevoir une réponse','Notre équipe pourra vous répondre à l’adresse e-mail indiquée.'],['Définir la suite','Échangez avec notre équipe sur les informations utiles à votre demande.']],faqK:'Questions fréquentes',faqH:'Les réponses aux questions essentielles.',faq:[['Quels services propose Finvero ?','Nous proposons un service privé d’information et d’accompagnement concernant les démarches liées au permis de conduire. La démarche dépend de votre situation et de la réglementation applicable.'],['Comment faire une demande ?','Utilisez le formulaire de contact du site. Votre message est transmis directement à notre service via Telegram.'],['Quelles informations dois-je communiquer ?','Décrivez brièvement votre situation, la catégorie de permis concernée et votre question. N’envoyez pas de documents sensibles ni de données complètes de pièce d’identité via le premier formulaire.'],['Puis-je contacter le service depuis mon téléphone ?','Oui. Le site et le formulaire sont adaptés aux smartphones, tablettes et ordinateurs.'],['Comment recevrai-je une réponse ?','Notre équipe pourra vous contacter à l’adresse e-mail indiquée.'],['Peut-on réobtenir un permis sans repasser d’examen ?','Cela dépend de chaque situation et de la réglementation allemande. Seule l’autorité compétente peut prendre une décision.'],['Le formulaire est-il un service d’urgence ?','Non. Le formulaire est destiné aux demandes générales et ne constitue pas un service d’urgence.'],['L’envoi du message entraîne-t-il un paiement ?','Non. L’envoi d’un message ne déclenche aucun paiement automatique.']],contactK:'Contact',contactH:'Une question concernant votre situation ?',messageK:'Message',messageH:'Écrire à notre service',fullName:'Nom',email:'E-mail',message:'Message',send:'Envoyer le message',footer:'Service privé d’information et d’accompagnement.'},
+ it:{nav:['Home','Servizi','Procedura','FAQ','Contatto'],heroK:'Assistenza privata · Germania',hero:'La tua <span>pratica relativa alla patente</span>, con un accompagnamento chiaro.',heroP:'Finvero offre un servizio privato di informazione e assistenza per le pratiche relative alla patente. Le possibilità dipendono dalla situazione personale e dalle norme applicabili.',start:'Contattaci',noticeTitle:'Informazione importante',notice:'Il rilascio, la riattribuzione o la nuova emissione della patente competono all’autorità competente. Il nostro servizio offre informazioni generali e assistenza privata.',servicesK:'I nostri servizi',servicesH:'Un referente chiaro e disponibile.',servicesP:'Descrivi la tua situazione e confrontati direttamente con il nostro servizio sui possibili passaggi successivi.',cards:[['Inviare una richiesta','Condividi la tua esigenza e le informazioni principali sulla tua situazione.'],['Ricevere informazioni','Ricevi indicazioni sulle informazioni e sui documenti utili alla tua richiesta.'],['Contatto diretto','Poni domande e discuti i passaggi successivi direttamente con il nostro servizio.']],procedureK:'La procedura',procedureH:'Contattaci in pochi passaggi.',procedureP:'Il modulo consente di inviare facilmente la tua domanda al nostro servizio.',steps:[['Compilare il modulo','Inserisci nome, indirizzo e-mail e messaggio.'],['Inviare il messaggio','Telegram si apre con il messaggio preparato. Scegli il destinatario e tocca Invia.'],['Ricevere una risposta','Il nostro team potrà contattarti all’indirizzo e-mail indicato.'],['Concordare i passaggi successivi','Parla con il nostro team delle informazioni utili alla tua richiesta.']],faqK:'Domande frequenti',faqH:'Risposte alle domande principali.',faq:[['Quali servizi offre Finvero?','Offriamo un servizio privato di informazione e assistenza per le pratiche relative alla patente. La procedura dipende dalla situazione personale e dalle norme applicabili.'],['Come posso inviare una richiesta?','Utilizza il modulo di contatto del sito. Telegram si apre con il messaggio preparato. Scegli il destinatario e tocca Invia.'],['Quali informazioni devo indicare?','Descrivi brevemente la tua situazione, la categoria della patente e la tua domanda. Non inviare documenti sensibili o dati completi dei documenti d’identità nel primo modulo.'],['Posso contattare il servizio dal telefono?','Sì. Il sito e il modulo sono ottimizzati per smartphone, tablet e computer.'],['Come riceverò una risposta?','Il nostro team potrà contattarti all’indirizzo e-mail indicato.'],['È possibile riottenere la patente senza nuovi esami?','Dipende dal singolo caso e dalle norme tedesche applicabili. Solo l’autorità competente può decidere.'],['Il modulo è un servizio di emergenza?','No. Il modulo è destinato a richieste generali e non è un servizio di emergenza.'],['L’invio del messaggio comporta un pagamento?','No. L’invio di un messaggio non attiva alcun pagamento automatico.']],contactK:'Contatto',contactH:'Hai una domanda sulla tua situazione?',messageK:'Messaggio',messageH:'Scrivi al nostro servizio',fullName:'Nome',email:'E-mail',message:'Messaggio',send:'Invia il messaggio',footer:'Servizio privato di informazione e assistenza.'}
 };
-
-function tr(key){return (TRANSLATIONS[currentLanguage]&&TRANSLATIONS[currentLanguage][key])||TRANSLATIONS.de[key]||key}
+let currentLanguage=['de','fr','it'].includes(localStorage.getItem('fc_language'))?localStorage.getItem('fc_language'):'de';
 function applyLanguage(lang){
-  if(!TRANSLATIONS[lang]) lang="de";
-  currentLanguage=lang; localStorage.setItem("fc_language",lang);
-  const t=TRANSLATIONS[lang];
-  document.documentElement.lang=lang;
-  const sel=document.getElementById("lang-btn"); if(sel) sel.value=lang;
-  const links=document.querySelectorAll(".navlinks a"); t.nav.forEach((v,i)=>{if(links[i])links[i].textContent=v});
-  document.getElementById("account-btn").innerHTML='<i class="fa-regular fa-user"></i> '+t.account;
-  const h=document.querySelector(".hero");
-  if(h){h.querySelector(".eyebrow").textContent=t.heroK;h.querySelector("h1").innerHTML=t.hero;h.querySelector("p").textContent=t.heroP;const bs=h.querySelectorAll(".actions .btn");if(bs[0])bs[0].innerHTML='<i class="fa-solid fa-file-signature"></i> '+t.start;if(bs[1])bs[1].innerHTML='<i class="fa-solid fa-right-to-bracket"></i> '+t.follow}
-  const notice=document.querySelector(".notice");if(notice){notice.querySelector("strong").textContent=t.noticeTitle;notice.childNodes[notice.childNodes.length-1].textContent=t.notice}
-  const svc=document.querySelector("#services .head");if(svc){svc.querySelector(".eyebrow").textContent=t.servicesK;svc.querySelector("h2").textContent=t.servicesH;svc.querySelector("p").textContent=t.servicesP}
-  document.querySelectorAll("#services .card").forEach((c,i)=>{c.querySelector("h3").textContent=t.cards[i][0];c.querySelector("p").textContent=t.cards[i][1]});
-  const proc=document.querySelector("#procedure .head");if(proc){proc.querySelector(".eyebrow").textContent=t.procedureK;proc.querySelector("h2").textContent=t.procedureH;proc.querySelector("p").textContent=t.procedureP}
-  document.querySelectorAll("#procedure .step").forEach((s,i)=>{s.querySelector("h3").textContent=t.steps[i][0];s.querySelector("p").textContent=t.steps[i][1]});
-  const fh=document.querySelector("#faq .head");if(fh){fh.querySelector(".eyebrow").textContent=t.faqK;fh.querySelector("h2").textContent=t.faqH}
-  document.querySelectorAll("#faq details").forEach((d,i)=>{d.querySelector("summary").textContent=t.faq[i][0];d.querySelector("p").textContent=t.faq[i][1]});
-  const ch=document.querySelector("#contact .contact-box");if(ch){ch.querySelector(".eyebrow").textContent=t.contactK;ch.querySelector("h3").textContent=t.contactH}
-  const cf=document.querySelector("#contact .formbox");if(cf){cf.querySelector(".eyebrow").textContent=t.messageK;cf.querySelector("h2").textContent=t.messageH;cf.querySelectorAll("label")[0].textContent=t.fullName;cf.querySelectorAll("label")[1].textContent=t.email;cf.querySelectorAll("label")[2].textContent=t.messageK;cf.querySelector("button").textContent=t.send}
-  const foot=document.querySelector("footer .foot"); if(foot){const spans=foot.querySelectorAll("span"); if(spans[0])spans[0].innerHTML="<strong>Führerschein Finvero Capital</strong><br>"+(lang==="de"?"Privater Service für Begleitung und Abwicklung von Führerscheinverfahren.":lang==="it"?"Servizio privato di assistenza e gestione delle procedure relative alla patente.":"Service privé d’accompagnement et de suivi des procédures de permis."); if(spans[1])spans[1].textContent="contact@finverocapital.de · finverocapital.de"}
-  // Auth pages
-  const lp=document.querySelector("#login-page"); if(lp){lp.querySelector(".eyebrow").textContent=t.clientK;lp.querySelector("h1").textContent=t.loginH;lp.querySelector("p").textContent=t.loginP;lp.querySelectorAll("label")[0].textContent=t.email;lp.querySelectorAll("label")[1].textContent=t.password;lp.querySelector("form button").textContent=t.login;lp.querySelectorAll(".auth-links .link")[0].textContent=t.forgot;lp.querySelectorAll(".auth-links .link")[1].textContent=t.create}
-  const rp=document.querySelector("#register-page"); if(rp){rp.querySelector(".eyebrow").textContent=t.newK;rp.querySelector("h1").textContent=t.registerH;rp.querySelector("p").textContent=t.registerP;const ls=rp.querySelectorAll("label");ls[0].textContent=t.fullName;ls[1].textContent=t.email;ls[2].textContent=t.password;ls[3].textContent=t.confirm;rp.querySelector("form button").textContent=t.register;rp.querySelector(".auth-links .link").textContent=t.already}
-  const fp=document.querySelector("#forgot-page"); if(fp){fp.querySelector(".eyebrow").textContent=t.recoveryK;fp.querySelector("h1").textContent=t.forgotH;fp.querySelector("p").textContent=t.forgotP;fp.querySelector("label").textContent=t.email;fp.querySelector("form button").textContent=t.sendLink;fp.querySelector(".auth-links .link").textContent=t.backLogin}
-  const rs=document.querySelector("#reset-page"); if(rs){rs.querySelector(".eyebrow").textContent=t.securityK;rs.querySelector("h1").textContent=t.resetH;rs.querySelector("p").textContent=t.resetP;const ls=rs.querySelectorAll("label");ls[0].textContent=t.newPassword;ls[1].textContent=t.confirm;rs.querySelector("form button").textContent=t.savePassword;rs.querySelector(".auth-links .link").textContent=t.backLogin}
-  const dp=document.querySelector("#dashboard-page"); if(dp){dp.querySelector(".eyebrow").textContent=t.personalK;dp.querySelector(".dash-top h1").textContent=t.myFile;dp.querySelector("#logout-btn").textContent=t.logout;const sbt=dp.querySelectorAll(".side button");sbt[0].innerHTML='<i class="fa-solid fa-folder"></i> '+t.myFile;sbt[1].innerHTML='<i class="fa-solid fa-file"></i> '+t.documents;sbt[2].innerHTML='<i class="fa-solid fa-user"></i> '+t.profile;dp.querySelector("#dash-documents h2").textContent=t.documents;dp.querySelector("#dash-documents p").textContent=t.docsP;const ls=dp.querySelectorAll("#dash-documents label");ls[0].textContent=t.docType;ls[1].textContent=t.file;const opts=dp.querySelectorAll("#doc-type option");[t.identity,t.photo,t.residence,t.other].forEach((v,i)=>opts[i].textContent=v);dp.querySelector("#document-form button").textContent=t.upload;dp.querySelector("#dash-profile h2").textContent=t.profile;const pls=dp.querySelectorAll("#dash-profile label");[t.fullName,t.phone,t.address,t.zip,t.city,t.country].forEach((v,i)=>pls[i].textContent=v);dp.querySelector("#profile-form button").textContent=t.saveProfile}
-  const am=document.querySelector("#application-modal");if(am){am.querySelector(".eyebrow").textContent=t.appK;am.querySelector("h2").textContent=t.appH;const ls=am.querySelectorAll("label");[t.fullName,t.birth,t.nationality,t.category,t.cityResidence].forEach((v,i)=>ls[i].textContent=v);const opts=am.querySelectorAll("#app-category option");if(opts.length){opts[0].textContent="B — "+(lang==="de"?"Pkw":lang==="it"?"Auto":"Voiture");opts[1].textContent="A — "+(lang==="de"?"Motorrad":lang==="it"?"Moto":"Moto");opts[2].textContent="BE";opts[3].textContent="C — "+(lang==="de"?"Schwerlastfahrzeuge":lang==="it"?"Veicoli pesanti":"Poids lourd");opts[4].textContent="D — "+(lang==="de"?"Personenbeförderung":lang==="it"?"Trasporto persone":"Transport de personnes");opts[5].textContent=lang==="de"?"Andere":lang==="it"?"Altro":"Autre"};am.querySelector("#application-cancel").textContent=t.cancel;am.querySelector("#application-form button[type=submit]").textContent=t.saveFile}
-  const ad=document.querySelector("#admin-screen");if(ad){ad.querySelector(".admin-head h2").textContent=t.adminTitle;ad.querySelector("#admin-close").textContent=t.close;ad.querySelector("#admin-login-view .eyebrow").textContent=t.secure;ad.querySelector("#admin-login-view h2").textContent=t.admin;ad.querySelector("#admin-login-view p").textContent=t.adminP;const als=ad.querySelectorAll("#admin-login-form label");als[0].textContent=t.adminEmail;als[1].textContent=t.password;ad.querySelector("#admin-login-form button").textContent=t.openAdmin;const tabs=ad.querySelectorAll(".admin-tabs button");[t.applications,t.documentsAdmin,t.clients,t.settings].forEach((v,i)=>tabs[i].textContent=v);ad.querySelector("#admin-applications h2").textContent=t.clientFiles;ad.querySelector("#admin-applications p").textContent=t.adminP2;ad.querySelector("#admin-documents h2").textContent=t.documentsAdmin;ad.querySelector("#admin-users h2").textContent=t.registered;ad.querySelector("#admin-settings h2").textContent=t.settings;const sl=ad.querySelectorAll("#admin-settings-form label");[t.serviceName,t.contactEmail,t.welcome].forEach((v,i)=>sl[i].textContent=v);ad.querySelector("#admin-settings-form button").textContent=t.save}
-  if(currentUser){if(document.getElementById("dashboard-page").classList.contains("active")){renderFile();renderDocuments()}}
+ if(!SITE_TEXT[lang])lang='de'; currentLanguage=lang; localStorage.setItem('fc_language',lang); const t=SITE_TEXT[lang]; document.documentElement.lang=lang;
+ const sel=document.getElementById('lang-btn');if(sel)sel.value=lang;
+ document.querySelectorAll('.navlinks a').forEach((a,i)=>{if(t.nav[i])a.textContent=t.nav[i]});
+ const h=document.querySelector('.hero');if(h){h.querySelector('.eyebrow').textContent=t.heroK;h.querySelector('h1').innerHTML=t.hero;h.querySelector('p').textContent=t.heroP;h.querySelectorAll('.actions a')[0].innerHTML='<i class="fa-solid fa-envelope"></i> '+t.start;h.querySelectorAll('.actions a')[1].innerHTML='<i class="fa-regular fa-message"></i> '+t.send}
+ const n=document.querySelector('.notice');if(n){n.querySelector('strong').textContent=t.noticeTitle;n.childNodes[n.childNodes.length-1].textContent=t.notice}
+ const sh=document.querySelector('#services .head');if(sh){sh.querySelector('.eyebrow').textContent=t.servicesK;sh.querySelector('h2').textContent=t.servicesH;sh.querySelector('p').textContent=t.servicesP}
+ document.querySelectorAll('#services .card').forEach((c,i)=>{c.querySelector('h3').textContent=t.cards[i][0];c.querySelector('p').textContent=t.cards[i][1]});
+ const ph=document.querySelector('#procedure .head');if(ph){ph.querySelector('.eyebrow').textContent=t.procedureK;ph.querySelector('h2').textContent=t.procedureH;ph.querySelector('p').textContent=t.procedureP}
+ document.querySelectorAll('#procedure .step').forEach((c,i)=>{c.querySelector('h3').textContent=t.steps[i][0];c.querySelector('p').textContent=t.steps[i][1]});
+ const fh=document.querySelector('#faq .head');if(fh){fh.querySelector('.eyebrow').textContent=t.faqK;fh.querySelector('h2').textContent=t.faqH}
+ document.querySelectorAll('#faq details').forEach((d,i)=>{d.querySelector('summary').textContent=t.faq[i][0];d.querySelector('p').textContent=t.faq[i][1]});
+ const cb=document.querySelector('#contact .contact-box');if(cb){cb.querySelector('.eyebrow').textContent=t.contactK;cb.querySelector('h3').textContent=t.contactH}
+ const fb=document.querySelector('#contact .formbox');if(fb){fb.querySelector('.eyebrow').textContent=t.messageK;fb.querySelector('h2').textContent=t.messageH;const labels=fb.querySelectorAll('label');labels[0].textContent=t.fullName;labels[1].textContent=t.email;labels[2].textContent=t.message;fb.querySelector('button').textContent=t.send}
+ const foot=document.querySelector('footer .foot span:first-child');if(foot)foot.innerHTML='<strong>Finvero</strong><br>'+t.footer;
 }
-document.getElementById("lang-btn").addEventListener("change",e=>applyLanguage(e.target.value));
-
-function toast(msg,error=false){const e=document.getElementById("toast");e.textContent=msg;e.className="toast show"+(error?" error":"");setTimeout(()=>e.className="toast",4200)}
-function esc(v){return String(v??"").replace(/[&<>"']/g,m=>({"&":"&amp;","<":"&lt;",">":"&gt;","\"":"&quot;","'":"&#039;"}[m]))}
-function showPage(name){document.querySelectorAll(".page").forEach(x=>x.classList.remove("active"));const p=document.getElementById(name+"-page");if(p)p.classList.add("active");window.scrollTo({top:0,behavior:"smooth"});closeMobileMenu()}
-function go(name){showPage(name)}
-const menuBtn=document.getElementById("menu-btn"),navlinks=document.querySelector(".navlinks");
-function closeMobileMenu(){navlinks?.classList.remove("open");menuBtn?.setAttribute("aria-expanded","false")}
-function toggleMobileMenu(){const open=navlinks?.classList.toggle("open");menuBtn?.setAttribute("aria-expanded",open?"true":"false")}
-menuBtn?.addEventListener("click",e=>{e.stopPropagation();toggleMobileMenu()});
-document.querySelectorAll("[data-go]").forEach(x=>x.addEventListener("click",()=>go(x.dataset.go)));
-document.querySelectorAll("[data-page-link]").forEach(x=>x.addEventListener("click",e=>{e.preventDefault();closeMobileMenu();go("home");const target=x.getAttribute("href");setTimeout(()=>document.querySelector(target)?.scrollIntoView({behavior:"smooth",block:"start"}),30)}));
-document.querySelectorAll(".navlinks a").forEach(a=>a.addEventListener("click",closeMobileMenu));
-document.addEventListener("click",e=>{if(navlinks?.classList.contains("open")&&!navlinks.contains(e.target)&&e.target!==menuBtn)closeMobileMenu()});
-document.addEventListener("keydown",e=>{if(e.key==="Escape")closeMobileMenu()});
-document.getElementById("account-btn").onclick=async()=>{if(currentUser)await loadDashboard();else go("login")};
-document.getElementById("logout-btn").onclick=async()=>{await sb.auth.signOut();currentUser=null;currentProfile=null;currentApplication=null;go("home");toast("Vous êtes déconnecté.")};
-document.querySelectorAll("[data-eye]").forEach(b=>b.onclick=()=>{const i=document.getElementById(b.dataset.eye);i.type=i.type==="password"?"text":"password";b.innerHTML=i.type==="password"?'<i class="fa-regular fa-eye"></i>':'<i class="fa-regular fa-eye-slash"></i>'});
-
-document.getElementById("login-form").onsubmit=async e=>{
+document.getElementById('lang-btn').addEventListener('change',e=>applyLanguage(e.target.value));
+const menuBtn=document.getElementById('menu-btn'),navlinks=document.querySelector('.navlinks');
+function closeMobileMenu(){navlinks?.classList.remove('open');menuBtn?.setAttribute('aria-expanded','false')}
+menuBtn?.addEventListener('click',e=>{e.stopPropagation();const open=navlinks?.classList.toggle('open');menuBtn?.setAttribute('aria-expanded',open?'true':'false')});
+document.querySelectorAll('[data-page-link]').forEach(a=>a.addEventListener('click',e=>{e.preventDefault();closeMobileMenu();document.querySelector(a.getAttribute('href'))?.scrollIntoView({behavior:'smooth',block:'start'})}));
+document.querySelectorAll('.navlinks a').forEach(a=>a.addEventListener('click',closeMobileMenu));
+document.addEventListener('click',e=>{if(navlinks?.classList.contains('open')&&!navlinks.contains(e.target)&&e.target!==menuBtn)closeMobileMenu()});
+const form=document.getElementById('contact-form');
+form.addEventListener('submit', async (e)=>{
  e.preventDefault();
- const email=document.getElementById("login-email").value.trim(),password=document.getElementById("login-password").value;
- const {data,error}=await sb.auth.signInWithPassword({email,password});
- if(error)return toast(error.message,true);
- currentUser=data.user;await loadDashboard();toast("Connexion réussie.");
-};
-document.getElementById("register-form").onsubmit=async e=>{
- e.preventDefault();
- const name=document.getElementById("reg-name").value.trim(),email=document.getElementById("reg-email").value.trim(),p=document.getElementById("reg-password").value,p2=document.getElementById("reg-password2").value;
- if(p!==p2)return toast("Les deux mots de passe ne correspondent pas.",true);
- if(p.length<8)return toast("Le mot de passe doit contenir au moins 8 caractères.",true);
- const {data,error}=await sb.auth.signUp({email,password:p,options:{data:{full_name:name}}});
- if(error)return toast(error.message,true);
- if(data.user){currentUser=data.user;await sb.from("profiles").upsert({id:data.user.id,full_name:name,email}).select().maybeSingle();toast("Compte créé. Vérifiez votre e-mail si la confirmation est activée.");go("login")}
-};
-document.getElementById("forgot-form").onsubmit=async e=>{
- e.preventDefault();
- const email=document.getElementById("forgot-email").value.trim();
- const {error}=await sb.auth.resetPasswordForEmail(email,{redirectTo:location.origin+location.pathname+"#reset"});
- if(error)return toast(error.message,true);toast("Le lien de récupération a été envoyé si cette adresse correspond à un compte.");
-};
-document.getElementById("reset-form").onsubmit=async e=>{
- e.preventDefault();
- const p=document.getElementById("reset-password").value,p2=document.getElementById("reset-password2").value;
- if(p.length<8)return toast("Le mot de passe doit contenir au moins 8 caractères.",true);
- if(p!==p2)return toast("Les deux mots de passe ne correspondent pas.",true);
- const {error}=await sb.auth.updateUser({password:p});
- if(error)return toast(error.message,true);
- history.replaceState(null,"",location.pathname);
- toast("Mot de passe modifié. Vous pouvez maintenant vous connecter.");go("login");
-};
-if(location.hash==="#reset")go("reset");
-document.getElementById("contact-form").onsubmit=async e=>{
- e.preventDefault();const f=new FormData(e.target);
- const {error}=await sb.from("contact_messages").insert({name:f.get("name"),email:f.get("email"),message:f.get("message")});
- if(error)return toast(error.message,true);e.target.reset();toast("Votre message a été envoyé.");
-};
-
-async function loadDashboard(){
- if(!currentUser){const r=await sb.auth.getUser();currentUser=r.data.user}
- if(!currentUser)return go("login");
- const [pr,ap]=await Promise.all([
-  sb.from("profiles").select("*").eq("id",currentUser.id).maybeSingle(),
-  sb.from("applications").select("*").eq("user_id",currentUser.id).order("created_at",{ascending:false}).limit(1).maybeSingle()
- ]);
- currentProfile=pr.data||{id:currentUser.id,email:currentUser.email};
- currentApplication=ap.data||null;
- fillProfile();renderFile();await renderDocuments();go("dashboard");
-}
-function fillProfile(){
- document.getElementById("profile-name").value=currentProfile?.full_name||"";
- document.getElementById("profile-phone").value=currentProfile?.phone||"";
- document.getElementById("profile-address").value=currentProfile?.address||"";
- document.getElementById("profile-zip").value=currentProfile?.postal_code||"";
- document.getElementById("profile-city").value=currentProfile?.city||"";
- document.getElementById("profile-country").value=currentProfile?.country||"";
-}
-function statusLabel(s){const m={de:{draft:"Entwurf",submitted:"Eingegangen",review:"In Bearbeitung",missing_documents:"Unterlagen fehlen",approved:"Entscheidung erfasst",rejected:"Abgeschlossen"},fr:{draft:"Brouillon",submitted:"Reçu",review:"En cours de traitement",missing_documents:"Pièces à compléter",approved:"Décision enregistrée",rejected:"Clôturé"},it:{draft:"Bozza",submitted:"Ricevuta",review:"In lavorazione",missing_documents:"Documenti mancanti",approved:"Decisione registrata",rejected:"Conclusa"}};return (m[currentLanguage]||m.de)[s]||s||(currentLanguage==="de"?"Keine Akte":currentLanguage==="it"?"Nessuna pratica":"Aucun dossier")}
-function renderFile(){
- const el=document.getElementById("file-content");
- if(!currentApplication){el.innerHTML=`<h2 style="font-family:var(--serif)">${currentLanguage==="de"?"Keine Akte geöffnet":currentLanguage==="it"?"Nessuna pratica aperta":"Aucun dossier ouvert"}</h2><p style="color:var(--muted)">${currentLanguage==="de"?"Sie können Ihre Führerscheinanfrage über diese Schaltfläche eröffnen.":currentLanguage==="it"?"Puoi aprire la tua richiesta di patente tramite questo pulsante.":"Vous pouvez ouvrir votre demande de permis depuis ce bouton."}</p><button class="btn gold" id="open-file-btn">${currentLanguage==="de"?"Akte eröffnen":currentLanguage==="it"?"Apri la pratica":"Ouvrir mon dossier"}</button>`;document.getElementById("open-file-btn").onclick=()=>openApplicationForm();return}
- const s=currentApplication.status||"draft", progress={draft:15,submitted:35,review:60,missing_documents:50,approved:100,rejected:100}[s]||20;
- el.innerHTML=`<div style="display:flex;justify-content:space-between;gap:15px;align-items:start"><div><span class="eyebrow">${currentLanguage==="de"?"Referenz":currentLanguage==="it"?"Riferimento":"Référence"}</span><h2 style="font-family:var(--serif);font-size:2rem;margin:8px 0">${esc(currentApplication.reference)}</h2></div><button class="btn outline" id="edit-file-btn">${currentLanguage==="de"?"Bearbeiten":currentLanguage==="it"?"Modifica":"Modifier"}</button></div>
- <div class="statusbar"><span class="pill ${s==="approved"?"ok":s==="rejected"?"bad":s==="missing_documents"?"pending":""}">${esc(statusLabel(s))}</span><span class="pill">${esc(currentApplication.category||"Catégorie non renseignée")}</span></div>
- <div class="progress"><i style="width:${progress}%"></i></div>
- <p><strong>${currentLanguage==="de"?"Antragsteller":currentLanguage==="it"?"Richiedente":"Demandeur"} :</strong> ${esc(currentApplication.full_name||"")}<br><strong>${currentLanguage==="de"?"Geburtsdatum":currentLanguage==="it"?"Data di nascita":"Date de naissance"} :</strong> ${esc(currentApplication.birth_date||"")}<br><strong>${currentLanguage==="de"?"Staatsangehörigkeit":currentLanguage==="it"?"Nazionalità":"Nationalité"} :</strong> ${esc(currentApplication.nationality||"")}<br><strong>${currentLanguage==="de"?"Ort":currentLanguage==="it"?"Città":"Ville"} :</strong> ${esc(currentApplication.city||"")}</p>
- <div class="notice"><strong>${currentLanguage==="de"?"Nachricht des Services":currentLanguage==="it"?"Messaggio del servizio":"Message du service"}</strong>${esc(currentApplication.admin_message||(currentLanguage==="de"?"Ihre Akte wurde erfasst. Prüfen Sie regelmäßig Ihren persönlichen Bereich, um den Fortschritt zu verfolgen.":currentLanguage==="it"?"La tua pratica è stata registrata. Controlla regolarmente la tua area personale per seguirne l'avanzamento.":"Votre dossier est enregistré. Consultez régulièrement votre espace pour suivre son évolution."))}</div>`;
- document.getElementById("edit-file-btn").onclick=()=>openApplicationForm(currentApplication);
-}
-let editingApplication=null;
-function openApplicationModal(existing=null){
- editingApplication=existing||null;
- document.getElementById("app-name").value=existing?.full_name||currentProfile?.full_name||"";
- document.getElementById("app-birth").value=existing?.birth_date||"";
- document.getElementById("app-nationality").value=existing?.nationality||"";
- document.getElementById("app-category").value=existing?.category||"B";
- document.getElementById("app-city").value=existing?.city||currentProfile?.city||"";
- const m=document.getElementById("application-modal");m.classList.add("open");m.setAttribute("aria-hidden","false");
- setTimeout(()=>document.getElementById("app-name").focus(),50);
-}
-function closeApplicationModal(){const m=document.getElementById("application-modal");m.classList.remove("open");m.setAttribute("aria-hidden","true");editingApplication=null}
-function openApplicationForm(existing=null){openApplicationModal(existing)}
-document.getElementById("application-modal-close").onclick=closeApplicationModal;
-document.getElementById("application-cancel").onclick=closeApplicationModal;
-document.getElementById("application-modal").addEventListener("click",e=>{if(e.target.id==="application-modal")closeApplicationModal()});
-document.getElementById("application-form").onsubmit=async e=>{
- e.preventDefault();if(!currentUser)return go("login");
- const payload={user_id:currentUser.id,full_name:document.getElementById("app-name").value.trim(),birth_date:document.getElementById("app-birth").value,nationality:document.getElementById("app-nationality").value.trim(),category:document.getElementById("app-category").value,city:document.getElementById("app-city").value.trim(),status:editingApplication?.status||"submitted"};
- if(!payload.full_name||!payload.birth_date||!payload.nationality||!payload.city)return toast("Veuillez compléter tous les champs.",true);
- if(!editingApplication)payload.reference="FZ-"+new Date().getFullYear()+"-"+Math.random().toString(36).slice(2,8).toUpperCase();
- const wasEditing=!!editingApplication;
- const q=wasEditing?sb.from("applications").update(payload).eq("id",editingApplication.id):sb.from("applications").insert(payload);
- const {data,error}=await q.select().single();if(error)return toast(error.message,true);currentApplication=data;closeApplicationModal();renderFile();toast(wasEditing?"Dossier mis à jour.":"Dossier enregistré.");
-};
-
-document.getElementById("profile-form").onsubmit=async e=>{
- e.preventDefault();
- const payload={id:currentUser.id,full_name:document.getElementById("profile-name").value.trim(),phone:document.getElementById("profile-phone").value.trim(),address:document.getElementById("profile-address").value.trim(),postal_code:document.getElementById("profile-zip").value.trim(),city:document.getElementById("profile-city").value.trim(),country:document.getElementById("profile-country").value.trim(),email:currentUser.email};
- const {error}=await sb.from("profiles").upsert(payload);if(error)return toast(error.message,true);currentProfile={...currentProfile,...payload};toast("Profil enregistré.");
-};
-document.querySelectorAll("[data-dash-tab]").forEach(b=>b.onclick=()=>{
- document.querySelectorAll("[data-dash-tab]").forEach(x=>x.classList.remove("active"));b.classList.add("active");
- document.querySelectorAll(".dash-tab").forEach(x=>x.style.display="none");document.getElementById("dash-"+b.dataset.dashTab).style.display="block";
+ const status=document.getElementById('contact-status');
+ if(form.elements.website?.value)return;
+ const name=form.elements.name.value.trim();
+ const email=form.elements.email.value.trim();
+ const message=form.elements.message.value.trim();
+ if(!name||!email||!message){
+   status.textContent=currentLanguage==='de'?'Bitte füllen Sie alle Felder aus.':currentLanguage==='it'?'Compila tutti i campi.':'Veuillez remplir tous les champs.';
+   return;
+ }
+ const button=form.querySelector('button[type="submit"]');
+ button.disabled=true;
+ status.textContent=currentLanguage==='de'?'Nachricht wird gesendet…':currentLanguage==='it'?'Invio del messaggio…':'Envoi du message en cours…';
+ try{
+   const response=await fetch('/api/telegram',{
+     method:'POST',
+     headers:{'Content-Type':'application/json'},
+     body:JSON.stringify({name,email,message,website:form.elements.website.value})
+   });
+   const result=await response.json();
+   if(!response.ok||!result.success)throw new Error(result.message||'send_failed');
+   status.textContent=currentLanguage==='de'?'Ihre Nachricht wurde erfolgreich gesendet.':currentLanguage==='it'?'Il messaggio è stato inviato correttamente.':'Votre message a bien été envoyé.';
+   form.reset();
+ }catch(error){
+   status.textContent=currentLanguage==='de'?'Senden fehlgeschlagen. Bitte versuchen Sie es später erneut.':currentLanguage==='it'?'Invio non riuscito. Riprova più tardi.':'L’envoi a échoué. Veuillez réessayer plus tard.';
+ }finally{button.disabled=false;}
 });
-
-document.getElementById("document-form").onsubmit=async e=>{
- e.preventDefault();if(!currentUser)return;
- const file=document.getElementById("doc-file").files[0],type=document.getElementById("doc-type").value;
- if(!file)return;
- if(file.size>10*1024*1024)return toast("Fichier trop volumineux (10 Mo maximum).",true);
- if(!currentApplication)return toast("Ouvrez d'abord votre dossier.",true);
- const safe=file.name.replace(/[^a-zA-Z0-9._-]/g,"_"),path=currentUser.id+"/"+crypto.randomUUID()+"-"+safe;
- const up=await sb.storage.from("application-documents").upload(path,file,{upsert:false});
- if(up.error)return toast(up.error.message,true);
- const ins=await sb.from("application_documents").insert({user_id:currentUser.id,application_id:currentApplication.id,document_type:type,file_name:file.name,storage_path:path,status:"submitted"});
- if(ins.error){await sb.storage.from("application-documents").remove([path]);return toast(ins.error.message,true)}
- e.target.reset();await renderDocuments();toast("Document déposé.");
-};
-async function renderDocuments(){
- if(!currentUser)return;
- const {data,error}=await sb.from("application_documents").select("*").eq("user_id",currentUser.id).order("created_at",{ascending:false});
- if(error)return document.getElementById("documents-list").innerHTML=`<div class="empty">${esc(error.message)}</div>`;
- document.getElementById("documents-list").innerHTML=data?.length?data.map(x=>`<div class="doc"><div><strong>${esc(x.file_name)}</strong><br><small>${esc(x.document_type)} · ${esc(x.status)}</small></div><span class="pill ${x.status==="approved"?"ok":x.status==="rejected"?"bad":"pending"}">${esc(x.status)}</span></div>`).join(""):`<div class="empty">${currentLanguage==="de"?"Keine Dokumente eingereicht.":currentLanguage==="it"?"Nessun documento inviato.":"Aucun document déposé."}</div>`;
-}
-
-let adminUser=null;
-const adminScreen=document.getElementById("admin-screen");
-document.getElementById("admin-close").onclick=()=>adminScreen.classList.remove("open");
-/* 3 clics sur le logo en moins de 2 secondes */
-let logoClicks=0,logoTimer=null;
-document.getElementById("logo-admin-trigger").addEventListener("click",()=>{
- logoClicks++;
- if(!logoTimer)logoTimer=setTimeout(()=>{logoClicks=0;logoTimer=null},2000);
- if(logoClicks>=3){logoClicks=0;clearTimeout(logoTimer);logoTimer=null;adminScreen.classList.add("open");}
-});
-document.getElementById("admin-login-form").onsubmit=async e=>{
- e.preventDefault();
- const email=document.getElementById("admin-email").value.trim(),password=document.getElementById("admin-password").value;
- const {data,error}=await sb.auth.signInWithPassword({email,password});
- if(error)return toast(error.message,true);
- const ok=await sb.rpc("is_admin");
- if(ok.error||ok.data!==true){await sb.auth.signOut();return toast("Ce compte n'a pas les droits administrateur.",true)}
- adminUser=data.user;document.getElementById("admin-login-view").style.display="none";document.getElementById("admin-dashboard").style.display="block";await loadAdmin();
-};
-document.querySelectorAll("[data-admin-tab]").forEach(b=>b.onclick=()=>{document.querySelectorAll("[data-admin-tab]").forEach(x=>x.classList.remove("active"));b.classList.add("active");document.querySelectorAll(".admin-section").forEach(x=>x.classList.remove("active"));document.getElementById("admin-"+b.dataset.adminTab).classList.add("active")});
-
-async function loadAdmin(){await Promise.all([loadAdminApplications(),loadAdminDocuments(),loadAdminUsers(),loadAdminSettings()])}
-async function loadAdminApplications(){
- const {data,error}=await sb.from("applications").select("*").order("created_at",{ascending:false});
- const el=document.getElementById("admin-applications-list");if(error)return el.innerHTML=`<div class="empty">${esc(error.message)}</div>`;
- el.innerHTML=data?.length?data.map(x=>`<div class="admin-item"><div class="admin-item-main"><h4>${esc(x.reference)} · ${esc(x.full_name)}</h4><p>${esc(x.category)} · ${esc(x.city||"")} · ${esc(statusLabel(x.status))}</p><div class="field" style="margin-top:10px"><label>${currentLanguage==="de"?"Für den Kunden sichtbare Nachricht":currentLanguage==="it"?"Messaggio visibile al cliente":"Message visible par le client"}</label><textarea data-message="${x.id}" rows="3">${esc(x.admin_message||"")}</textarea></div></div><div class="admin-actions"><select data-status="${x.id}"><option value="draft">${statusLabel("draft")}</option><option value="submitted">${statusLabel("submitted")}</option><option value="review">${statusLabel("review")}</option><option value="missing_documents">${statusLabel("missing_documents")}</option><option value="approved">${statusLabel("approved")}</option><option value="rejected">${statusLabel("rejected")}</option></select><button class="btn small gold" data-edit-app="${x.id}">Enregistrer</button></div></div>`).join(""):`<div class="empty">${currentLanguage==="de"?"Keine Akten.":currentLanguage==="it"?"Nessuna pratica.":"Aucun dossier."}</div>`;
- data?.forEach(x=>{const s=document.querySelector(`[data-status="${x.id}"]`);if(s)s.value=x.status;const b=document.querySelector(`[data-edit-app="${x.id}"]`);if(b)b.onclick=async()=>{const ns=document.querySelector(`[data-status="${x.id}"]`).value;const field=document.querySelector(`[data-message="${x.id}"]`);const message=field?field.value:"";const {error}=await sb.from("applications").update({status:ns,admin_message:message}).eq("id",x.id);if(error)return toast(error.message,true);toast("Dossier actualisé.");loadAdminApplications()}})
-}
-async function loadAdminDocuments(){
- const {data,error}=await sb.from("application_documents").select("*").order("created_at",{ascending:false});
- const el=document.getElementById("admin-documents-list");if(error)return el.innerHTML=`<div class="empty">${esc(error.message)}</div>`;
- el.innerHTML=`<table><thead><tr><th>${currentLanguage==="de"?"Datei":currentLanguage==="it"?"File":"Fichier"}</th><th>${currentLanguage==="de"?"Typ":currentLanguage==="it"?"Tipo":"Type"}</th><th>${currentLanguage==="de"?"Status":currentLanguage==="it"?"Stato":"Statut"}</th><th>${currentLanguage==="de"?"Aktion":currentLanguage==="it"?"Azione":"Action"}</th></tr></thead><tbody>${(data||[]).map(x=>`<tr><td>${esc(x.file_name)}</td><td>${esc(x.document_type)}</td><td><select data-doc-status="${x.id}"><option value="submitted" ${x.status==="submitted"?"selected":""}>${currentLanguage==="de"?"Eingegangen":currentLanguage==="it"?"Ricevuto":"Reçu"}</option><option value="approved" ${x.status==="approved"?"selected":""}>${currentLanguage==="de"?"Genehmigt":currentLanguage==="it"?"Approvato":"Validé"}</option><option value="rejected" ${x.status==="rejected"?"selected":""}>${currentLanguage==="de"?"Abgelehnt":currentLanguage==="it"?"Rifiutato":"Refusé"}</option></select></td><td><button class="btn small gold" data-doc="${x.id}">Enregistrer</button></td></tr>`).join("")}</tbody></table>`;
- data?.forEach(x=>document.querySelector(`[data-doc="${x.id}"]`)?.addEventListener("click",async()=>{const s=document.querySelector(`[data-doc-status="${x.id}"]`)?.value;if(!s)return;const {error}=await sb.from("application_documents").update({status:s}).eq("id",x.id);if(error)return toast(error.message,true);loadAdminDocuments();toast("Document actualisé.")}))
-}
-async function loadAdminUsers(){
- const {data,error}=await sb.from("profiles").select("*").order("created_at",{ascending:false});
- const el=document.getElementById("admin-users-list");if(error)return el.innerHTML=`<div class="empty">${esc(error.message)}</div>`;
- el.innerHTML=`<table><thead><tr><th>Nom</th><th>E-mail</th><th>Téléphone</th><th>Ville</th><th>Créé</th></tr></thead><tbody>${(data||[]).map(x=>`<tr><td>${esc(x.full_name)}</td><td>${esc(x.email)}</td><td>${esc(x.phone)}</td><td>${esc(x.city)}</td><td>${esc(x.created_at||"")}</td></tr>`).join("")}</tbody></table>`;
-}
-async function loadAdminSettings(){
- const {data}=await sb.from("site_settings").select("*").eq("id",1).maybeSingle();
- if(data){document.getElementById("set-brand").value=data.brand_name||"";document.getElementById("set-email").value=data.contact_email||"";document.getElementById("set-message").value=data.welcome_message||""}
-}
-document.getElementById("admin-settings-form").onsubmit=async e=>{
- e.preventDefault();const payload={id:1,brand_name:document.getElementById("set-brand").value,contact_email:document.getElementById("set-email").value,welcome_message:document.getElementById("set-message").value,updated_at:new Date().toISOString()};
- const {error}=await sb.from("site_settings").upsert(payload);if(error)return toast(error.message,true);toast("Paramètres enregistrés.");
-};
-
 applyLanguage(currentLanguage);
-
-sb.auth.onAuthStateChange(async(event,session)=>{
- if(event==="PASSWORD_RECOVERY"){currentUser=session?.user||null;go("reset");return}
- if(session){currentUser=session.user}
- else{currentUser=null}
-});
 </script>
 </body>
 </html>
