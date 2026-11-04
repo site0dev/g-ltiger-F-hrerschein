@@ -784,6 +784,18 @@ header .container,
 }
 
 
+
+/* Preisübersicht mit Kategorien und Einzelpreisen */
+.price-groups{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}
+.price-group{background:#fff;border:1px solid var(--line);padding:24px;box-shadow:var(--shadow)}
+.price-group h3{font-family:var(--serif);font-size:1.45rem;margin:0 0 14px;color:var(--navy)}
+.price-row{display:flex;justify-content:space-between;align-items:center;gap:14px;padding:13px 0;border-top:1px solid var(--line)}
+.price-row div{display:flex;flex-direction:column}
+.price-row strong{font-size:.92rem;color:var(--ink)}
+.price-row small{font-size:.76rem;color:var(--muted)}
+.price-row b{font-family:var(--serif);font-size:1.25rem;color:#8a6a30;white-space:nowrap}
+@media(max-width:700px){.price-groups{grid-template-columns:1fr}.price-group{padding:18px}.price-row{gap:8px}.price-row b{font-size:1.1rem}}
+
 /* Galerie, prix et informations utiles */
 .photo-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}
 .photo-grid figure{margin:0;background:#fff;border:1px solid var(--line);overflow:hidden}
@@ -962,9 +974,48 @@ header .container,
 
   <section class="section cream" id="preise">
     <div class="container">
-      <div class="head"><div><span class="eyebrow">Preisübersicht</span><h2>Transparente Informationen zum Preis.</h2></div></div>
-      <div class="price-card"><span class="eyebrow">Angegebener Preis</span><h3 style="font-family:var(--serif);font-size:1.7rem;margin:8px 0">Führerschein – privater Begleitungsservice</h3><div class="price-value">2.400 €</div><p style="color:var(--muted)">Der Preis bezieht sich auf die private Unterstützungsleistung. Vor einer Beauftragung müssen die enthaltenen Leistungen, mögliche Behördengebühren, Zahlungsbedingungen sowie Rücktritts- und Erstattungsbedingungen schriftlich erläutert werden.</p><a class="btn gold" href="#contact">Preis und Leistungen anfragen</a></div>
-      <p class="notice" style="margin-top:20px"><strong>Wichtiger Hinweis</strong>Der Preis ist kein Kaufpreis für einen amtlichen Führerschein und garantiert keine Erteilung. Ein Führerschein kann ausschließlich von der zuständigen Behörde nach den geltenden gesetzlichen Voraussetzungen ausgestellt werden.</p>
+      <div class="head">
+        <div><span class="eyebrow">Preisübersicht</span><h2>Übersicht der Führerscheinklassen und Preise.</h2></div>
+        <p>Die folgenden Beträge sind die angegebenen Preise je Führerscheinklasse bzw. Erweiterung.</p>
+      </div>
+
+      <div class="price-groups">
+        <div class="price-group">
+          <h3>1. Mofas und Roller</h3>
+          <div class="price-row"><div><strong>Mofa</strong><small>Motorisiertes Zweirad bis 25 km/h</small></div><b>350 €</b></div>
+          <div class="price-row"><div><strong>Klasse AM</strong><small>Roller / Kleinkraftrad bis 45 km/h</small></div><b>200 €</b></div>
+        </div>
+
+        <div class="price-group">
+          <h3>2. Motorräder</h3>
+          <div class="price-row"><div><strong>Klasse A1</strong><small>Leichtkraftrad bis 125 cm³</small></div><b>700 €</b></div>
+          <div class="price-row"><div><strong>Erweiterung B196</strong><small>Erweiterung für 125-cm³-Motorräder</small></div><b>850 €</b></div>
+          <div class="price-row"><div><strong>Klasse A2</strong><small>Mittelschwere Motorräder bis 35 kW</small></div><b>1.000 €</b></div>
+          <div class="price-row"><div><strong>Klasse A</strong><small>Schwere Motorräder / Direkteinstieg</small></div><b>1.500 €</b></div>
+        </div>
+
+        <div class="price-group">
+          <h3>3. Pkw und Anhänger</h3>
+          <div class="price-row"><div><strong>Klasse B</strong><small>Pkw mit Schaltgetriebe oder Automatik</small></div><b>1.500 €</b></div>
+          <div class="price-row"><div><strong>Klasse BE</strong><small>Pkw mit großem Anhänger über 750 kg</small></div><b>900 €</b></div>
+        </div>
+
+        <div class="price-group">
+          <h3>4. Lkw und Nutzfahrzeuge</h3>
+          <div class="price-row"><div><strong>Klasse C1</strong><small>Lkw von 3,5 t bis 7,5 t</small></div><b>1.200 €</b></div>
+          <div class="price-row"><div><strong>Klasse C</strong><small>Schwere Lkw ohne die hier angegebene PTAC-Begrenzung</small></div><b>1.900 €</b></div>
+        </div>
+
+        <div class="price-group">
+          <h3>5. Busse und Reisebusse</h3>
+          <div class="price-row"><div><strong>Klasse D1</strong><small>Kleinbusse bis 16 Fahrgäste und maximal 8 Meter</small></div><b>2.100 €</b></div>
+          <div class="price-row"><div><strong>Klasse D</strong><small>Linienbusse und Reisebusse</small></div><b>3.200 €</b></div>
+        </div>
+      </div>
+
+      <p class="notice" style="margin-top:20px"><strong>Hinweis zur Mofa-Berechtigung</strong>Für Mofas wurde als Voraussetzung eine einfache theoretische Bescheinigung ab 15 Jahren ohne praktische Prüfung angegeben.</p>
+      <p class="notice" style="margin-top:12px"><strong>Wichtiger Hinweis zur gewerblichen Nutzung</strong>Die genannten Preise für D1 und D beziehen sich auf eine private oder vereinsbezogene Nutzung. Wer in Dresden beruflich als Busfahrer arbeiten möchte, beispielsweise bei der DVB oder auf Regionalbuslinien, benötigt zusätzlich die Berufskraftfahrerqualifikation (Grundqualifikation / Code 95).</p>
+      <p class="notice" style="margin-top:12px"><strong>Wichtiger rechtlicher Hinweis</strong>Diese Preisangaben sind keine Garantie für die Erteilung eines amtlichen Führerscheins. Die Ausstellung eines Führerscheins erfolgt ausschließlich durch die zuständige Behörde nach den geltenden gesetzlichen Voraussetzungen. Vor einer Beauftragung sollten Leistungsumfang, mögliche Behörden- und Prüfungskosten sowie Zahlungs-, Rücktritts- und Erstattungsbedingungen schriftlich geklärt werden.</p>
     </div>
   </section>
 
