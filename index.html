@@ -881,6 +881,18 @@ header .container,
   .photo-grid figcaption{display:none !important}
   .requirements .requirement,.cards .card,.steps .step{height:100%;min-height:0;padding:12px !important}
 }
+
+
+/* Führerscheinklassen als übersichtliches 2-Spalten-Raster */
+.license-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}
+.license-card{background:#fff;border:1px solid var(--line);padding:22px;box-shadow:var(--shadow);min-width:0}
+.license-category{display:inline-block;color:#8a6a30;text-transform:uppercase;letter-spacing:.13em;font-size:.62rem;font-weight:700;margin-bottom:8px}
+.license-card h3{font-family:var(--serif);font-size:1.35rem;color:var(--navy);margin:0 0 7px}
+.license-card p{color:var(--muted);font-size:.84rem;min-height:2.5em;margin:0 0 14px}
+.license-card strong{font-family:var(--serif);font-size:1.55rem;color:#8a6a30}
+.selected-price{margin:10px 0 0;padding:12px 14px;background:#f5f2eb;border-left:3px solid var(--gold);font-weight:700;color:var(--navy)}
+@media(max-width:700px){.license-grid{grid-template-columns:1fr 1fr}.license-card{padding:16px}}
+@media(max-width:460px){.license-grid{grid-template-columns:1fr}}
 </style>
 </head>
 <body>
@@ -979,40 +991,22 @@ header .container,
         <p>Die folgenden Beträge sind die angegebenen Preise je Führerscheinklasse bzw. Erweiterung.</p>
       </div>
 
-      <div class="price-groups">
-        <div class="price-group">
-          <h3>1. Mofas und Roller</h3>
-          <div class="price-row"><div><strong>Mofa</strong><small>Motorisiertes Zweirad bis 25 km/h</small></div><b>350 €</b></div>
-          <div class="price-row"><div><strong>Klasse AM</strong><small>Roller / Kleinkraftrad bis 45 km/h</small></div><b>200 €</b></div>
-        </div>
-
-        <div class="price-group">
-          <h3>2. Motorräder</h3>
-          <div class="price-row"><div><strong>Klasse A1</strong><small>Leichtkraftrad bis 125 cm³</small></div><b>700 €</b></div>
-          <div class="price-row"><div><strong>Erweiterung B196</strong><small>Erweiterung für 125-cm³-Motorräder</small></div><b>850 €</b></div>
-          <div class="price-row"><div><strong>Klasse A2</strong><small>Mittelschwere Motorräder bis 35 kW</small></div><b>1.000 €</b></div>
-          <div class="price-row"><div><strong>Klasse A</strong><small>Schwere Motorräder / Direkteinstieg</small></div><b>1.500 €</b></div>
-        </div>
-
-        <div class="price-group">
-          <h3>3. Pkw und Anhänger</h3>
-          <div class="price-row"><div><strong>Klasse B</strong><small>Pkw mit Schaltgetriebe oder Automatik</small></div><b>1.500 €</b></div>
-          <div class="price-row"><div><strong>Klasse BE</strong><small>Pkw mit großem Anhänger über 750 kg</small></div><b>900 €</b></div>
-        </div>
-
-        <div class="price-group">
-          <h3>4. Lkw und Nutzfahrzeuge</h3>
-          <div class="price-row"><div><strong>Klasse C1</strong><small>Lkw von 3,5 t bis 7,5 t</small></div><b>1.200 €</b></div>
-          <div class="price-row"><div><strong>Klasse C</strong><small>Schwere Lkw ohne die hier angegebene PTAC-Begrenzung</small></div><b>1.900 €</b></div>
-        </div>
-
-        <div class="price-group">
-          <h3>5. Busse und Reisebusse</h3>
-          <div class="price-row"><div><strong>Klasse D1</strong><small>Kleinbusse bis 16 Fahrgäste und maximal 8 Meter</small></div><b>2.100 €</b></div>
-          <div class="price-row"><div><strong>Klasse D</strong><small>Linienbusse und Reisebusse</small></div><b>3.200 €</b></div>
-        </div>
+      <div class="license-grid">
+        <article class="license-card"><span class="license-category">Zweiräder</span><h3>Mofa</h3><p>Motorisiertes Zweirad bis 25 km/h</p><strong>200 €</strong></article>
+        <article class="license-card"><span class="license-category">Zweiräder</span><h3>Roller / Scooter (Klasse AM)</h3><p>Kleinkraftrad bis 45 km/h</p><strong>350 €</strong></article>
+        <article class="license-card"><span class="license-category">Motorräder</span><h3>Klasse A1</h3><p>Leichtkraftrad bis 125 cm³</p><strong>700 €</strong></article>
+        <article class="license-card"><span class="license-category">Motorräder</span><h3>Erweiterung B196</h3><p>Erweiterung für 125-cm³-Motorräder</p><strong>850 €</strong></article>
+        <article class="license-card"><span class="license-category">Motorräder</span><h3>Klasse A2</h3><p>Mittelschwere Motorräder bis 35 kW</p><strong>1.000 €</strong></article>
+        <article class="license-card"><span class="license-category">Motorräder</span><h3>Klasse A</h3><p>Schwere Motorräder / Direkteinstieg</p><strong>1.500 €</strong></article>
+        <article class="license-card"><span class="license-category">Pkw und Anhänger</span><h3>Klasse B</h3><p>Pkw mit Schaltgetriebe oder Automatik</p><strong>1.500 €</strong></article>
+        <article class="license-card"><span class="license-category">Pkw und Anhänger</span><h3>Klasse BE</h3><p>Pkw mit großem Anhänger über 750 kg</p><strong>900 €</strong></article>
+        <article class="license-card"><span class="license-category">Nutzfahrzeuge</span><h3>Klasse C1</h3><p>Lkw von 3,5 t bis 7,5 t</p><strong>1.200 €</strong></article>
+        <article class="license-card"><span class="license-category">Nutzfahrzeuge</span><h3>Klasse C</h3><p>Schwere Lkw</p><strong>1.900 €</strong></article>
+        <article class="license-card"><span class="license-category">Busse</span><h3>Klasse D1</h3><p>Kleinbusse bis 16 Fahrgäste und maximal 8 Meter</p><strong>2.100 €</strong></article>
+        <article class="license-card"><span class="license-category">Busse</span><h3>Klasse D</h3><p>Linienbusse und Reisebusse</p><strong>3.200 €</strong></article>
       </div>
 
+      <p class="notice" style="margin-top:20px"><strong>MPU-Beratung</strong>Fragen zur MPU werden individuell und direkt mit einem Berater besprochen. Bitte wählen Sie dafür im Formular „MPU-Beratung – Preis nach persönlicher Absprache“ aus.</p>
       <p class="notice" style="margin-top:20px"><strong>Hinweis zur Mofa-Berechtigung</strong>Für Mofas wurde als Voraussetzung eine einfache theoretische Bescheinigung ab 15 Jahren ohne praktische Prüfung angegeben.</p>
       <p class="notice" style="margin-top:12px"><strong>Wichtiger Hinweis zur gewerblichen Nutzung</strong>Die genannten Preise für D1 und D beziehen sich auf eine private oder vereinsbezogene Nutzung. Wer in Dresden beruflich als Busfahrer arbeiten möchte, beispielsweise bei der DVB oder auf Regionalbuslinien, benötigt zusätzlich die Berufskraftfahrerqualifikation (Grundqualifikation / Code 95).</p>
       <p class="notice" style="margin-top:12px"><strong>Wichtiger rechtlicher Hinweis</strong>Diese Preisangaben sind keine Garantie für die Erteilung eines amtlichen Führerscheins. Die Ausstellung eines Führerscheins erfolgt ausschließlich durch die zuständige Behörde nach den geltenden gesetzlichen Voraussetzungen. Vor einer Beauftragung sollten Leistungsumfang, mögliche Behörden- und Prüfungskosten sowie Zahlungs-, Rücktritts- und Erstattungsbedingungen schriftlich geklärt werden.</p>
@@ -1040,6 +1034,7 @@ header .container,
         <details><summary>Welche Angaben sollte ich machen?</summary><p>Beschreiben Sie kurz Ihre Situation, die betreffende Führerscheinklasse und Ihre Frage. Senden Sie über das erste Formular keine sensiblen Dokumente oder vollständigen Ausweisdaten.</p></details>
         <details><summary>Kann ich den Service mit meinem Smartphone kontaktieren?</summary><p>Ja. Die Website und das Formular sind für Smartphones, Tablets und Computer optimiert.</p></details>
         <details><summary>Wie erhalte ich eine Antwort?</summary><p>Unser Team kann Sie über die E-Mail-Adresse kontaktieren, die Sie in Ihrer Nachricht angegeben haben.</p></details>
+        <details><summary>Wie läuft eine MPU-Beratung ab?</summary><p>Fragen zur MPU werden individuell und direkt mit einem Berater besprochen. Ein Preis wird im persönlichen Austausch geklärt.</p></details>
         <details><summary>Kann ein Führerschein ohne erneute Prüfung wiedererteilt werden?</summary><p>Das hängt vom Einzelfall und den deutschen Vorschriften ab. Eine Entscheidung kann ausschließlich die zuständige Behörde treffen.</p></details>
         <details><summary>Ist das Formular ein Notfalldienst?</summary><p>Nein. Das Formular ist für allgemeine Anfragen bestimmt und kein Notfalldienst.</p></details>
         <details><summary>Fallen beim Senden der Nachricht Kosten an?</summary><p>Nein. Durch das Senden einer Nachricht wird keine automatische Zahlung ausgelöst.</p></details>
@@ -1061,11 +1056,40 @@ header .container,
         <form id="contact-form">
           <div style="position:absolute;left:-9999px;width:1px;height:1px;overflow:hidden" aria-hidden="true"><input name="website" tabindex="-1" autocomplete="off" aria-label="Website"></div>
           <div class="form-grid">
-            <div class="field"><label>Name</label><input name="name" autocomplete="name" required></div>
-            <div class="field"><label>E-Mail-Adresse</label><input name="email" type="email" autocomplete="email" required></div>
-            <div class="field"><label>Telefonnummer</label><input name="phone" type="tel" autocomplete="tel" placeholder="+49 …"></div>
-            <div class="field full"><label>Post- oder Lieferanschrift (optional)</label><input name="address" autocomplete="street-address" placeholder="Straße, Hausnummer, PLZ, Ort, Land"></div>
-            <div class="field full"><label>Ihre Nachricht</label><textarea name="message" placeholder="Beschreiben Sie bitte Ihr Anliegen…" required></textarea></div>
+            <div class="field"><label for="name">Name</label><input id="name" name="name" autocomplete="name" required></div>
+            <div class="field"><label for="email">E-Mail-Adresse</label><input id="email" name="email" type="email" autocomplete="email" required></div>
+            <div class="field"><label for="phone">Telefonnummer</label><input id="phone" name="phone" type="tel" autocomplete="tel" placeholder="+49 …"></div>
+            <div class="field"><label for="license">Führerscheinklasse / Anliegen *</label>
+              <select id="license" name="license" required>
+                <option value="" data-price="">Bitte auswählen …</option>
+                <optgroup label="Zweiräder">
+                  <option value="Mofa" data-price="200">Mofa – 200 €</option>
+                  <option value="Roller / Scooter (Klasse AM)" data-price="350">Roller / Scooter (Klasse AM) – 350 €</option>
+                </optgroup>
+                <optgroup label="Motorräder">
+                  <option value="Klasse A1" data-price="700">Klasse A1 – 700 €</option>
+                  <option value="Erweiterung B196" data-price="850">Erweiterung B196 – 850 €</option>
+                  <option value="Klasse A2" data-price="1000">Klasse A2 – 1.000 €</option>
+                  <option value="Klasse A" data-price="1500">Klasse A – 1.500 €</option>
+                </optgroup>
+                <optgroup label="Pkw und Anhänger">
+                  <option value="Klasse B" data-price="1500">Klasse B – 1.500 €</option>
+                  <option value="Klasse BE" data-price="900">Klasse BE – 900 €</option>
+                </optgroup>
+                <optgroup label="Nutzfahrzeuge">
+                  <option value="Klasse C1" data-price="1200">Klasse C1 – 1.200 €</option>
+                  <option value="Klasse C" data-price="1900">Klasse C – 1.900 €</option>
+                </optgroup>
+                <optgroup label="Busse">
+                  <option value="Klasse D1" data-price="2100">Klasse D1 – 2.100 €</option>
+                  <option value="Klasse D" data-price="3200">Klasse D – 3.200 €</option>
+                </optgroup>
+                <option value="MPU-Beratung" data-price="">MPU-Beratung – Preis nach persönlicher Absprache</option>
+              </select>
+              <p id="selected-price" class="selected-price" aria-live="polite">Bitte wählen Sie eine Führerscheinklasse oder MPU-Beratung aus.</p>
+            </div>
+            <div class="field full"><label for="address">Post- oder Wohnanschrift (optional)</label><input id="address" name="address" autocomplete="street-address" placeholder="Straße, Hausnummer, PLZ, Ort, Land"></div>
+            <div class="field full"><label for="message">Ihre Nachricht</label><textarea id="message" name="message" placeholder="Beschreiben Sie bitte Ihr Anliegen…" required></textarea></div>
           </div>
           <button class="btn gold" type="submit">Nachricht senden</button>
           <p id="contact-status" role="status" aria-live="polite" style="margin-top:14px;color:var(--muted);font-size:.85rem"></p>
@@ -1104,6 +1128,20 @@ document.addEventListener('click', (event) => {
   if (navlinks?.classList.contains('open') && !navlinks.contains(event.target) && event.target !== menuBtn) closeMobileMenu();
 });
 
+const licenseSelect = document.getElementById('license');
+const selectedPrice = document.getElementById('selected-price');
+licenseSelect?.addEventListener('change', () => {
+  const option = licenseSelect.options[licenseSelect.selectedIndex];
+  const price = option?.dataset.price || '';
+  if (!licenseSelect.value) {
+    selectedPrice.textContent = 'Bitte wählen Sie eine Führerscheinklasse oder MPU-Beratung aus.';
+  } else if (licenseSelect.value === 'MPU-Beratung') {
+    selectedPrice.textContent = 'MPU: Kosten und Vorgehen werden direkt mit einem Berater besprochen.';
+  } else {
+    selectedPrice.textContent = `Ausgewählt: ${licenseSelect.value} – ${Number(price).toLocaleString('de-DE')} €`;
+  }
+});
+
 const form = document.getElementById('contact-form');
 form?.addEventListener('submit', async (event) => {
   event.preventDefault();
@@ -1112,11 +1150,15 @@ form?.addEventListener('submit', async (event) => {
   const name = form.elements.name.value.trim();
   const email = form.elements.email.value.trim();
   const message = form.elements.message.value.trim();
+  const licenseSelect = form.elements.license;
+  const selectedOption = licenseSelect.options[licenseSelect.selectedIndex];
+  const license = licenseSelect.value;
+  const licensePrice = selectedOption?.dataset.price || '';
   const website = form.elements.website.value;
 
   if (website) return;
-  if (!name || !email || !message) {
-    status.textContent = 'Bitte füllen Sie alle Felder aus.';
+  if (!name || !email || !message || !license) {
+    status.textContent = 'Bitte füllen Sie alle Pflichtfelder aus und wählen Sie eine Führerscheinklasse oder MPU-Beratung.';
     return;
   }
   if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
@@ -1133,7 +1175,12 @@ form?.addEventListener('submit', async (event) => {
     const response = await fetch('/api/telegram', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ name, email, message, website })
+      body: JSON.stringify({
+        name,
+        email,
+        message: `${message}\\n\\nAusgewähltes Anliegen: ${license}\\nKosten: ${licensePrice ? Number(licensePrice).toLocaleString('de-DE') + ' €' : 'Nach persönlicher Absprache (MPU)'}`,
+        website
+      })
     });
     const result = await response.json().catch(() => ({}));
     if (!response.ok || result.success !== true) {
